@@ -1,0 +1,203 @@
+@mixin fontStyle($pixel, $color) {
+    font-size: $pixel;
+    color: $color;
+}
+@function toRem($pix) {
+    @return calc($pix / 16) + rem;
+}
+
+.winMillion-container {
+    background: linear-gradient(rgb(111, 182, 240), rgb(232, 241, 245));
+    width: 100vw;
+    .winMillion-content {
+      background-color: rgb(208, 229, 250);
+      border-radius: toRem(50);
+      padding: toRem(20) 0;
+      margin: toRem(100) 0;
+      .main-title {
+        @include fontStyle(40px, #280d5f);
+        font-weight: 550;
+        text-align: center;
+        .purple-win {
+          color: rgb(118, 69, 217);
+        }
+      }
+      .par-container {
+        text-align: center;
+        @include fontStyle(16px, rgb(122, 110, 170));
+        font-weight: 300;
+      }
+      .card-container {
+        /* text-align: center; */
+        /* display: flex;
+              align-items: center;
+              justify-content: center; */
+        width: 100%;
+        .card {
+          padding: toRem(15);
+          margin: toRem(10);
+          height: toRem(350);
+          border-radius: toRem(25);
+          .card-image {
+            text-align: end;
+            padding: 10px;
+          }
+          .card-first-el {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          .card-button {
+            margin: 10px 0;
+            text-align: center;
+            padding-top: 25px;
+            button {
+              border: none;
+              background: transparent;
+              @include fontStyle(16px, white);
+              border: 1px solid #1fc7d4;
+              border-radius: 15px;
+              width: 90%;
+              padding: 10px;
+              font-weight: 500;
+              color: white;
+              background-color: #1fc7d4;
+              transition: all 0.3s ease;
+              box-shadow: 0px 1.5px 3px black;
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+        .left-card {
+          background: linear-gradient(rgb(254,178,55), rgb(255,230,104));
+          margin-right: toRem(15);
+          .card-first-el{
+              color: rgb(40, 13, 95);
+          }
+          .card-amount {
+              @include fontStyle(24px, rgb(40, 13, 95));
+              h2 {
+                  font-weight: 600;
+              }
+          }
+          .card-amount-info {
+              color:  rgb(40, 13, 95);
+              font-weight: 600;
+              padding-bottom: 20px;
+          }
+          .card-description {
+              font-weight: 300;
+              color: rgb(40, 13, 95);
+          }
+      }
+      .right-card {
+          background: linear-gradient(rgb(117,67,216), rgb(81,33,177));
+          color: white;
+          margin-left: toRem(15);
+          .card-image {
+              fill: white;
+          }
+          .card-amount {
+              @include fontStyle(24px, rgb(253,191,35));
+              h2 {
+                  font-weight: 600;
+              }
+          }
+          .card-amount-info {
+              color:  white;
+              font-weight: 600;
+              padding-bottom: 20px;
+          }
+          .card-description {
+              font-weight: 300;
+              color: white;
+          }
+      }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 852px) {
+      .winMillion-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .winMillion-content {
+            width: 60%;
+              height: toRem(550);
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-areas: 
+                  "title title"
+                  "par par"
+                  "card card";
+              .main-title {
+                  grid-area: title;
+              }
+              .par-container{
+                  grid-area: par;
+              }
+              .card-container {
+                  grid-area: card;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .card {
+                      width: 33%;
+                  }
+                  .left-card {
+                      transform: rotate(-3deg);
+                      box-shadow: -1px 5px 0px rgb(254,178,55);
+                  }
+                  .right-card {
+                      transform: rotate(2deg);
+                      box-shadow: 0px 5px 0px hwb(260 26% 50%);
+                  }
+              }
+          }
+      }
+  }
+  @media screen and (max-width: 851px) {
+      .winMillion-container {
+        width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .winMillion-content {
+            width: 65%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .main-title {
+                  grid-area: title;
+              }
+              .par-container{
+                  grid-area: par;
+              }
+              .card-container {
+                  grid-area: card;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  .card {
+                      width: 70%;
+                  }
+                  .left-card {
+                      box-shadow: -1px 7px 0px rgb(254,178,55);
+                  }
+                  .right-card {
+                      box-shadow: -1px 7px 0px hwb(260 26% 50%);
+                  }
+              }
+          }
+      }
+  }
+  @media screen and (max-width: 370px) {
+    .winMillion-container .winMillion-content .card-container .card .card-button button {
+        @include fontStyle(14px, white);
+    }
+  }

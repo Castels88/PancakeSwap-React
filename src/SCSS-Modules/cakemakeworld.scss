@@ -1,0 +1,296 @@
+@mixin fontStyle($pixel, $color) {
+  font-size: $pixel;
+  color: $color;
+}
+@function toRem($pix) {
+  @return calc($pix / 16) + rem;
+}
+
+.cake-container {
+  height: toRem(800);
+  width: 100%;
+  padding: toRem(20) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cake-content {
+    .cake-title {
+      margin-bottom: 20px;
+      grid-area: title;
+      h2 {
+        @include fontStyle(40px, #280d5f);
+        font-weight: 550;
+        line-height: 45px;
+        padding: 1rem;
+        .purple-cake {
+          color: rgb(118, 69, 217);
+        }
+      }
+    }
+    .cake-description {
+      grid-area: desc;
+      text-align: left;
+      @include fontStyle(16px, rgb(122, 110, 170));
+      font-weight: 300;
+      p {
+        padding: 1rem;
+      }
+    }
+    .cake-buttons {
+      grid-area: buttons;
+      margin: 10px 0;
+      text-align: center;
+      padding-top: 25px;
+      display: flex;
+      align-items: baseline;
+      button {
+        border: none;
+        background: transparent;
+        @include fontStyle(16px, white);
+        border: 1px solid #1fc7d4;
+        border-radius: 15px;
+        width: 44%;
+        padding: 15px;
+        font-weight: bold;
+        color: white;
+        background-color: #1fc7d4;
+        transition: all 0.3s ease;
+        box-shadow: 0px 1.5px 0px #072f32;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #1fc7d4;
+        margin: 0 10px;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: #1fc7d4;
+        }
+      }
+    }
+    .cake-image {
+      grid-area: pic;
+    }
+    .cake-data-table {
+      margin-top: 100px;
+      grid-area: data;
+      .data {
+        padding: 10px;
+        .data-title {
+          @include fontStyle(16px, rgb(122, 110, 170));
+          font-weight: 400;
+        }
+        .data-num {
+          @include fontStyle(24px, #280d5f);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 852px) {
+  .cake-container {
+    .cake-content {
+      display: grid;
+      grid-template-columns: repeat(1fr, 3);
+      grid-template-areas:
+        "title title pic"
+        "desc desc pic"
+        "buttons . pic"
+        "data data data";
+
+      .cake-image {
+        grid-area: pic;
+        position: relative;
+        picture {
+          .bottom-right-cake {
+            animation: 3s ease-in-out 0s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+            height: 350px;
+            width: 400px;
+          }
+          .top-right-cake {
+            animation: 3s ease-in-out 0.3s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 350px;
+            width: 400px;
+          }
+          .top-left-cake {
+            animation: 3s ease-in-out 0.6s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+            position: absolute;
+            top: 0;
+            left: -260px;
+            height: 350px;
+            width: 400px;
+          }
+          .coin-cake {
+            animation: 3s ease-in-out 0.9s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+            position: absolute;
+            height: 350px;
+            width: 400px;
+            right: 0;
+          }
+        }
+      }
+    }
+    .cake-data-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "d1 d2 d3"
+        "d4 d5 d6";
+      row-gap: 25px;
+      column-gap: 150px;
+      .data1  {
+        grid-area: d1;
+      }
+      .data-2 {
+        grid-area: d2;
+      }
+      .data-3 {
+        grid-area: d3;
+      }
+      .data-4 {
+        grid-area: d4;
+      }
+      .data-5 {
+        grid-area: d5;
+      }
+      .data-6 {
+        grid-area: d6;
+      }
+      .data2,
+      .data3,
+      .data5,
+      .data6 {
+        border-left: 2px solid rgba(122, 110, 170, 0.4);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .cake-container {
+    .cake-content {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cake-image {
+        display: flex;
+        height: 150px;
+        picture {
+            position: relative;
+          img {
+            position: absolute;
+            height: 150px;
+            width: 200;
+          }
+        }
+      }
+      .cake-buttons {
+        button {
+          width: 150px !important;
+        }
+      }
+      .cake-data-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "d1 d2"
+          "d3 d4"
+          "d5 d6";
+        row-gap: 25px;
+        margin-top: 50px;
+        .data1  {
+          grid-area: d1;
+        }
+        .data-2 {
+          grid-area: d2;
+        }
+        .data-3 {
+          grid-area: d3;
+        }
+        .data-4 {
+          grid-area: d4;
+        }
+        .data-5 {
+          grid-area: d5;
+        }
+        .data-6 {
+          grid-area: d6;
+        }
+        .data {
+          border-left: 2px solid rgba(122, 110, 170, 0.4);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cake-container {
+    .cake-content {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cake-image {
+        display: flex;
+        height: 150px;
+        picture {
+            position: relative;
+          img {
+            position: absolute;
+            height: 150px;
+            width: 200;
+          }
+        }
+      }
+      .cake-buttons {
+        button {
+          width: 150px !important;
+        }
+      }
+      .cake-data-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "d1 d2"
+          "d3 d4"
+          "d5 d6";
+        row-gap: 25px;
+        margin-top: 12px;
+        .data1  {
+          grid-area: d1;
+        }
+        .data-2 {
+          grid-area: d2;
+        }
+        .data-3 {
+          grid-area: d3;
+        }
+        .data-4 {
+          grid-area: d4;
+        }
+        .data-5 {
+          grid-area: d5;
+        }
+        .data-6 {
+          grid-area: d6;
+        }
+        .data {
+          border-left: 2px solid rgba(122, 110, 170, 0.4);
+        }
+      }
+    }
+  }
+}
+
