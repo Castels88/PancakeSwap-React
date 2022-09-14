@@ -111,6 +111,9 @@
     font-weight:bold;
     margin-top: 20px;
 }
+a {
+  text-decoration: none;
+}
 .btn_connect{
     -webkit-box-align: center;
     align-items: center;
@@ -132,90 +135,11 @@
     padding: 0px 24px;
     background-color: rgb(122, 110, 170);
     color: rgb(255, 255, 255);
-    width: 80%;
+    width: auto;
 }
 .btn_connect:hover{
     opacity: 0.5;
     transition: all 1s;
-}
-
-@media screen and (max-width: 372px){
-  .big_container2{
-    display: none;
-  }
-  
-  .appear_second {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    position: fixed;
-    inset: 0px;
-    z-index: 99;
-    will-change: opacity;
-  }
-  .appear_second .presentation_second {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 13, 95, 0.6);
-    z-index: 20;
-    will-change: opacity;
-  }
-  .appear_second .settings_menu_2 {
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
-    border-radius: 32px;
-    width: 400px;
-    height: 80%;
-    margin-top: 129px;
-    z-index: 100;
-  }
-}
-@media screen and (max-width: 576px){
-  .big_container2{
-    display: none;
-  }
-  
-  .appear_second {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    position: fixed;
-    inset: 0px;
-    z-index: 99;
-    will-change: opacity;
-  }
-  .appear_second .presentation_second {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 13, 95, 0.6);
-    z-index: 20;
-    will-change: opacity;
-  }
-  .appear_second .settings_menu_2 {
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
-    border-radius: 32px;
-    width: 100%;
-    height: 80%;
-    margin-top: 129px;
-    z-index: 100;
-  }
 }
 
 ::-webkit-scrollbar {
@@ -372,4 +296,84 @@
 
 .exit2:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 370px){
+  .big_container2{
+    display: none;
+  }
+  
+  .appear_second {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    inset: 0px;
+    z-index: 99;
+    will-change: opacity;
+  }
+  .appear_second .presentation_second {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 13, 95, 0.6);
+    z-index: 20;
+    will-change: opacity;
+  }
+  .appear_second .settings_menu_2 {
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 32px;
+    width: 400px;
+    height: 80%;
+    margin-top: 129px;
+    z-index: 100;
+  }
+}
+@media screen and (max-width: 576px){
+  .big_container2{
+    display: none;
+  }
+  
+  .appear_second {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    inset: 0px;
+    z-index: 99;
+    will-change: opacity;
+  }
+  .appear_second .presentation_second {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 13, 95, 0.6);
+    z-index: 20;
+    will-change: opacity;
+  }
+  .appear_second .settings_menu_2 {
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 32px;
+    width: 100%;
+    height: 80%;
+    margin-top: 129px;
+    z-index: 100;
+    padding-bottom: 1.5rem;
+  }
 }

@@ -94,17 +94,17 @@ const StartInSeconds = () => {
           >
             Learn how to start
           </a>
-          <div className="container-btn">
+          <div className="container-btn"> {/*componente button */}
             <button className="mainbuttons" onClick={handleClick}>Connect Wallet</button>
           </div>
         </div>
       </div>
-
-      <div class="big_container2_elio"  className={isShown ? 'display-block' : 'display-none'} >
-        <div className="appear_elio">
-          <div className="presentation_elio"></div>
-          <div className="settings_menu_elio2">
-            <div className="settings_top_elio">
+      {/*componente container connect wallet*/}
+      <div className={"big_container2" && isShown ? 'display-block' : 'display-none'} >
+        <div className="appear_second">
+          <div className="presentation_second"></div>
+          <div className="settings_menu_2">
+            <div className="settings_top">
               Connect Wallet
               <svg
                 className="exit2"
@@ -120,9 +120,9 @@ const StartInSeconds = () => {
                 ></path>
               </svg>
             </div>
-            <div className="grid_container_elio">
+            <div className="grid_container">
               <div className="container1">
-                <button className="icons_elio">
+                <button className="icons">
                   <svg
                     viewBox="0 0 40 40"
                     width="40px"
@@ -247,11 +247,11 @@ const StartInSeconds = () => {
                       fill="#F5841F"
                     ></path>
                   </svg>
-                  <div className="font_settings2_elio">Metamask</div>
+                  <div className="font_settings2">Metamask</div>
                 </button>
               </div>
               <div className="container1">
-                <button className="icons_elio">
+                <button className="icons">
                   <svg
                     viewBox="0 0 40 40"
                     width="40px"
@@ -264,11 +264,11 @@ const StartInSeconds = () => {
                       fill="#F1BA0D"
                     ></path>
                   </svg>
-                  <div className="font_settings2_elio">Binance Wallet</div>
+                  <div className="font_settings2">Binance Wallet</div>
                 </button>
               </div>
               <div className="container1">
-                <button className="icons_elio">
+                <button className="icons">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0, 0, 400,400"
@@ -303,7 +303,7 @@ const StartInSeconds = () => {
                 </button>
               </div>
               <div className="container1">
-                <button className="icons_elio">
+                <button className="icons">
                   <svg
                     className="more_elio"
                     viewBox="0 0 24 24"
@@ -317,14 +317,14 @@ const StartInSeconds = () => {
                 </button>
               </div>
             </div>
-            <div className="settings_bot_elio">
-              <div className="testo_elio">Haven’t got a crypto wallet yet?</div>
+            <div className="settings_bot">
+              <div className="testo">Haven’t got a crypto wallet yet?</div>
               <a
                 href="https://docs.pancakeswap.finance/get-started/connection-guide"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn_connect_elio">
+                <button className="btn_connect">
                   Learn how to Connect
                 </button>
               </a>
