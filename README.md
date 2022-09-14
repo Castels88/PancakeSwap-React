@@ -9,6 +9,7 @@
 ### 3° Per la divisione dei sottomoduli React creare delle sottocartelle nella cartella "React-Modules" 
 ### (ad esempio la cartella vuota "Buttons")
 
+### 4° Tra una sezione e l'altra nel file App.js aggiungere a dicitura "Inizio sezione di..." e "Fine sezione di..."
 
 ## Collaboratori:
 
