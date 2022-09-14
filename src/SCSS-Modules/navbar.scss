@@ -109,8 +109,16 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .icon{
+        .icon svg {
             padding: 10px;
+            transition: .5s all;   
+            transition-delay: 0s;
+            width: 44px;
+                &:hover {
+                    width: 48px;
+                    margin:-3.2px;
+                    transition-delay: 0s;
+                }
         }
         .Navbar_money{
             color: rgb(122, 110, 170);
