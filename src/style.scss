@@ -1,9 +1,2 @@
-@use './modules/root';
-@use './modules/navbar';
-@use "./modules/moonofpancake";
-@use "./modules/usedby";
-@use './modules/tradeanything';
-@use './modules/winmillion';
-@use "./modules/cakemakeworld";
-@use "./modules/startinsec";
-@use "./modules/footer";
+@use './SCSS-Modules/root.scss';
+@use './SCSS-Modules/navbar.scss';
