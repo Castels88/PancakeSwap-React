@@ -13,7 +13,7 @@ const ButtonConnectWallet = () => {
           Connect Wallet
         </button>
 
-        <div className={"big_container2" && isShown ? 'display-block' : 'display-none'}>
+        <div className={"big_container2"} style={{display: isShown ? 'block' : 'none'}}>
           <div className="appear_second">
             <div className="presentation_second"></div>
             <div className="settings_menu_2">
