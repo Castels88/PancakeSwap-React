@@ -36,7 +36,6 @@ const Navbar = () => {
                         </div>
                     </li>
                 </ul>
-
                 <ul className="Navbar_menuBtn">
                     <li>
                         <a href="https://pancakeswap.finance/swap">Earn</a>
@@ -50,7 +49,6 @@ const Navbar = () => {
                         </div>
                     </li>
                 </ul>
-
                 <ul className="Navbar_menuBtn">
                     <li>
                         <a href="https://pancakeswap.finance/swap">Win</a>
@@ -67,7 +65,6 @@ const Navbar = () => {
                         </div>
                     </li>
                 </ul>
-
                 <ul className="Navbar_menuBtn">
                     <li>
                         <a href="https://pancakeswap.finance/swap">NFT</a>
@@ -84,7 +81,6 @@ const Navbar = () => {
                         </div>
                     </li>
                 </ul>
-
                 <ul className="Navbar_menuBtn">
                     <li>
                         <a href="http://">...</a>
