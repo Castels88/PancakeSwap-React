@@ -129,7 +129,6 @@ nav .Navbar_destra {
   align-items: center;
 }
 nav .Navbar_destra .Navbar_bunny {
-  padding: 10px;
   transition: 0.5s all;
   transition-delay: 0s;
   width: 45px;
@@ -978,7 +977,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 60%;
     display: flex;
   }
-  nav .Navbar_sinistra a .Navbar_logo {
+  nav .Navbar_sinistra .Navbar_logo {
+    display: none;
+  }
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
   nav .Navbar_sinistra .Navbar_bottoni {
@@ -1131,7 +1133,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_sinistra {
     width: 50%;
   }
-  nav .Navbar_sinistra .Navbar.Navbar_logo {
+  nav .Navbar_sinistra .Navbar_logo {
+    display: none;
+  }
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
   nav .Navbar_sinistra .Navbar_bottoni {
@@ -1320,4 +1325,4 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
