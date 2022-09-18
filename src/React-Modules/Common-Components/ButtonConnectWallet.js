@@ -14,7 +14,6 @@ const [Toogle, setToogle] = useState(false)
         <div className={"big_container2"}>
 =======
 
-        <div className={"big_container2"}>
 >>>>>>> efc707e69b14e7dd61669f09e4d7693118bf8abb
           <div className="appear_second">
             <div className="presentation_second"></div>
