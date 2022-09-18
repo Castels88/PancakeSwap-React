@@ -27,15 +27,20 @@ nav {
         align-items: center;
         justify-content: flex-start;
         a {
+            display: flex;
             text-decoration: none;
             color: black;
-        
+            img {
+                width: 20px;
+                margin: 5px;
+            }
             .Navbar_logo{
                 display: flex;
                 align-items: center;
                 height: 100%;
                 font-size: 20px;
                 font-weight: bolder;
+                margin-top: 4px;
             }
         }
         .Navbar_bottoni{
@@ -114,11 +119,11 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .icon svg {
+        .Navbar_bunny {
             padding: 10px;
             transition: .5s all;   
             transition-delay: 0s;
-            width: 44px;
+            width: 45px;
                 &:hover {
                     width: 48px;
                     margin:-3.2px;
@@ -136,6 +141,7 @@ nav {
         .Navbar_language {
             height: 100%;
             display: flex;
+            align-items: center;
             &:hover .Navbar_dropdown_content{
                 border:1px solid rgb(216, 212, 212);
                 border-radius: 10px;
@@ -146,6 +152,7 @@ nav {
                 }
             }
             svg{
+                height: 26px;
                 fill:rgb(118, 69, 217)
             }
             .Navbar_dropdown_content{
@@ -155,7 +162,7 @@ nav {
                 background-color: rgb(255, 255, 255);
                 border: 1px solid rgb(231, 227, 235);
                 border-radius: 16px;
-                margin-top: 55px;
+                margin-top: 238px;
                 padding-bottom: 4px;
                 padding-top: 4px;
                 width: 150px;
@@ -792,7 +799,7 @@ nav {
                     background-color: rgb(255, 255, 255);
                     border: 1px solid rgb(231, 227, 235);
                     border-radius: 16px;
-                    margin-top: 55px;
+                    margin-top: 238px;
                     padding-bottom: 4px;
                     padding-top: 4px;
                     width: 150px;
@@ -978,12 +985,11 @@ nav {
         .Navbar_sinistra{
             width: 60%;
             display: flex;
-            .Navbar_logo{
-                display: none;
                 a{
-                    display: none;
+                    .Navbar_logo{
+                        display: none;
+                    }
                 }
-            }
             .Navbar_bottoni{
                 display: flex;
                 justify-content: space-evenly;
@@ -1138,12 +1144,9 @@ nav {
     nav {
         .Navbar_sinistra{
             width: 50%;
-            .Navbar_logo{
+            .Navbar.Navbar_logo{
                 display: none;
-                a{
-                    display: none;
                 }
-            }
             .Navbar_bottoni{
                 display: none;
                 .Navbar_menuBtn{
