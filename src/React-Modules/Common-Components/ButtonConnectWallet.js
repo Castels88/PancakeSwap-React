@@ -9,8 +9,13 @@ const [Toogle, setToogle] = useState(false)
         <button onClick={()=> setToogle(!Toogle)} className="Navbar_main_buttons">
           Connect Wallet
         </button>
+<<<<<<< HEAD
         {Toogle && (
         <div className={"big_container2"}>
+=======
+
+        <div className={"big_container2"}>
+>>>>>>> efc707e69b14e7dd61669f09e4d7693118bf8abb
           <div className="appear_second">
             <div className="presentation_second"></div>
             <div className="settings_menu_2">
