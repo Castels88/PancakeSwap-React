@@ -12,7 +12,7 @@
     border-radius: 8px;
   }
   .big_container{
-    display: none;
+    display: block;
   }
   
   .appear {
@@ -48,7 +48,7 @@
     z-index: 100;
   }
   .appear .settings_container .settings_top {
-    height: 80px;
+    height: 70px;
     -webkit-box-align: center;
     align-items: center;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -60,6 +60,10 @@
     font-weight: bolder;
     color: rgb(40, 13, 95);
   }
+  .appear .settings_container .settings_top img{
+    height: 20px;
+  }
+
   .appear .settings_container .settings_top a{
     text-decoration: none;
     color: rgb(31, 199, 212);
@@ -71,7 +75,7 @@
     padding: 10px;
   }
   .appear .settings_container .settings_scroolbar .primo_conteiner {
-    height: 160px;
+    height: 285px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -128,7 +132,8 @@
     transition:transform 1s;
   }
   .appear .settings_container .settings_scroolbar .primo_conteiner .sub_container .switch .luna {
-    fill: white;
+    color: white;
+    width: 50%;
   }
   .appear .settings_container .settings_scroolbar .primo_conteiner .font_settings2 {
     color: rgb(40, 13, 95);
@@ -338,7 +343,7 @@
   }  
   @media screen and (max-width:372px){
     .big_container{
-      display: none;
+      display: block;
     }
     
     .appear {
@@ -378,7 +383,7 @@
   }
   @media screen and (max-width:576px){
     .big_container{
-      display: none;
+      display: block;
     }
     
     .appear {
