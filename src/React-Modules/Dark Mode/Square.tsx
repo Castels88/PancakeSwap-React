@@ -1,4 +1,4 @@
-import "./square.css";
+import "../../SCSS-Modules/Dark Mode/square.css";
 
 export function Square() {
   return (

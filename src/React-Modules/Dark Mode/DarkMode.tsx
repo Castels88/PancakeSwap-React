@@ -1,6 +1,6 @@
 import useLocalStorage from "use-local-storage";
-import "./darkmode.css";
-import { Square } from "./components/Square";
+import "../../SCSS-Modules/Dark Mode/darkmode.css";
+import { Square } from "./Square";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
