@@ -1,9 +1,11 @@
+import React from "react";
+import './style.css'
 
-
-function App() {
+export default function App() {
   return (
-    
+    <div>
+    </div>
   );
 }
 
-export default App;
+
