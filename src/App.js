@@ -1,9 +1,8 @@
-import { LangaugePicker } from "./React-Modules/Language/LanguagePicker";
-
+import { WinMillions } from "./React-Modules/WinMillions/WinMillions";
 
 function App() {
   return (
-    <LangaugePicker/>
+    <WinMillions/>
   );
 }
 

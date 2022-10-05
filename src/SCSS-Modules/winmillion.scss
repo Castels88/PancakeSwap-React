@@ -28,8 +28,8 @@
         font-weight: 300;
       }
       .card-container {
-        /* text-align: center; */
-        /* display: flex;
+        /* text-align: center;
+        display: flex;
               align-items: center;
               justify-content: center; */
         width: 100%;
@@ -117,7 +117,7 @@
       }
     }
   }
-  
+
   @media screen and (min-width: 852px) {
       .winMillion-container {
           display: flex;
@@ -128,7 +128,7 @@
               height: toRem(550);
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-areas: 
+              grid-template-areas:
                   "title title"
                   "par par"
                   "card card";
