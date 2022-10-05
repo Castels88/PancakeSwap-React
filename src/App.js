@@ -1,8 +1,12 @@
+import { Cake } from "./React-Modules/Cake/Cake";
 import { WinMillions } from "./React-Modules/WinMillions/WinMillions";
 
 function App() {
   return (
-    <WinMillions/>
+    <div>
+      <WinMillions />
+      <Cake />
+    </div>
   );
 }
 

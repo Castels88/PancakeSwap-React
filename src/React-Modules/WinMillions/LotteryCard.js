@@ -1,13 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
-
+import { randomNum } from "../Functions/Million&Cake";
 
 export function LotteryCard() {
   const [amount, setAmount] = useState('')
-
-  function randomNum(base, x) {
-    return Math.floor((Math.random() * x) + base);
-    }
 
     useEffect(()=> {
         const lottery1 = '81';
