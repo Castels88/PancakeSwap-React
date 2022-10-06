@@ -46,7 +46,7 @@ export function LangaugePicker() {
   }
 
   return (
-    <div>
+    <div className="language-container">
       {!buttonToggle ? <select className='picker' onChange={handleLang} name="languages" id="languages" value={actualLang}>
         {languages.map((language) => {
           return (

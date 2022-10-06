@@ -1,11 +1,18 @@
-.picker {
+.language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language-container .picker {
   background: transparent;
   border: none;
   font-size: 16px;
+  padding: 15px;
 }
-
-.button {
+.language-container .button {
   background: transparent;
   text-transform: uppercase;
   border: none;
+  padding: 15px;
+  align-self: flex-start;
 }/*# sourceMappingURL=languagepicker.css.map */
