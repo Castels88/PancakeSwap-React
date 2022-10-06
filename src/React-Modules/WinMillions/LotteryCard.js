@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { randomNum } from "../Functions/Million&Cake";
+import './../../SCSS-Modules/winmillion.css'
 
 export function LotteryCard() {
   const [amount, setAmount] = useState('')

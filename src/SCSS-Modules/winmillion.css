@@ -57,7 +57,7 @@
   border: 1px solid #1fc7d4;
   border-radius: 15px;
   width: 90%;
-  padding: 10px;
+  padding: 15px;
   font-weight: 500;
   color: white;
   background-color: #1fc7d4;
@@ -143,11 +143,14 @@
   .winMillion-container .winMillion-content .card-container .card {
     width: 33%;
   }
-  .winMillion-container .winMillion-content .card-container .left-card {
+  .winMillion-container .winMillion-content .card-container .card-button {
+    margin-top: 55px !important;
+  }
+  .winMillion-container .winMillion-content .left-card {
     transform: rotate(-3deg);
     box-shadow: -1px 5px 0px rgb(254, 178, 55);
   }
-  .winMillion-container .winMillion-content .card-container .right-card {
+  .winMillion-container .winMillion-content .right-card {
     transform: rotate(2deg);
     box-shadow: 0px 5px 0px hwb(260 26% 50%);
   }

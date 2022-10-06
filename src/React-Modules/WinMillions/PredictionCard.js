@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { randomNum } from "../Functions/Million&Cake";
+import './../../SCSS-Modules/winmillion.css'
+
 
 export function PredictionCard() {
   const [amount, setAmount] = useState("");
@@ -11,7 +13,6 @@ export function PredictionCard() {
   }, []);
 
   return (
-    <div>
       <div className="card left-card">
         <div className="card-image">
           <svg
@@ -45,6 +46,5 @@ export function PredictionCard() {
           <button>Play →</button>
         </div>
       </div>
-    </div>
   );
 }
