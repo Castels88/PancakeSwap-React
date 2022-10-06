@@ -2,10 +2,34 @@ import { useState } from "react";
 import '../../SCSS-Modules/languagepicker.css'
 
 const languages = [
+  { lang: "العربية",  tag:"ar"},
+  { lang: "বাংলা", tag: "bn"},
   { lang: "English", tag: "en" },
-  { lang: "French", tag: "fr" },
-  { lang: "Espanol", tag: "es-es" },
+  { lang: "Deutsch", tag: "de"},
+  { lang: "Ελληνικά", tag: "el"},
+  { lang: "Español", tag: "es-es" },
+  { lang:"Suomalainen", tag: "fi"},
+  { lang: "Filipino", tag: "fil" },
+  { lang: "Français", tag: "fr" },
+  { lang: "हिंदी", tag: "hi" },
+  { lang: "Magyar", tag: "hu" },
+  { lang: "Bahasa Indonesia", tag: "id" },
   { lang: "Italiano", tag: "it" },
+  { lang: "日本語", tag: "ja" },
+  { lang: "한국어", tag: "ko" },
+  { lang: "Nederlands", tag: "nl" },
+  { lang: "Polski", tag: "pl" },
+  { lang: "Português (Brazil)", tag: "pt-br" },
+  { lang: "Português", tag: "pt" },
+  { lang: "Română", tag: "ro" },
+  { lang: "Русский", tag: "ru" },
+  { lang: "Svenska", tag: "sv" },
+  { lang: "தமிழ்", tag: "ta" },
+  { lang: "Türkçe", tag: "tr" },
+  { lang: "Українська", tag: "uk" },
+  { lang: "Tiếng Việt", tag: "vi" },
+  { lang: "简体中文", tag: "zh-cn" },
+  { lang: "繁體中文", tag: "zh-tw" }
 ];
 
 export function LangaugePicker() {
@@ -23,7 +47,7 @@ export function LangaugePicker() {
 
   return (
     <div>
-      {!buttonToggle ? <select className='picker' onChange={handleLang} name="languages" id="languages">
+      {!buttonToggle ? <select className='picker' onChange={handleLang} name="languages" id="languages" value={actualLang}>
         {languages.map((language) => {
           return (
             <option

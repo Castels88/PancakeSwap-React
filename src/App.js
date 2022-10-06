@@ -1,4 +1,5 @@
 import { Cake } from "./React-Modules/Cake/Cake";
+import { LangaugePicker } from "./React-Modules/Language/LanguagePicker";
 import { WinMillions } from "./React-Modules/WinMillions/WinMillions";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <WinMillions />
       <Cake />
+      <LangaugePicker/>
     </div>
   );
 }
