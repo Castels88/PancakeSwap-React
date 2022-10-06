@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { randomNum } from "../Functions/Million&Cake"
+import './../../SCSS-Modules/cakemakeworld.css'
+
 
 export function CakeData(){
     const [data1, setData1] = useState('');
@@ -18,7 +20,7 @@ export function CakeData(){
         setData6(`13.${randomNum(0, 75)}/block`)
     },[])
 
-    return <div>
+    return(
         <div className="cake-data-table">
             <div className="data data1">
                 <p className="data-title">Circulating Supply</p>
@@ -44,6 +46,5 @@ export function CakeData(){
                 <p className="data-title">Current emissions</p>
                 <p className="data-num">{data6}</p>
             </div>
-        </div>
-    </div>
+        </div>)
 }
