@@ -1,0 +1,30 @@
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.language .language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language .language-container .picker {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  color: #b8acd2;
+}
+.language .language-container .button {
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  font-size: 18px;
+  width: 100px;
+  font-weight: 300;
+  color: #b8acd2;
+  padding: 2px;
+  text-align: start;
+}/*# sourceMappingURL=languagepicker.css.map */
