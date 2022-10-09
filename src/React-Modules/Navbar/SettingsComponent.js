@@ -8,7 +8,7 @@ export function SettingsComponent() {
       <div className="Navbar_settings_menu">
         <svg
           onClick={() => setToogle(!Toogle)}
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
           height="24"
           width="24"
           color="#7A6EAA;"

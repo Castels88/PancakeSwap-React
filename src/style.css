@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #7A6EAA;
+  background-color: #7a6eaa;
   border-radius: 8px;
 }
 
@@ -73,7 +73,7 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: #7A6EAA;
+  color: #7a6eaa;
   font-weight: bold;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -91,7 +91,7 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_cont
 }
 nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn li a {
   text-decoration: none;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
   display: none;
@@ -209,7 +209,7 @@ nav .Navbar_destra .Navbar_settings_menu svg {
 nav .Navbar_destra .Navbar_main_buttons {
   display: flex;
   align-items: center;
-  border: 1px solid #1FC7D4;
+  border: 1px solid #1fc7d4;
   border-radius: 20px;
   width: 140px;
   height: 35px;
@@ -217,7 +217,7 @@ nav .Navbar_destra .Navbar_main_buttons {
   font-weight: bold;
   font-size: 16px;
   color: white;
-  background-color: #1FC7D4;
+  background-color: #1fc7d4;
   transition: all 0.3s ease;
 }
 nav .Navbar_destra .Navbar_main_buttons a {
@@ -225,8 +225,8 @@ nav .Navbar_destra .Navbar_main_buttons a {
   color: white;
 }
 nav .Navbar_destra .Navbar_main_buttons:hover {
-  background-color: #1D8999;
-  border: 1px solid #1D8999;
+  background-color: #1d8999;
+  border: 1px solid #1d8999;
   border-radius: 20px;
   color: white;
 }
@@ -243,7 +243,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   height: 600px;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
   z-index: 1;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -279,7 +278,19 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 350px;
   height: 400px;
   position: absolute;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+}
+@-webkit-keyframes img-wallet {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 @keyframes img-wallet {
   0% {
@@ -296,12 +307,14 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 400px;
   height: 400px;
   position: absolute;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
   width: 350px;
   height: 400px;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
   width: 50%;
@@ -337,24 +350,24 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1FC7D4;
+  border: 1px solid #1fc7d4;
   border-radius: 13px;
   width: 99px;
   height: 44px;
   font-weight: bold;
   font-size: 16px;
   color: white;
-  background-color: #1FC7D4;
+  background-color: #1fc7d4;
   transition: all 0.3s ease;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link .Earn_p_i_mainbuttons:hover {
-  background-color: #1D8999;
-  border: 1px solid #1D8999;
+  background-color: #1d8999;
+  border: 1px solid #1d8999;
   border-radius: 20px;
   color: white;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link .Earn_p_i_link {
-  color: #1FC7D4;
+  color: #1fc7d4;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -386,7 +399,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: rgb(118, 69, 217);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch svg {
-  fill: #7A6EAA;
+  fill: #7a6eaa;
   cursor: pointer;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
@@ -394,7 +407,19 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  animation: 1s ease-in-out 3s normal none running movimento;
+  -webkit-animation: 1s ease-in-out 3s normal none running movimento;
+          animation: 1s ease-in-out 3s normal none running movimento;
+}
+@-webkit-keyframes movimento {
+  50% {
+    transform: translateY(30px);
+  }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 @keyframes movimento {
   50% {
@@ -427,7 +452,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 {
   width: 100%;
@@ -449,7 +474,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 {
   width: 100%;
@@ -471,7 +496,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 {
   width: 100%;
@@ -493,7 +518,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 {
   width: 100%;
@@ -514,10 +539,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
-  display: none;
+  display: flex;
   width: 100%;
   height: 35%;
   padding: 10px;
@@ -539,7 +564,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: rgb(118, 69, 217);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch svg {
-  fill: #7A6EAA;
+  fill: #7a6eaa;
   cursor: pointer;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
@@ -547,7 +572,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  animation: 1s ease-in-out 3s normal none running movimento;
+  -webkit-animation: 1s ease-in-out 4s normal none running movimento;
+          animation: 1s ease-in-out 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -580,7 +606,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 {
   width: 100%;
@@ -602,7 +628,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 {
   width: 100%;
@@ -624,7 +650,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 {
   width: 100%;
@@ -646,7 +672,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 {
   width: 100%;
@@ -667,7 +693,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7A6EAA;
+  color: #7a6eaa;
 }
 
 @media screen and (max-width: 1080px) {
@@ -712,7 +738,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: #7A6EAA;
+    color: #7a6eaa;
     font-weight: bold;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -730,7 +756,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn li a {
     text-decoration: none;
-    color: #7A6EAA;
+    color: #7a6eaa;
   }
   nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
     display: none;
@@ -837,7 +863,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
-    border: 1px solid #1FC7D4;
+    border: 1px solid #1fc7d4;
     border-radius: 20px;
     width: 140px;
     height: 35px;
@@ -845,7 +871,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #1FC7D4;
+    background-color: #1fc7d4;
     transition: all 0.3s ease;
   }
   nav .Navbar_destra .Navbar_main_buttons a {
@@ -853,8 +879,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     color: white;
   }
   nav .Navbar_destra .Navbar_main_buttons:hover {
-    background-color: #1D8999;
-    border: 1px solid #1D8999;
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
     border-radius: 20px;
     color: white;
   }
@@ -893,7 +919,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
-    border: 1px solid #1FC7D4;
+    border: 1px solid #1fc7d4;
     border-radius: 20px;
     width: 110px;
     height: 35px;
@@ -901,7 +927,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #1FC7D4;
+    background-color: #1fc7d4;
     transition: all 0.3s ease;
   }
   nav .Navbar_destra .Navbar_main_buttons a {
@@ -910,8 +936,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     content: "Connect";
   }
   nav .Navbar_destra .Navbar_main_buttons:hover {
-    background-color: #1D8999;
-    border: 1px solid #1D8999;
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
     border-radius: 20px;
     color: white;
   }
@@ -950,7 +976,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
-    border: 1px solid #1FC7D4;
+    border: 1px solid #1fc7d4;
     border-radius: 20px;
     width: 110px;
     height: 35px;
@@ -958,7 +984,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #1FC7D4;
+    background-color: #1fc7d4;
     transition: all 0.3s ease;
   }
   nav .Navbar_destra .Navbar_main_buttons a {
@@ -967,8 +993,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     content: "Connect";
   }
   nav .Navbar_destra .Navbar_main_buttons:hover {
-    background-color: #1D8999;
-    border: 1px solid #1D8999;
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
     border-radius: 20px;
     color: white;
   }
@@ -999,7 +1025,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
-    border: 1px solid #1FC7D4;
+    border: 1px solid #1fc7d4;
     border-radius: 20px;
     width: 110px;
     height: 35px;
@@ -1007,7 +1033,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #1FC7D4;
+    background-color: #1fc7d4;
     transition: all 0.3s ease;
   }
   nav .Navbar_destra .Navbar_main_buttons a {
@@ -1016,8 +1042,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     content: "Connect";
   }
   nav .Navbar_destra .Navbar_main_buttons:hover {
-    background-color: #1D8999;
-    border: 1px solid #1D8999;
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
     border-radius: 20px;
     color: white;
   }
@@ -1029,7 +1055,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -1069,18 +1094,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1155,7 +1183,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
-    border: 1px solid #1FC7D4;
+    border: 1px solid #1fc7d4;
     border-radius: 20px;
     width: 110px;
     height: 35px;
@@ -1163,7 +1191,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: bold;
     font-size: 16px;
     color: white;
-    background-color: #1FC7D4;
+    background-color: #1fc7d4;
     transition: all 0.3s ease;
   }
   nav .Navbar_destra .Navbar_main_buttons a {
@@ -1172,8 +1200,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     content: "Connect";
   }
   nav .Navbar_destra .Navbar_main_buttons:hover {
-    background-color: #1D8999;
-    border: 1px solid #1D8999;
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
     border-radius: 20px;
     color: white;
   }
@@ -1221,7 +1249,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -1261,18 +1288,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1318,6 +1348,4 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding: 10px;
     gap: 15px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
