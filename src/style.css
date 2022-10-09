@@ -231,6 +231,36 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: white;
 }
 
+#light nav {
+  background-color: rgb(255, 255, 255);
+}
+
+#dark nav {
+  background-color: #100c18;
+}
+#dark nav .Navbar_logo {
+  color: white;
+}
+#dark nav .Navbar_menuBtn {
+  background-color: #100c18;
+  border: 1px solid #100c18;
+}
+#dark nav .Navbar_menuBtn .Navbar_dropdown_content {
+  background-color: #100c18;
+  border: 1px solid #100c18;
+}
+#dark nav .Navbar_language .Navbar_dropdown_content {
+  background-color: #100c18;
+  border: 1px solid #100c18;
+}
+#dark nav .Navbar_language .Navbar_dropdown_content .Navbar_element a {
+  color: white;
+}
+#dark nav .Navbar_settings_menu {
+  background-color: #100c18;
+  border: 1px solid #100c18;
+}
+
 .navbar_menu_nascosto {
   display: none;
 }

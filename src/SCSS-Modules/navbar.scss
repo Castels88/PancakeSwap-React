@@ -221,6 +221,43 @@ nav {
     }
   }
 }
+#light {
+  nav {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+#dark {
+  nav {
+    background-color: #100c18;
+    .Navbar_logo {
+      color: white;
+    }
+    .Navbar_menuBtn {
+      background-color: #100c18;
+      border: 1px solid #100c18;
+      .Navbar_dropdown_content {
+        background-color: #100c18;
+        border: 1px solid #100c18;
+      }
+    }
+    .Navbar_language {
+      .Navbar_dropdown_content {
+        background-color: #100c18;
+        border: 1px solid #100c18;
+        .Navbar_element {
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    .Navbar_settings_menu {
+      background-color: #100c18;
+      border: 1px solid #100c18;
+    }
+  }
+}
 .navbar_menu_nascosto {
   display: none;
 }
