@@ -407,8 +407,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease-in-out 3s normal none running movimento;
-          animation: 1s ease-in-out 3s normal none running movimento;
+  -webkit-animation: 1s ease 4s normal none running movimento;
+          animation: 1s ease 4s normal none running movimento;
 }
 @-webkit-keyframes movimento {
   50% {
@@ -572,8 +572,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease-in-out 4s normal none running movimento;
-          animation: 1s ease-in-out 4s normal none running movimento;
+  -webkit-animation: 1s ease 4s normal none running movimento;
+          animation: 1s ease 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {

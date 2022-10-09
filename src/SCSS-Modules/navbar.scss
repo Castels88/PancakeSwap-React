@@ -385,7 +385,7 @@ nav {
         display: flex;
         padding: 10px;
         gap: 15px;
-        animation: 1s ease-in-out 3s normal none running movimento;
+        animation: 1s ease 4s normal none running movimento;
 
         @keyframes movimento {
           50% {
@@ -539,7 +539,7 @@ nav {
         display: flex;
         padding: 10px;
         gap: 15px;
-        animation: 1s ease-in-out 3s normal none running movimento;
+        animation: 1s ease 4s normal none running movimento;
         @keyframes movimento {
           50% {
             transform: translateY(30px);

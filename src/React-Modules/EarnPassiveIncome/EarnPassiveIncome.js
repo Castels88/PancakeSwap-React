@@ -1,24 +1,10 @@
-import React, { useState } from "react";
 import Stoks from "../Navbar/Images/Stoks.webp";
 import Pie from "../Navbar/Images/Pie.webp";
 import Folder from "../Navbar/Images/Folder.webp";
 import { SyrupPools } from "./SyrupPools";
 import { TopFarm } from "./TopFarm";
-import { useEffect } from "react";
 
 export function EarnPassiveIncome() {
-  const [show, setShow] = useState(true);
-  useEffect(() => {
-    setInterval(() => {
-      setShow(!show);
-    }, 4000);
-  }, [show]);
-  const [toogle, setToogle] = useState(false);
-  useEffect(() => {
-    setInterval(() => {
-      setToogle(!toogle);
-    }, 4000);
-  }, [toogle]);
   return (
     <div className="Earn_p_i_big_contaniner">
       <div className="Earn_p_i_top_container">
@@ -55,8 +41,8 @@ export function EarnPassiveIncome() {
             </div>
           </div>
         </div>
-        {show && <TopFarm />}
-        {toogle && <SyrupPools />}
+        <TopFarm />
+        <SyrupPools />
       </div>
     </div>
   );
