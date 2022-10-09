@@ -1,471 +1,542 @@
-.themeSwitcher {
-  width: 56px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(189, 194, 196);
-  border-radius: 24px;
-  box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
-  cursor: pointer;
-  transition: background-color 200ms ease 0s;
-  -webkit-box-align: center;
-}
-
-.themeSwitcher input {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 3;
-  position: absolute;
-}
-
-.themeSwitcher .sole {
-  fill: rgb(252, 249, 72);
-  background-color: white;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.5);
-  width: 50%;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-}
-
-.themeSwitcher .sole:active {
-  border: 4px solid rgb(122, 110, 170);
-  transform: translateX(100%);
-  transition: transform 1s;
-}
-
-.themeSwitcher .luna {
-  fill: white;
-}
-
-.themeSwitcher {
-  width: 56px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(189, 194, 196);
-  border-radius: 24px;
-  box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
-  -webkit-box-align: center;
-}
-
-/* Inizio Switch */
 * {
-  margin: 0;
+  font-family: "Kanit";
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.wrapper {
-  position: absolute;
-  background: #2b3e51;
+.moon_container {
+  height: 55rem;
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  line-height: 1;
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
 }
-.wrapper .switch {
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  width: 120px;
+.moon_container .moon_top {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.moon_container .moon_top .moon_countdown {
+  border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.moon_container .moon_top .moon_countdown #moon_perpetual {
+  color: rgb(255, 178, 55);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.moon_container .moon_top .moon_countdown #moon_upto100 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+  -webkit-text-stroke: 6px transparent;
+}
+.moon_container .moon_top .moon_countdown #moon_mainbutton {
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 150px;
   height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+  z-index: 10;
 }
-.wrapper .switch input {
-  display: none;
+.moon_container .moon_top .moon_countdown #moon_mainbutton:hover {
+  opacity: 0.7;
 }
-.wrapper .switch .wave {
+.moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderimg {
   position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 40px;
-  width: 120px;
-  height: 50px;
-  display: none;
-}
-.wrapper .switch .wave:after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  border-radius: 100%;
-  background: #fff;
-  position: absolute;
-  top: 3px;
-  left: 20%;
-  opacity: 0.4;
-}
-.wrapper .switch .wave:before {
-  content: "";
-  width: 35px;
-  height: 2px;
-  border-radius: 100%;
-  background: #fff;
-  position: absolute;
-  top: 10px;
-  left: 30%;
-  opacity: 0.3;
-}
-.wrapper .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
+  max-height: 120%;
+  max-width: 100%;
   right: 0;
   bottom: 0;
-  background-color: #e74a42;
-  transition: all 1.4s;
-  border-radius: 50px;
-  z-index: 100;
-  overflow: hidden;
 }
-.wrapper .switch .slider:before, .wrapper .switch .slider:after {
+.moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderhide {
+  visibility: hidden;
   position: absolute;
-  content: "";
+  max-height: 120%;
+  max-width: 100%;
+  right: 0;
+  bottom: 0;
+}
+.moon_container .moon_top .moon_countdown h2 {
+  color: white;
+}
+.moon_container .moon_top .moon_countdown .moon_counter {
+  background-color: #280d5f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 40px;
-  width: 40px;
-  left: 5px;
-  bottom: 5px;
-  border-radius: 30px;
-  background-color: #fff;
+  border-radius: 10px;
 }
-.wrapper .switch .slider:before {
-  transition: 0.4s;
+.moon_container .moon_top .moon_countdown .moon_counter .moon_timer {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrapper .switch .slider:after {
-  transition: 0.5s;
+.moon_container .moon_top .moon_countdown .moon_counter .moon_timer p {
+  color: rgb(255, 178, 55);
+  font-size: 2.5em;
+  font-weight: 600;
 }
-.wrapper .switch .slider .fish {
+.moon_container .moon_top .moon_countdown .moon_counter .moon_timer span {
+  color: rgb(255, 178, 55);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.moon_container .moon_top .moon_countdown .moon_lottery img {
   position: absolute;
-  left: -20%;
-  top: 20%;
-  transition: 1.5s all;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
-.wrapper .switch .slider .fish .body {
-  width: 20px;
-  height: 20px;
-  background: repeating-linear-gradient(-45deg, #e79c2a, #e79c2a 5px, #fb7813 5px, #fb7813 10px);
-  border-radius: 0 100% 20% 100%;
-  transform: rotate(-45deg);
-  position: relative;
-}
-.wrapper .switch .slider .fish .eye {
+.moon_container .moon_top .moon_countdown .moon_lottery img:last-child {
   position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 4px;
-  height: 4px;
-  background-color: #000;
-  border-radius: 100%;
+  visibility: hidden;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
-.wrapper .switch .slider .fish .eye:after {
-  content: "";
-  width: 1px;
-  height: 1px;
-  background-color: #fff;
-  border-radius: 100%;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-.wrapper .switch .slider .fish .tail {
-  width: 5px;
-  height: 5px;
-  background: repeating-linear-gradient(-45deg, #e79c2a, #e79c2a 5px, #fb7813 5px, #fb7813 10px);
-  border-radius: 100% 10% 0 10%;
-  transform: rotate(-45deg);
-  position: absolute;
-  left: -8px;
-  top: 40%;
-}
-.wrapper .switch .sky {
-  position: absolute;
-  left: -40%;
-  top: -150px;
-  width: 100px;
-  height: 100px;
-  transform: scale(0);
-  opacity: 0;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.wrapper .switch .sky .sun .outer {
-  background: #e77b21;
-  width: 50px;
+.moon_container .moon_top .moon_countdown #moon_mainbutton {
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 150px;
   height: 50px;
-  position: absolute;
-  top: -11px;
-  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+  z-index: 10;
 }
-.wrapper .switch .sky .sun .outer:before, .wrapper .switch .sky .sun .outer:after {
-  content: "";
+.moon_container .moon_top .moon_countdown #moon_mainbutton:hover {
+  opacity: 0.7;
+}
+.moon_container .moon_top .moon_sliderbox {
+  width: 100px;
+  height: 8px;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 50px;
-  width: 50px;
-  background: #e77b21;
-  border-radius: 5px;
+  margin-top: 230px;
+  display: flex;
 }
-.wrapper .switch .sky .sun .outer:before {
-  transform: rotate(30deg);
+.moon_container .moon_top .moon_sliderbox .moon_slidertrasparente {
+  width: 50%;
+  background-color: gray;
+  opacity: 0.5;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
-.wrapper .switch .sky .sun .outer:after {
-  transform: rotate(60deg);
+.moon_container .moon_top .moon_sliderbox .moon_slidercolorato {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 50%;
+  background-color: white;
 }
-.wrapper .switch .sky .sun .inner {
+.moon_container .moon_top .moon_backgroundimg img {
   position: absolute;
-  width: 50px;
+  bottom: 0;
+  right: 0;
+  fill: rgb(40, 13, 95);
+}
+.moon_container .moon_bottom {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.moon_container .moon_bottom .moon_bottomleft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.moon_container .moon_bottom .moon_bottomleft #moon_maintext {
+  font-size: 65px;
+  font-weight: bolder;
+  color: rgb(118, 69, 217);
+}
+.moon_container .moon_bottom .moon_bottomleft #moon_secondarytext {
+  font-size: 18px;
+  color: #280d5f;
+  font-weight: bold;
+}
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  gap: 10px;
+}
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton {
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 150px;
   height: 50px;
-  border-radius: 100%;
-  background-color: #ffd65a;
-  top: -12px;
-  overflow: hidden;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+  z-index: 10;
 }
-.wrapper .switch .sky .sun .inner:before {
-  content: "";
-  width: 50px;
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton:hover {
+  opacity: 0.7;
+}
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_secondarybutton {
+  border: 2px solid #1fc7d4;
+  border-radius: 15px;
+  width: 120px;
   height: 50px;
-  border-radius: 100%;
-  position: absolute;
-  left: 3 px;
-  top: 15px;
-  background: #ffc631;
-}
-.wrapper .switch .sky .cloud {
-  position: absolute;
-  filter: url("#cloud");
-  z-index: -1;
-}
-.wrapper .switch .sky .cloud .rect {
-  width: 100px;
-  height: 30px;
-  background: #fff;
-  border-radius: 100px;
-}
-.wrapper .switch .sky .cloud .circle {
-  border-radius: 100%;
-  background: #fff;
-  position: absolute;
-}
-.wrapper .switch .sky .cloud .circle-lg {
-  width: 50px;
-  height: 50px;
-  top: -55%;
-  left: 5%;
-}
-.wrapper .switch .sky .cloud .circle-sm {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  left: 35%;
-  top: -50%;
-}
-.wrapper .switch .sky .cloud1 {
-  left: -60%;
-  top: 20%;
-}
-.wrapper .switch .sky .cloud2 {
-  left: 150px;
-  top: 10%;
-  opacity: 0.8;
-}
-.wrapper .switch input:checked + .slider {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1fc7d4;
   background-color: transparent;
+  transition: all 0.3s ease;
 }
-.wrapper .switch input:checked + .slider .fish {
-  -webkit-animation: fishMovement 4s linear infinite;
-          animation: fishMovement 4s linear infinite;
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_secondarybutton:hover {
+  opacity: 0.7;
 }
-.wrapper .switch input:checked ~ .wave {
-  background-color: #3398d9;
-  display: block;
-  filter: url(#wave);
+.moon_container .moon_bottom .moon_bottomright {
+  width: 50%;
 }
-.wrapper .switch input:checked + .slider:before {
-  transform: translateX(70px);
-}
-.wrapper .switch input:checked + .slider:after {
-  transform: translateX(70px);
-}
-.wrapper .switch input:checked ~ .boat {
-  top: -25%;
-  opacity: 1;
-  z-index: -1;
-  -webkit-animation: boatMovement 3s linear alternate infinite;
-          animation: boatMovement 3s linear alternate infinite;
-}
-.wrapper .switch input:checked ~ .sky {
-  transform: scale(1);
-  opacity: 1;
-}
-.wrapper .switch input:checked ~ .sky .outer {
-  -webkit-animation: rotateSun 5s infinite linear;
-          animation: rotateSun 5s infinite linear;
-}
-.wrapper .switch input:checked ~ .sky .cloud {
-  -webkit-animation: swingCloud 10s infinite linear;
-          animation: swingCloud 10s infinite linear;
-}
-.wrapper .switch .boat {
-  position: absolute;
-  top: 100%;
-  left: 25%;
-  width: 40px;
-  height: 100px;
-  transition: 0.6s all cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  opacity: 0;
-}
-.wrapper .switch .boat .bottom {
-  border-top: 15px solid #d64242;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  height: 0;
-  width: 40px;
-  border-radius: 2px;
-}
-.wrapper .switch .boat .bottom:after {
-  content: "";
-  width: 50px;
-  border-top: 4px solid #000;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  height: 0;
-  position: absolute;
-  top: 3px;
-  left: 2px;
-  opacity: 0.2;
-}
-.wrapper .switch .boat .mast {
-  position: absolute;
-  width: 3px;
-  height: 35px;
-  background: #6f4914;
-  left: 70%;
-  bottom: 100%;
-}
-.wrapper .switch .boat .rectangle-sm {
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-left: 10px solid #d6d6d6;
-  border-right: 10px solid transparent;
-  border-radius: 0 0 0 0;
-  position: absolute;
-  left: 80%;
-  bottom: 110%;
-}
-.wrapper .switch .boat .rectangle-lg {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 15px solid #d6d6d6;
-  border-radius: 0 0 0 0;
-  position: absolute;
-  left: 5%;
-  bottom: 110%;
-}
-.wrapper a {
-  color: #fff;
-  padding: 15px;
-  display: block;
-  font-family: sans-serif;
-  font-size: 10px;
-  position: absolute;
+.moon_container .moon_bottom .moon_bottomright img {
+  max-width: 99%;
+  -webkit-animation: 1s ease-in-out 0s infinite normal none running img-moon;
+          animation: 1s ease-in-out 0s infinite normal none running img-moon;
 }
 
-svg {
-  display: none;
-}
-
-@-webkit-keyframes fishMovement {
-  60% {
-    transform: translate(-50%, 50%);
+@-webkit-keyframes img-moon {
+  0% {
+    transform: translate(0px, 0px);
   }
-  65% {
-    transform: translate(50%, 50%);
-  }
-  100% {
-    transform: translate(100px, 50%);
-  }
-}
-
-@keyframes fishMovement {
-  60% {
-    transform: translate(-50%, 50%);
-  }
-  65% {
-    transform: translate(50%, 50%);
-  }
-  100% {
-    transform: translate(100px, 50%);
-  }
-}
-@-webkit-keyframes boatMovement {
-  30% {
-    transform: rotate(-5deg);
-  }
-  60% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-@keyframes boatMovement {
-  30% {
-    transform: rotate(-5deg);
-  }
-  60% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-@-webkit-keyframes twinkling {
-  30% {
-    opacity: 0.4;
-  }
-  60% {
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@keyframes twinkling {
-  30% {
-    opacity: 0.4;
-  }
-  60% {
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes rotateSun {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotateSun {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes swingCloud {
   50% {
-    transform: translateX(50px);
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
-@keyframes swingCloud {
+
+@keyframes img-moon {
+  0% {
+    transform: translate(0px, 0px);
+  }
   50% {
-    transform: translateX(50px);
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
-/* Fine Switch *//*# sourceMappingURL=style.css.map */
+@-webkit-keyframes slider {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-100vw, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slider {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-100vw, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .moon_container {
+    padding: 0px 60px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:first-child {
+    width: 100%;
+    height: auto;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:last-child {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 968px) {
+  .moon_container .moon_top .moon_countdown .moon_lottery img:first-child {
+    visibility: hidden;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:last-child {
+    visibility: visible;
+    margin-top: 100px;
+    bottom: -50px;
+    width: 40%;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderhide {
+    visibility: visible;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderimg {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 852px) {
+  .moon_container {
+    padding: 0px 40px;
+  }
+  .moon_container .moon_top .moon_backgroundimg img {
+    bottom: -25px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderhide {
+    visibility: visible;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderimg {
+    visibility: hidden;
+  }
+  .moon_container .moon_bottom {
+    flex-direction: column;
+  }
+  .moon_container .moon_bottom .moon_bottomleft {
+    order: 2;
+    width: 100%;
+  }
+  .moon_container .moon_bottom .moon_bottomleft #moon_maintext {
+    font-size: 45px;
+    width: 100%;
+  }
+  .moon_container .moon_bottom .moon_bottomleft #moon_secondarytext {
+    width: 100%;
+  }
+  .moon_container .moon_bottom .moon_bottomright {
+    order: 1;
+  }
+  .moon_container .moon_bottom .moon_bottomright img {
+    margin-left: 200px;
+    width: 80%;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .moon_container {
+    padding: 0px 30px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_counter #moon_timerCountdown {
+    font-size: 30px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:first-child {
+    visibility: hidden;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:last-child {
+    visibility: visible;
+    padding-top: 50px;
+    right: 0;
+    width: 50%;
+  }
+  .moon_container .moon_top .moon_countdown #moon_upto100 {
+    font-size: 24px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderhide {
+    visibility: visible;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderimg {
+    visibility: hidden;
+  }
+  .moon_container .moon_bottom {
+    flex-direction: column;
+  }
+  .moon_container .moon_bottom .moon_bottomleft {
+    order: 2;
+    width: 100%;
+  }
+  .moon_container .moon_bottom .moon_bottomleft #maintext {
+    font-size: 45px;
+  }
+  .moon_container .moon_bottom .moon_bottomright {
+    order: 1;
+  }
+  .moon_container .moon_bottom .moon_bottomright img {
+    margin-left: 100px;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .moon_container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .moon_container .moon_top .moon_countdown {
+    width: 100%;
+  }
+  .moon_container .moon_top .moon_countdown #moon_upto100 {
+    font-size: 20px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_counter .moon_timer p {
+    font-size: 30px;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:first-child {
+    visibility: hidden;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery img:last-child {
+    visibility: visible;
+    padding-bottom: 50px;
+    right: 0;
+    width: 70%;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderimg {
+    visibility: hidden;
+  }
+  .moon_container .moon_top .moon_countdown .moon_lottery2 #moon_sliderhide {
+    visibility: hidden;
+  }
+  .moon_container .moon_bottom .moon_bottomright img {
+    margin-left: 0;
+  }
+}
+.usedby_container {
+  height: 50rem;
+  width: 100%;
+  padding-top: 100px;
+  background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+}
+.usedby_container .usedby_usedtop {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.usedby_container .usedby_usedtop img {
+  padding-bottom: 20px;
+}
+.usedby_container .usedby_usedtop h2 {
+  font-size: 40px;
+  color: #280d5f;
+  padding-bottom: 20px;
+  line-height: 1;
+}
+.usedby_container .usedby_usedtop p {
+  padding-bottom: 20px;
+}
+.usedby_container .usedby_usedtop span {
+  font-weight: bold;
+}
+.usedby_container .usedby_usedbottom {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.usedby_container .usedby_usedbottom .usedby_card {
+  width: 280px;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  border-bottom: 8px solid lightgray;
+  flex-wrap: wrap;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_top,
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom {
+  height: 50%;
+  width: 100%;
+  line-height: 1;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_top {
+  position: relative;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_top img {
+  position: absolute;
+  right: 0;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom h2 {
+  font-size: 40px;
+  color: #280d5f;
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom h2 #usedby_diff1 {
+  color: rgb(118, 69, 217);
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom h2 #usedby_diff2 {
+  color: rgb(31, 199, 212);
+}
+.usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom h2 #usedby_diff3 {
+  color: rgb(237, 75, 158);
+}
+
+@media screen and (max-width: 852px) {
+  .usedby_container {
+    height: auto;
+  }
+  .usedby_container .usedby_usedbottom {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .usedby_container .usedby_usedbottom .usedby_card {
+    height: 180px;
+  }
+  .usedby_container .usedby_usedbottom .usedby_card .usedby_card_top {
+    display: none;
+  }
+  .usedby_container .usedby_usedbottom .usedby_card .usedby_card_bottom h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .usedby_container .usedby_usedtop p {
+    padding: 0px 20px;
+  }
+}
+#root {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
