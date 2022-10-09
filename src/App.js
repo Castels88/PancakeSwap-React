@@ -3,15 +3,14 @@ import { EarnPassiveIncome } from "./React-Modules/EarnPassiveIncome/EarnPassive
 // import { ReactDOM } from "react-dom/client";
 import Navbar from "./React-Modules/Navbar/Navbar";
 
-
 function App() {
   return (
     <div>
       {/* inizio Navbar */}
-      <Navbar/>
+      <Navbar />
       {/* fine Navbar */}
       {/* inizio EranPassiveIncome */}
-      <EarnPassiveIncome/>
+      <EarnPassiveIncome />
       {/* fine EranPassiveIncome */}
     </div>
   );
