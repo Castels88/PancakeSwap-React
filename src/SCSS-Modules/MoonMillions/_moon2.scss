@@ -118,6 +118,30 @@
             }
           }
         }
+
+        // Container 2
+
+        #moon_perpetual {
+          color: rgb(255, 178, 55);
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+
+        #moon_upto100 {
+          font-size: 40px;
+          color: rgb(255, 255, 255);
+          text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+          background: -webkit-linear-gradient(
+              top,
+              rgb(118, 69, 217) 0%,
+              rgb(69, 42, 122) 100%
+            )
+            text;
+          -webkit-text-stroke: 6px transparent;
+        }
       }
 
       .moon_countdown_right {
@@ -139,50 +163,28 @@
             z-index: 0;
           }
         }
+
+        // Container 2
+
+        .moon_lottery2 {
+          #moon_sliderimg {
+            position: absolute;
+            max-height: 120%;
+            max-width: 100%;
+            right: 0;
+            bottom: 0;
+          }
+          #moon_sliderhide {
+            // display: none;
+            visibility: hidden;
+            position: absolute;
+            max-height: 120%;
+            max-width: 100%;
+            right: 0;
+            bottom: 0;
+          }
+        }
       }
-
-      // Container 2
-
-      // #moon_perpetual {
-      //   color: rgb(255, 178, 55);
-      //   font-size: 24px;
-      //   font-weight: 600;
-      //   margin-bottom: 8px;
-      // }
-
-      // #moon_upto100 {
-      //   font-size: 40px;
-      //   color: rgb(255, 255, 255);
-      //   text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
-      //   text-transform: uppercase;
-      //   margin-bottom: 8px;
-      //   background: -webkit-linear-gradient(
-      //       top,
-      //       rgb(118, 69, 217) 0%,
-      //       rgb(69, 42, 122) 100%
-      //     )
-      //     text;
-      //   -webkit-text-stroke: 6px transparent;
-      // }
-
-      // .moon_lottery2 {
-      //   #moon_sliderimg {
-      //     position: absolute;
-      //     max-height: 120%;
-      //     max-width: 100%;
-      //     right: 0;
-      //     bottom: 0;
-      //   }
-      //   #moon_sliderhide {
-      //     // display: none;
-      //     visibility: hidden;
-      //     position: absolute;
-      //     max-height: 120%;
-      //     max-width: 100%;
-      //     right: 0;
-      //     bottom: 0;
-      //   }
-      // }
     }
 
     // Slider inside of moon_countdown
@@ -349,10 +351,10 @@
           }
           .moon_lottery2 {
             #moon_sliderhide {
-              visibility: visible;
+              visibility: hidden;
             }
             #moon_sliderimg {
-              visibility: hidden;
+              visibility: visible;
             }
           }
         }
@@ -427,55 +429,54 @@
               font-size: 30px;
             }
           }
-          //   #moon_upto100 {
-          //     font-size: 24px;
-          //   }
-          // }
+          #moon_upto100 {
+            font-size: 24px;
+          }
+        }
 
-          .moon_countdown_right {
-            .moon_lottery {
-              img:first-child {
-                visibility: hidden;
-              }
-              img:last-child {
-                visibility: visible;
-                padding-top: 50px;
-                // padding-right: 30px;
-                right: 0;
-                width: 50%;
-              }
+        .moon_countdown_right {
+          .moon_lottery {
+            img:first-child {
+              visibility: hidden;
             }
+            img:last-child {
+              visibility: visible;
+              padding-top: 50px;
+              // padding-right: 30px;
+              right: 0;
+              width: 50%;
+            }
+          }
 
-            .moon_lottery2 {
-              #moon_sliderhide {
-                visibility: visible;
-              }
-              #moon_sliderimg {
-                visibility: hidden;
-              }
+          .moon_lottery2 {
+            #moon_sliderhide {
+              visibility: visible;
+            }
+            #moon_sliderimg {
+              visibility: hidden;
             }
           }
         }
       }
+    }
 
-      .moon_bottom {
-        flex-direction: column;
+    .moon_bottom {
+      flex-direction: column;
 
-        .moon_bottomleft {
-          order: 2;
-          width: 100%;
-          #maintext {
-            font-size: 45px;
-          }
+      .moon_bottomleft {
+        order: 2;
+        width: 100%;
+        #maintext {
+          font-size: 45px;
         }
+      }
 
-        .moon_bottomright {
-          order: 1;
-          img {
-            margin-left: 100px;
-            width: 100%;
-            padding-bottom: 25px;
-          }
+      .moon_bottomright {
+        order: 1;
+        img {
+          margin-left: 100px;
+          width: 100%;
+          padding-bottom: 25px;
         }
       }
     }

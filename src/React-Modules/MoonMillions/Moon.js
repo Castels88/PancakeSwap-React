@@ -2,6 +2,8 @@ import bunny from "./img/bunny.webp";
 import lottery from "./img/lottery.webp";
 import lotteryMobile from "./img/lotteryMobile.webp";
 import output from "./img/svgviewer-output.svg";
+import perpetual from "./img/perpetual.webp";
+import perpetualMobile from "./img/perpetualMobile.webp";
 import { useMoon } from "./useMoon";
 
 export function Moon() {
@@ -10,7 +12,8 @@ export function Moon() {
   return (
     <div className="moon_container">
       <div className="moon_top">
-        <div className="moon_countdown">
+        {/* Container n.1 */}
+        {/* <div className="moon_countdown">
           <div className="moon_countdown_left">
             <h2>
               Win <span id="moon_lotteryChange">{moneyCount}</span> in Lottery
@@ -28,6 +31,23 @@ export function Moon() {
             <div className="moon_lottery">
               <img src={lottery} alt="" />
               <img src={lotteryMobile} alt="" />
+            </div>
+          </div>
+        </div> */}
+
+        {/* Container n.2 */}
+        <div className="moon_countdown">
+          <div className="moon_countdown_left">
+            <p id="moon_perpetual">Perpetual Futures</p>
+            <h2 id="moon_upto100">Up to 100x Leverage</h2>
+            <a href="https://pancakeswap.finance/lottery">
+              <button id="moon_mainbutton">Trade Now</button>
+            </a>
+          </div>
+          <div className="moon_countdown_right">
+            <div className="moon_lottery2">
+              <img id="moon_sliderimg" src={perpetual} alt="" />
+              <img id="moon_sliderhide" src={perpetualMobile} alt="" />
             </div>
           </div>
         </div>
