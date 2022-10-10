@@ -2,7 +2,7 @@ import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
 import bigBunny from "../Navbar/Images/bigBunny.svg";
 import bunnyBlue from "../Navbar/Images/bunnyBlue.svg";
 import { SettingsComponent } from "./SettingsComponent";
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav>
       <div className="Navbar_sinistra">
@@ -174,8 +174,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <SettingsComponent />
-        <ButtonConnectWallet />
+        <SettingsComponent switchTheme={props.switchTheme}/>
+        <ButtonConnectWallet switchTheme={props.switchTheme}/>
         <div className="navbar_menu_nascosto">
           <div className="navbar_menu_nascosto_icon">
             <a href="http://">
