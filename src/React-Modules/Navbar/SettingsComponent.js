@@ -1,15 +1,10 @@
-import { useState, createContext } from "react";
-import ReactSwitch from "react-switch";
+import { useState } from "react";
 import Exit from "../Navbar/Images/Exit.svg";
 import SwitchComponent from "../Navbar/SwitchComponent";
-export const ThemeContext = createContext(null);
 
 export function SettingsComponent() {
   const [Toogle, setToogle] = useState(false);
-  const [theme, setTheme] = useState("light");
-  const toogleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
-  };
+
   return (
     <div>
       <div className="Navbar_settings_menu">
@@ -39,12 +34,6 @@ export function SettingsComponent() {
                   <div class="font_settings1">Global</div>
                   <div class="sub_container">
                     <div class="font_settings2">Dark mode</div>
-                    <div className="dark_mode">
-                      <ReactSwitch
-                        onChange={toogleTheme}
-                        checked={theme === "dark"}
-                      />
-                    </div>
                   </div>
                   <div class="sub_container">
                     <div class="font_settings2">Subgraph Health Indicator</div>
