@@ -1,11 +1,11 @@
-import { useState, createContext } from "react";
 import DarkModeBtn from "../Common-Components/DarkModeBtn";
+import { useState } from "react";
 import Exit from "../Navbar/Images/Exit.svg";
 import SwitchComponent from "../Navbar/SwitchComponent";
-export const ThemeContext = createContext(null);
 
 export function SettingsComponent(props) {
   const [Toogle, setToogle] = useState(false);
+
   return (
     <div>
       <div className="Navbar_settings_menu">
@@ -35,7 +35,7 @@ export function SettingsComponent(props) {
                   <div class="font_settings1">Global</div>
                   <div class="sub_container">
                     <div class="font_settings2">Dark mode</div>
-                    <DarkModeBtn switchTheme={props.switchTheme} />
+                      <DarkModeBtn switchTheme={props.switchTheme} />
                   </div>
                   <div class="sub_container">
                     <div class="font_settings2">Subgraph Health Indicator</div>
