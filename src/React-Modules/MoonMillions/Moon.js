@@ -2,26 +2,33 @@ import bunny from "./img/bunny.webp";
 import lottery from "./img/lottery.webp";
 import lotteryMobile from "./img/lotteryMobile.webp";
 import output from "./img/svgviewer-output.svg";
+import { useMoon } from "./useMoon";
 
 export function Moon() {
+  const { timer, moneyCount } = useMoon();
+
   return (
     <div className="moon_container">
       <div className="moon_top">
         <div className="moon_countdown">
-          <h2>
-            Win <span id="moon_lotteryChange"></span> in Lottery
-          </h2>
-          <div className="moon_counter">
-            <div className="moon_timer">
-              <p id="moon_timerCountdown"></p>
+          <div className="moon_countdown_left">
+            <h2>
+              Win <span id="moon_lotteryChange">{moneyCount}</span> in Lottery
+            </h2>
+            <div className="moon_counter">
+              <div className="moon_timer">
+                <p id="moon_timerCountdown">{timer}</p>
+              </div>
             </div>
+            <a href="https://pancakeswap.finance/lottery">
+              <button id="moon_mainbutton">Play Now</button>
+            </a>
           </div>
-          <a href="https://pancakeswap.finance/lottery">
-            <button id="moon_mainbutton">Play Now</button>
-          </a>
-          <div className="moon_lottery">
-            <img src={lottery} alt="" />
-            <img src={lotteryMobile} alt="" />
+          <div className="moon_countdown_right">
+            <div className="moon_lottery">
+              <img src={lottery} alt="" />
+              <img src={lotteryMobile} alt="" />
+            </div>
           </div>
         </div>
 
