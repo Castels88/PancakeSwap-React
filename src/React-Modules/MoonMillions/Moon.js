@@ -7,55 +7,73 @@ import perpetualMobile from "./img/perpetualMobile.webp";
 import { useMoon } from "./useMoon";
 
 export function Moon() {
-  const { timer, moneyCount } = useMoon();
+  const {
+    timer,
+    moneyCount,
+    carouselOne,
+    carouselTwo,
+    handleCarouselOne,
+    handleCarouselTwo,
+  } = useMoon();
 
   return (
     <div className="moon_container">
       <div className="moon_top">
-        {/* Container n.1 */}
-        {/* <div className="moon_countdown">
-          <div className="moon_countdown_left">
-            <h2>
-              Win <span id="moon_lotteryChange">{moneyCount}</span> in Lottery
-            </h2>
-            <div className="moon_counter">
-              <div className="moon_timer">
-                <p id="moon_timerCountdown">{timer}</p>
+        <>
+          {carouselOne ? (
+            <div className="moon_countdown">
+              <div className="moon_countdown_left">
+                <h2>
+                  Win <span id="moon_lotteryChange">{moneyCount}</span> in
+                  Lottery
+                </h2>
+                <div className="moon_counter">
+                  <div className="moon_timer">
+                    <p id="moon_timerCountdown">{timer}</p>
+                  </div>
+                </div>
+                <button id="moon_mainbutton">
+                  <a href="https://pancakeswap.finance/lottery">Play Now</a>
+                </button>
+              </div>
+              <div className="moon_countdown_right">
+                <div className="moon_lottery">
+                  <img src={lottery} alt="" />
+                  <img src={lotteryMobile} alt="" />
+                </div>
               </div>
             </div>
-            <a href="https://pancakeswap.finance/lottery">
-              <button id="moon_mainbutton">Play Now</button>
-            </a>
-          </div>
-          <div className="moon_countdown_right">
-            <div className="moon_lottery">
-              <img src={lottery} alt="" />
-              <img src={lotteryMobile} alt="" />
+          ) : (
+            <div className="moon_countdown">
+              <div className="moon_countdown_left">
+                <p id="moon_perpetual">Perpetual Futures</p>
+                <h2 id="moon_upto100">Up to 100x Leverage</h2>
+                <button id="moon_mainbutton">
+                  <a href="https://pancakeswap.finance/lottery">Trade Now</a>
+                </button>
+              </div>
+              <div className="moon_countdown_right">
+                <div className="moon_lottery2">
+                  <img id="moon_sliderimg" src={perpetual} alt="" />
+                  <img id="moon_sliderhide" src={perpetualMobile} alt="" />
+                </div>
+              </div>
             </div>
-          </div>
-        </div> */}
+          )}
+        </>
 
-        {/* Container n.2 */}
-        <div className="moon_countdown">
-          <div className="moon_countdown_left">
-            <p id="moon_perpetual">Perpetual Futures</p>
-            <h2 id="moon_upto100">Up to 100x Leverage</h2>
-            <a href="https://pancakeswap.finance/lottery">
-              <button id="moon_mainbutton">Trade Now</button>
-            </a>
-          </div>
-          <div className="moon_countdown_right">
-            <div className="moon_lottery2">
-              <img id="moon_sliderimg" src={perpetual} alt="" />
-              <img id="moon_sliderhide" src={perpetualMobile} alt="" />
-            </div>
-          </div>
+        <div className="moon_sliderbox">
+          <button
+            className="moon_slidertrasparente"
+            onClick={handleCarouselOne}
+            style={{ backgroundColor: carouselOne ? "white" : "gray" }}
+          ></button>
+          <button
+            className="moon_slidercolorato"
+            onClick={handleCarouselTwo}
+            style={{ backgroundColor: carouselTwo ? "white" : "gray" }}
+          ></button>
         </div>
-
-        {/* <div className="moon_sliderbox">
-          <div className="moon_slidertrasparente"></div>
-          <div className="moon_slidercolorato"></div>
-        </div> */}
 
         <div className="moon_backgroundimg">
           <img src={output} alt="" />

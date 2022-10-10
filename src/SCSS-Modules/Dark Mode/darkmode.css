@@ -1,126 +1,121 @@
-@import url('https://css.gg/moon.css');
-@import url('https://css.gg/sun.css');
+@import url("https://css.gg/moon.css");
+@import url("https://css.gg/sun.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --background: white;
-    --text-primary: black;
-    --text-secondary: royalblue;
-    --accent: purple;
-  }
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
 
-  [data-theme='dark'] {
-    --background: black;
-    --text-primary: white;
-    --text-secondary: yellow;
-    --accent: darkred;
-  }
+[data-theme="dark"] {
+  --background: yellow;
+  --text-primary: white;
+  --text-secondary: yellow;
+  --accent: darkred;
+}
 
-  #root {
-    width: 100vw;
-    height: 100vh;
-  }
+#root {
+  width: 100vw;
+  height: 100vh;
+}
 
-  .darkswitch {
-    color: var(--text-primary);
-    background-color: var(--background);
-    padding: 20px;
-    transition: all .5s;
-    width: 100%;
-    height: 100%;
-  }
+.darkswitch {
+  color: var(--text-primary);
+  background-color: var(--background);
+  padding: 20px;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
 
-  body.dark {
-    background-color: #292c35;
-  }
-  .checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  .label {
-    width: 50px;
-    height: 26px;
-    background-color:gray; 
-    display: flex;
-    border-radius:50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-  }
-  
-  .ball {
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-  }
-  
-  /*  target the elemenent after the label*/
-  .checkbox:checked + .label .ball{
-    transform: translateX(24px);
-  }
-  
-  .gg-moon,
-  .gg-moon::after {
-   display: block;
-   box-sizing: border-box;
-   border-radius: 50%
-  }
-  
-  .gg-moon {
-   overflow: hidden;
-   position: relative;
-   transform: rotate(-135deg) scale(var(--ggs,0.8));
-   width: 20px;
-   height: 20px;
-   border: 2px solid;
-   border-bottom-color: transparent;
-   color: white;
-  }
-  
-  .gg-moon::after {
-   content: "";
-   position: absolute;
-   width: 12px;
-   height: 18px;
-   border: 2px solid transparent;
-   box-shadow: 0 0 0 2px;
-   top: 8px;
-   left: 2px
-  } 
-  
+body.dark {
+  background-color: #292c35;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: gray;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.gg-moon,
+.gg-moon::after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.gg-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 0.8));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+  color: white;
+}
+
+.gg-moon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
+}
+
 .gg-sun {
   box-sizing: border-box;
   position: relative;
   display: block;
-  transform: scale(var(--ggs,0.7));
+  transform: scale(var(--ggs, 0.7));
   width: 24px;
   height: 24px;
-  background:
-    linear-gradient(to bottom,
-        currentColor 4px,transparent 0)
-        no-repeat 5px -6px/2px 6px,
-    linear-gradient(to bottom,
-        currentColor 4px,transparent 0)
-        no-repeat 5px 14px/2px 6px,
-    linear-gradient(to bottom,
-        currentColor 4px,transparent 0)
-        no-repeat -8px 5px/6px 2px,
-    linear-gradient(to bottom,
-        currentColor 4px,transparent 0)
-        no-repeat 14px 5px/6px 2px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0)
+      no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px
+      14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px
+      5px/6px 2px;
   border-radius: 100px;
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
@@ -137,11 +132,11 @@
   border-right: 4px solid;
   border-left: 4px solid;
   left: -6px;
-  top: 5px
+  top: 5px;
 }
 .gg-sun::before {
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 .gg-sun::after {
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }

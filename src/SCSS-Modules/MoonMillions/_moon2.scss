@@ -12,6 +12,9 @@
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   z-index: 10;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   &:hover {
     opacity: 0.7;
   }
@@ -36,6 +39,12 @@
 
 #moon_mainbutton {
   @include mainbuttons;
+  a {
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 100px;
+  }
 }
 
 // Moon Style
@@ -50,12 +59,12 @@
   flex-direction: column;
   position: relative;
   line-height: 1;
-  background-color: var(--background);
-  // background: linear-gradient(
-  //   139.73deg,
-  //   rgb(230, 253, 255) 0%,
-  //   rgb(243, 239, 255) 100%
-  // );
+  // background-color: var(--background);
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
 
   .moon_top {
     // overflow: hidden;
@@ -198,17 +207,18 @@
       display: flex;
 
       .moon_slidertrasparente {
-        width: 50%;
-        background-color: gray;
-        opacity: 0.5;
+        width: 100px;
+        height: 10px;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
+        border: none;
       }
       .moon_slidercolorato {
+        width: 100px;
+        height: 10px;
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
-        width: 50%;
-        background-color: white;
+        border: none;
       }
     }
 

@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export function useMoon() {
-  let [timer, setTimer] = useState("");
-  let [moneyCount, setMoneyCount] = useState("70.478$");
-  let date = "Oct 15, 2022 15:37:25";
+  let [timer, setTimer] = useState(""); // A state for the timer
+  let [moneyCount, setMoneyCount] = useState("70.478$"); // A state for the $money counter
+  let [carouselSwitch, setCarouselSwitch] = useState(false);
+  let [carouselOne, setCarouselOne] = useState(true);
+  let [carouselTwo, setCarouselTwo] = useState(false);
 
   /* A timer that counts down to a specific date. */
+  let date = "Oct 15, 2022 15:37:25";
   useEffect(() => {
     setInterval(() => {
       let countDownDate = new Date(date).getTime();
@@ -44,5 +47,29 @@ export function useMoon() {
     }, 2000);
   }, []);
 
-  return { timer, moneyCount };
+  function handleCarouselOne() {
+    setCarouselOne(true);
+    setCarouselTwo(false);
+    console.log(carouselOne, carouselTwo);
+    // console.log(`Carosello 1: ${carouselOne}, Carosello 2: ${carouselTwo}`);
+  }
+
+  function handleCarouselTwo() {
+    setCarouselTwo(true);
+    setCarouselOne(false);
+    console.log(carouselTwo, carouselOne);
+  }
+
+  // useEffect(() => {
+  //   setCarouselOne;
+  // }, []);
+
+  return {
+    timer,
+    moneyCount,
+    carouselOne,
+    carouselTwo,
+    handleCarouselOne,
+    handleCarouselTwo,
+  };
 }
