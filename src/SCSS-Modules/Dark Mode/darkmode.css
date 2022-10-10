@@ -15,7 +15,7 @@
   }
 
   [data-theme='dark'] {
-    --background: rgb(0, 0, 0);
+    --background: rgb(39, 38, 44);
     --text-primary: white;
     --text-secondary: yellow;
     --accent: darkred;

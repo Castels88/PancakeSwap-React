@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background);
   border-bottom: 1px solid rgb(231, 227, 235);
   padding-left: 16px;
   padding-right: 16px;
@@ -231,36 +231,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: white;
 }
 
-#light nav {
-  background-color: rgb(255, 255, 255);
-}
-
-#dark nav {
-  background-color: #100c18;
-}
-#dark nav .Navbar_logo {
-  color: white;
-}
-#dark nav .Navbar_menuBtn {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_menuBtn .Navbar_dropdown_content {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_language .Navbar_dropdown_content {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_language .Navbar_dropdown_content .Navbar_element a {
-  color: white;
-}
-#dark nav .Navbar_settings_menu {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-
 .navbar_menu_nascosto {
   display: none;
 }
@@ -273,6 +243,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   height: 600px;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
   z-index: 1;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -308,19 +279,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 350px;
   height: 400px;
   position: absolute;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-}
-@-webkit-keyframes img-wallet {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 @keyframes img-wallet {
   0% {
@@ -337,14 +296,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 400px;
   height: 400px;
   position: absolute;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
   width: 350px;
   height: 400px;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
   width: 50%;
@@ -437,19 +394,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease 4s normal none running movimento;
-          animation: 1s ease 4s normal none running movimento;
-}
-@-webkit-keyframes movimento {
-  50% {
-    transform: translateY(30px);
-  }
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation: 1s ease 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -602,8 +547,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease 4s normal none running movimento;
-          animation: 1s ease 4s normal none running movimento;
+  animation: 1s ease 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -1077,6 +1021,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 20px;
     color: white;
   }
+
   .Earn_p_i_big_contaniner {
     width: 100%;
     height: 800px;
@@ -1085,6 +1030,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -1124,21 +1070,18 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1235,6 +1178,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 20px;
     color: white;
   }
+
   .navbar_menu_nascosto {
     display: flex;
     align-items: center;
@@ -1271,6 +1215,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: 400;
     font-size: 10px;
   }
+
   .Earn_p_i_big_contaniner {
     width: 100%;
     height: 800px;
@@ -1279,6 +1224,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -1318,21 +1264,18 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1378,4 +1321,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding: 10px;
     gap: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
