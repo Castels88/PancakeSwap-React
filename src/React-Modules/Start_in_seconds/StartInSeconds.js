@@ -1,7 +1,7 @@
 import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet';
 import section from './Assets/Image/section Start in seconds_2.png';
 
-const StartInSeconds = () => {
+const StartInSeconds = (props) => {
 
   return (
     <div>
@@ -87,7 +87,7 @@ const StartInSeconds = () => {
             Learn how to start
           </a>
           <div className="container-btn">
-            <ButtonConnectWallet />
+            <ButtonConnectWallet switchTheme={props.switchTheme}/>
           </div>
         </div>
       </div>

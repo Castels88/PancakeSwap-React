@@ -1,10 +1,12 @@
 import React from "react";
-import StartInSeconds from "./React-Modules/Start_in_seconds/StartInSeconds";
+import { DarkMode } from "./React-Modules/Dark Mode/DarkMode";
 
 
 function App() {
   return (
-    <StartInSeconds />
+    <div>
+      <DarkMode />
+    </div>
   );
 }
 

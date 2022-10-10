@@ -1,6 +1,7 @@
 import { useState } from "react";
+import DarkModeBtn from "./DarkModeBtn";
 
-const ButtonConnectWallet = () => {
+const ButtonConnectWallet = (props) => {
     const [isShown, setIsShown] = useState(false);
 
     const handleClick = () => {
@@ -12,13 +13,14 @@ const ButtonConnectWallet = () => {
         <button className="mainbuttons" onClick={handleClick}>
           Connect Wallet
         </button>
-
+        
         <div className={"big_container2"} style={{ display: isShown ? 'block' : 'none' }}>
           <div className="appear_second">
             <div className="presentation_second"></div>
             <div className="settings_menu_2">
               <div className="settings_top">
                 Connect Wallet
+                <DarkModeBtn switchTheme={props.switchTheme} />
                 <svg
                   className="exit2"
                   onClick={handleClick}
