@@ -368,6 +368,9 @@
   .moon_container .moon_top .moon_countdown .moon_countdown_left {
     gap: 10px;
   }
+  .moon_container .moon_top .moon_countdown .moon_countdown_left .moon_counter #moon_timerCountdown {
+    font-size: 23px;
+  }
   .moon_container .moon_top .moon_countdown .moon_countdown_left .moon_counter .moon_timer p {
     font-size: 30px;
   }

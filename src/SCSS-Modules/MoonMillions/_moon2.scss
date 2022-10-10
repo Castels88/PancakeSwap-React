@@ -493,6 +493,9 @@
         .moon_countdown_left {
           gap: 10px;
           .moon_counter {
+            #moon_timerCountdown {
+              font-size: 23px;
+            }
             .moon_timer {
               p {
                 font-size: 30px;
