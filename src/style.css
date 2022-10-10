@@ -79,12 +79,21 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
   cursor: pointer;
   list-style-type: none;
 }
-nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
+nav
+  .Navbar_sinistra
+  .Navbar_bottoni
+  .Navbar_menuBtn:hover
+  .Navbar_dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
 }
-nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content:hover .Navbar_element {
+nav
+  .Navbar_sinistra
+  .Navbar_bottoni
+  .Navbar_menuBtn:hover
+  .Navbar_dropdown_content:hover
+  .Navbar_element {
   display: block;
   display: flex;
   justify-content: space-between;
@@ -107,7 +116,12 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
   z-index: 1001;
   flex-direction: column;
 }
-nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element {
+nav
+  .Navbar_sinistra
+  .Navbar_bottoni
+  .Navbar_menuBtn
+  .Navbar_dropdown_content
+  .Navbar_element {
   display: flex;
   justify-content: space-between;
   height: 48px;
@@ -115,7 +129,12 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .N
   align-items: center;
   padding: 10px;
 }
-nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element:hover {
+nav
+  .Navbar_sinistra
+  .Navbar_bottoni
+  .Navbar_menuBtn
+  .Navbar_dropdown_content
+  .Navbar_element:hover {
   display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
@@ -158,7 +177,11 @@ nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
   display: block;
   z-index: 1;
 }
-nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
+nav
+  .Navbar_destra
+  .Navbar_language:hover
+  .Navbar_dropdown_content:hover
+  .Navbar_element {
   display: block;
 }
 nav .Navbar_destra .Navbar_language svg {
@@ -190,7 +213,11 @@ nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
   color: rgb(40, 13, 95);
   font-weight: bold;
 }
-nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
+nav
+  .Navbar_destra
+  .Navbar_language
+  .Navbar_dropdown_content
+  .Navbar_element:hover {
   display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
@@ -246,7 +273,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   -webkit-box-align: center;
   align-items: center;
   z-index: 1;
-  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  background: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
   padding: 48px 0px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
@@ -255,7 +286,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   top: 0px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container svg {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_medium_container
+  svg {
   fill: rgb(250, 249, 250);
   height: 100%;
   max-height: 48px;
@@ -268,14 +302,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   justify-content: center;
   padding: 10px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .earn_p_i_img_container {
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .earn_p_i_img_container
+  .earn_p_i_image1 {
   width: 350px;
   height: 400px;
   position: absolute;
@@ -292,18 +333,29 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     transform: translate(0px, 0px);
   }
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .earn_p_i_img_container
+  .earn_p_i_image2 {
   width: 400px;
   height: 400px;
   position: absolute;
   animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .earn_p_i_img_container
+  .earn_p_i_image3 {
   width: 350px;
   height: 400px;
   animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_h2_container {
   width: 50%;
   height: 100%;
   display: flex;
@@ -311,29 +363,48 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   justify-content: center;
   gap: 20px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container h2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_h2_container
+  h2 {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
   color: rgb(40, 13, 95);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container h2 span {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_h2_container
+  h2
+  span {
   color: rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_text {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_text {
   color: rgb(122, 110, 170);
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 24px;
   font-size: 16px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_button_link {
   display: flex;
   gap: 10px;
   position: relative;
   bottom: 20px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link .Earn_p_i_mainbuttons {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_button_link
+  .Earn_p_i_mainbuttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,13 +418,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   background-color: #1fc7d4;
   transition: all 0.3s ease;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link .Earn_p_i_mainbuttons:hover {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_button_link
+  .Earn_p_i_mainbuttons:hover {
   background-color: #1d8999;
   border: 1px solid #1d8999;
   border-radius: 20px;
   color: white;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_button_link .Earn_p_i_link {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_central_container
+  .Earn_p_i_button_link
+  .Earn_p_i_link {
   color: #1fc7d4;
   text-decoration: none;
   display: flex;
@@ -363,7 +442,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   line-height: 1.5;
   font-size: 16px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container {
   width: 100%;
   height: 35%;
   padding: 10px;
@@ -371,25 +452,44 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   flex-direction: column;
   align-items: center;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_h2_switch {
   width: 70%;
   display: flex;
   padding: 10px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch h2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_h2_switch
+  h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.1;
   color: rgb(40, 13, 95);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch h2 span {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_h2_switch
+  h2
+  span {
   color: rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch svg {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_h2_switch
+  svg {
   fill: #7a6eaa;
   cursor: pointer;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container {
   width: 70%;
   display: flex;
   padding: 10px;
@@ -407,116 +507,213 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     opacity: 0;
   }
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5 {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2 {
   display: flex;
   width: 100%;
   height: 35%;
@@ -524,25 +721,44 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   flex-direction: column;
   align-items: center;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_h2_switch {
   width: 70%;
   display: flex;
   padding: 10px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch h2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_h2_switch
+  h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.1;
   color: rgb(40, 13, 95);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch h2 span {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_h2_switch
+  h2
+  span {
   color: rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch svg {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_h2_switch
+  svg {
   fill: #7a6eaa;
   cursor: pointer;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container {
   width: 70%;
   display: flex;
   padding: 10px;
@@ -560,112 +776,207 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     opacity: 0;
   }
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container1
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container2
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container3
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4 {
   width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container4
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5 {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text1 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text2 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text2 {
   color: rgb(40, 13, 95);
   font-style: bold;
   font-weight: 600;
 }
-.Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
+.Earn_p_i_big_contaniner
+  .Earn_p_i_top_container
+  .Earn_p_i_bottom_switch_container2
+  .Earn_p_i_lower_big_container
+  .Earn_p_i_container5
+  .Earn_p_i_text3 {
   font-size: 16px;
   color: #7a6eaa;
 }
@@ -718,12 +1029,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     cursor: pointer;
     list-style-type: none;
   }
-  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
+  nav
+    .Navbar_sinistra
+    .Navbar_bottoni
+    .Navbar_menuBtn:hover
+    .Navbar_dropdown_content {
     border: 1px solid rgb(216, 212, 212);
     border-radius: 10px;
     display: block;
   }
-  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content:hover .Navbar_element {
+  nav
+    .Navbar_sinistra
+    .Navbar_bottoni
+    .Navbar_menuBtn:hover
+    .Navbar_dropdown_content:hover
+    .Navbar_element {
     display: block;
     display: flex;
     justify-content: space-between;
@@ -732,7 +1052,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     text-decoration: none;
     color: #7a6eaa;
   }
-  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
+  nav
+    .Navbar_sinistra
+    .Navbar_bottoni
+    .Navbar_menuBtn
+    .Navbar_dropdown_content {
     display: none;
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -746,7 +1070,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     z-index: 1001;
     flex-direction: column;
   }
-  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element {
+  nav
+    .Navbar_sinistra
+    .Navbar_bottoni
+    .Navbar_menuBtn
+    .Navbar_dropdown_content
+    .Navbar_element {
     display: flex;
     justify-content: space-between;
     height: 48px;
@@ -754,7 +1083,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: center;
     padding: 10px;
   }
-  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element:hover {
+  nav
+    .Navbar_sinistra
+    .Navbar_bottoni
+    .Navbar_menuBtn
+    .Navbar_dropdown_content
+    .Navbar_element:hover {
     display: block;
     border: 1px solid rgb(216, 212, 212);
     background-color: rgb(216, 212, 212);
@@ -787,7 +1121,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 10px;
     display: block;
   }
-  nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
+  nav
+    .Navbar_destra
+    .Navbar_language:hover
+    .Navbar_dropdown_content:hover
+    .Navbar_element {
     display: block;
   }
   nav .Navbar_destra .Navbar_language svg {
@@ -813,12 +1151,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: center;
     padding: 10px;
   }
-  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
+  nav
+    .Navbar_destra
+    .Navbar_language
+    .Navbar_dropdown_content
+    .Navbar_element
+    a {
     text-decoration: none;
     color: rgb(40, 13, 95);
     font-weight: bold;
   }
-  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
+  nav
+    .Navbar_destra
+    .Navbar_language
+    .Navbar_dropdown_content
+    .Navbar_element:hover {
     display: block;
     border: 1px solid rgb(216, 212, 212);
     background-color: rgb(216, 212, 212);
@@ -1033,7 +1380,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     -webkit-box-align: center;
     align-items: center;
     z-index: 1;
-    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    background: linear-gradient(
+      111.68deg,
+      rgb(242, 236, 242) 0%,
+      rgb(232, 242, 246) 100%
+    );
     padding: 48px 0px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
@@ -1042,7 +1393,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     top: 0px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container svg {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_medium_container
+    svg {
     fill: rgb(250, 249, 250);
     height: 100%;
     max-height: 48px;
@@ -1056,7 +1410,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     padding: 10px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container {
     width: 40%;
     height: 100%;
     display: flex;
@@ -1066,24 +1423,39 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     top: 20px;
     left: 100px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image1 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image1 {
     width: 187px;
     height: 192px;
     position: absolute;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image3 {
     width: 187px;
     height: 192px;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .Earn_p_i_h2_container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1091,7 +1463,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     gap: 20px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container {
     width: 100%;
     height: 45%;
     padding: 10px;
@@ -1100,7 +1474,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-wrap: wrap;
     align-content: flex-start;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container
+    .Earn_p_i_lower_big_container {
     width: 100%;
     height: 50%;
     display: flex;
@@ -1109,7 +1486,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding: 10px;
     gap: 15px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container2 {
     width: 100%;
     height: 40%;
     padding: 10px;
@@ -1118,7 +1497,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container2
+    .Earn_p_i_lower_big_container {
     width: 100%;
     height: 50%;
     display: flex;
@@ -1227,7 +1609,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     -webkit-box-align: center;
     align-items: center;
     z-index: 1;
-    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    background: linear-gradient(
+      111.68deg,
+      rgb(242, 236, 242) 0%,
+      rgb(232, 242, 246) 100%
+    );
     padding: 48px 0px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
@@ -1236,7 +1622,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     top: 0px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container svg {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_medium_container
+    svg {
     fill: rgb(250, 249, 250);
     height: 100%;
     max-height: 48px;
@@ -1250,7 +1639,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     padding: 10px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container {
     width: 40%;
     height: 100%;
     display: flex;
@@ -1260,24 +1652,39 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     top: 20px;
     left: 100px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image1 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image1 {
     width: 187px;
     height: 192px;
     position: absolute;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .earn_p_i_img_container
+    .earn_p_i_image3 {
     width: 187px;
     height: 192px;
     animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_central_container
+    .Earn_p_i_h2_container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1285,7 +1692,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     gap: 20px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container {
     width: 70%;
     height: 45%;
     padding: 10px;
@@ -1294,7 +1703,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-wrap: nowrap;
     align-items: flex-start;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container
+    .Earn_p_i_lower_big_container {
     width: 70%;
     height: 100%;
     display: flex;
@@ -1303,7 +1715,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding: 10px;
     gap: 15px;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container2 {
     width: 70%;
     height: 40%;
     padding: 10px;
@@ -1312,7 +1726,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
+  .Earn_p_i_big_contaniner
+    .Earn_p_i_top_container
+    .Earn_p_i_bottom_switch_container2
+    .Earn_p_i_lower_big_container {
     width: 70%;
     height: 100%;
     display: flex;

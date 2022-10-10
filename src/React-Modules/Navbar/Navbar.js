@@ -174,8 +174,8 @@ const Navbar = (props) => {
             </div>
           </div>
         </div>
-        <SettingsComponent switchTheme={props.switchTheme}/>
-        <ButtonConnectWallet switchTheme={props.switchTheme}/>
+        <SettingsComponent switchTheme={props.switchTheme} />
+        <ButtonConnectWallet switchTheme={props.switchTheme} />
         <div className="navbar_menu_nascosto">
           <div className="navbar_menu_nascosto_icon">
             <a href="http://">
