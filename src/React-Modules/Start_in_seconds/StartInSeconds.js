@@ -1,4 +1,5 @@
 import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet';
+// import DarkModeBtn from '../Common-Components/DarkModeBtn';
 import section from './Assets/Image/section Start in seconds_2.png';
 
 const StartInSeconds = (props) => {
@@ -91,6 +92,7 @@ const StartInSeconds = (props) => {
           </div>
         </div>
       </div>
+      {/* <DarkModeBtn switchTheme={props.switchTheme} /> */}
     </div>
   );
 };

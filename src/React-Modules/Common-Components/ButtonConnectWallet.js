@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DarkModeBtn from "./DarkModeBtn";
 
 const ButtonConnectWallet = (props) => {
     const [isShown, setIsShown] = useState(false);
@@ -20,7 +19,6 @@ const ButtonConnectWallet = (props) => {
             <div className="settings_menu_2">
               <div className="settings_top">
                 Connect Wallet
-                <DarkModeBtn switchTheme={props.switchTheme} />
                 <svg
                   className="exit2"
                   onClick={handleClick}
