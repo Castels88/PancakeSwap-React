@@ -8,17 +8,20 @@
 }
 
 :root {
-  --background: white;
+  /* inizio background light navbar */
+  --background-navbar: white;
   --text-primary: black;
   --text-secondary: royalblue;
   --accent: purple;
 }
 
 [data-theme="dark"] {
-  --background: rgb(39, 38, 44);
+  --background: black;
   --text-primary: white;
   --text-secondary: yellow;
   --accent: darkred;
+  /* inzio background dark navbar */
+  --background-navbar: rgb(39, 38, 44);
 }
 
 #root {
