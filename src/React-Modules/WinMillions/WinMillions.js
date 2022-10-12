@@ -1,10 +1,12 @@
+
 import "../../style.css";
 import { LotteryCard } from "./LotteryCard";
 import { PredictionCard } from "./PredictionCard";
 
-export function WinMillions() {
+export function WinMillions({props}) {
+
   return (
-    <div className="winMillion-container">
+    <div className={`winMillion-container`}>
       <div className="winMillion-content">
 
         <h2 className="main-title">
@@ -17,8 +19,8 @@ export function WinMillions() {
         </div>
 
         <div className='card-container'>
-            <PredictionCard/>
-            <LotteryCard/>
+            <PredictionCard />
+            <LotteryCard />
         </div>
       </div>
     </div>

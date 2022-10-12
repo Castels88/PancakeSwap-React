@@ -1,26 +1,26 @@
 .winMillion-container {
-  background: linear-gradient(rgb(111, 182, 240), rgb(232, 241, 245));
+  background: var(--background-gradient);
   width: 100vw;
 }
 .winMillion-container .winMillion-content {
-  background-color: rgb(208, 229, 250);
+  background-color: var(--background-blurred-content);
   border-radius: 3.125rem;
   padding: 1.25rem 0;
   margin: 6.25rem 0;
 }
 .winMillion-container .winMillion-content .main-title {
   font-size: 40px;
-  color: #280d5f;
+  color: --primary-title;
   font-weight: 550;
   text-align: center;
 }
 .winMillion-container .winMillion-content .main-title .purple-win {
-  color: rgb(118, 69, 217);
+  color: var(--secondary-title);
 }
 .winMillion-container .winMillion-content .par-container {
   text-align: center;
   font-size: 16px;
-  color: rgb(122, 110, 170);
+  color: --primary-text;
   font-weight: 300;
 }
 .winMillion-container .winMillion-content .card-container {
@@ -59,7 +59,7 @@
   width: 90%;
   padding: 15px;
   font-weight: 500;
-  color: white;
+  color: var(--button-text);
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   box-shadow: 0px 1.5px 3px black;

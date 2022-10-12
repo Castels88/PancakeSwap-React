@@ -3,7 +3,7 @@ import { randomNum } from "../Functions/Million&Cake"
 import './../../SCSS-Modules/cakemakeworld.css'
 
 
-export function CakeData(){
+export function CakeData({props}){
     const [data1, setData1] = useState('');
     const [data2, setData2] = useState('');
     const [data3, setData3] = useState('');

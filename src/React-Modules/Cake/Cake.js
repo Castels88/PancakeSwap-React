@@ -6,7 +6,7 @@ const coinCakeImg = require('./images/pancake-coin.webp');
 const topLeftImg = require("./images/top-left.webp");
 const topRightImg = require("./images/top-right.webp");
 
-export function Cake(){
+export function Cake({props}){
     return <div className="cake-container">
         <div className="cake-content">
             <div className="cake-image">

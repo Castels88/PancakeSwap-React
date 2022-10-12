@@ -13,19 +13,19 @@
 }
 .cake-container .cake-content .cake-title h2 {
   font-size: 40px;
-  color: #280d5f;
+  color: var(--primary-title);
   font-weight: 550;
   line-height: 45px;
   padding: 1rem;
 }
 .cake-container .cake-content .cake-title h2 .purple-cake {
-  color: rgb(118, 69, 217);
+  color: var(--secondary-title);
 }
 .cake-container .cake-content .cake-description {
   grid-area: desc;
   text-align: left;
   font-size: 16px;
-  color: rgb(122, 110, 170);
+  color: var(--primary-text);
   font-weight: 300;
 }
 .cake-container .cake-content .cake-description p {
@@ -43,13 +43,13 @@
   border: none;
   background: transparent;
   font-size: 16px;
-  color: white;
+  color: var(--button-text);
   border: 1px solid #1fc7d4;
   border-radius: 15px;
   width: 44%;
   padding: 15px;
   font-weight: bold;
-  color: white;
+  color: var(--button-text);
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   box-shadow: 0px 1.5px 0px #072f32;
@@ -79,12 +79,12 @@
 }
 .cake-container .cake-content .cake-data-table .data .data-title {
   font-size: 16px;
-  color: rgb(122, 110, 170);
+  color: var(--primary-text);
   font-weight: 400;
 }
 .cake-container .cake-content .cake-data-table .data .data-num {
   font-size: 24px;
-  color: #280d5f;
+  color: var(--primary-title);
   font-weight: 500;
 }
 

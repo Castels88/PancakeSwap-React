@@ -18,19 +18,19 @@
       margin-bottom: 20px;
       grid-area: title;
       h2 {
-        @include fontStyle(40px, #280d5f);
+        @include fontStyle(40px, var(--primary-title));
         font-weight: 550;
         line-height: 45px;
         padding: 1rem;
         .purple-cake {
-          color: rgb(118, 69, 217);
+          color: var(--secondary-title);
         }
       }
     }
     .cake-description {
       grid-area: desc;
       text-align: left;
-      @include fontStyle(16px, rgb(122, 110, 170));
+      @include fontStyle(16px, var(--primary-text));
       font-weight: 300;
       p {
         padding: 1rem;
@@ -46,13 +46,13 @@
       button {
         border: none;
         background: transparent;
-        @include fontStyle(16px, white);
+        @include fontStyle(16px, var(--button-text));
         border: 1px solid #1fc7d4;
         border-radius: 15px;
         width: 44%;
         padding: 15px;
         font-weight: bold;
-        color: white;
+        color: var(--button-text);
         background-color: #1fc7d4;
         transition: all 0.3s ease;
         box-shadow: 0px 1.5px 0px #072f32;
@@ -79,11 +79,11 @@
       .data {
         padding: 10px;
         .data-title {
-          @include fontStyle(16px, rgb(122, 110, 170));
+          @include fontStyle(16px, var(--primary-text));
           font-weight: 400;
         }
         .data-num {
-          @include fontStyle(24px, #280d5f);
+          @include fontStyle(24px,var(--primary-title));
           font-weight: 500;
         }
       }
@@ -187,7 +187,7 @@
         display: flex;
         height: 150px;
         picture {
-            position: relative;
+          position: relative;
           img {
             position: absolute;
             height: 150px;
@@ -246,7 +246,7 @@
         display: flex;
         height: 150px;
         picture {
-            position: relative;
+          position: relative;
           img {
             position: absolute;
             height: 150px;
@@ -293,4 +293,3 @@
     }
   }
 }
-

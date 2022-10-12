@@ -12,6 +12,12 @@
     --text-primary: black;
     --text-secondary: royalblue;
     --accent: purple;
+    --background-gradient: linear-gradient(rgb(111, 182, 240), rgb(232, 241, 245));
+    --background-blurred-content: rgb(208, 229, 250);
+    --primary-text: rgb(122, 110, 170);
+    --primary-title: #280d5f;
+    --secondary-title: rgb(118, 69, 217);
+    --button-text: white;
   }
 
   [data-theme='dark'] {
@@ -19,6 +25,12 @@
     --text-primary: white;
     --text-secondary: yellow;
     --accent: darkred;
+    --background-gradient: linear-gradient(rgb(11,68,116), rgb(8,17,21));
+    --background-blurred-content: rgba(5, 5, 5, 0.6);
+    --primary-text: rgb(122, 110, 170);
+    --primary-title: rgb(244,238,255);
+    --button-text: black;
+
   }
 
   #root {
@@ -42,11 +54,11 @@
     opacity: 0;
     position: absolute;
   }
-  
+
   .label {
     width: 50px;
     height: 26px;
-    background-color:gray; 
+    background-color:gray;
     display: flex;
     border-radius:50px;
     align-items: center;
@@ -55,7 +67,7 @@
     position: relative;
     transform: scale(1.5);
   }
-  
+
   .ball {
     width: 22px;
     height: 22px;
@@ -66,19 +78,19 @@
     border-radius: 50%;
     transition: transform 0.2s linear;
   }
-  
+
   /*  target the elemenent after the label*/
   .checkbox:checked + .label .ball{
     transform: translateX(24px);
   }
-  
+
   .gg-moon,
   .gg-moon::after {
    display: block;
    box-sizing: border-box;
    border-radius: 50%
   }
-  
+
   .gg-moon {
    overflow: hidden;
    position: relative;
@@ -89,7 +101,7 @@
    border-bottom-color: transparent;
    color: white;
   }
-  
+
   .gg-moon::after {
    content: "";
    position: absolute;
@@ -99,8 +111,8 @@
    box-shadow: 0 0 0 2px;
    top: 8px;
    left: 2px
-  } 
-  
+  }
+
 .gg-sun {
   box-sizing: border-box;
   position: relative;

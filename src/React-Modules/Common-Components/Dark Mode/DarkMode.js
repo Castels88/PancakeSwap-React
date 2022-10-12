@@ -1,6 +1,8 @@
 import useLocalStorage from "use-local-storage";
-import "../../SCSS-Modules/Dark Mode/darkmode.css";
-import { Square } from "./Square";
+import "../../../SCSS-Modules/Dark Mode/darkmode.css";
+import { Cake } from "../../Cake/Cake";
+import { WinMillions } from "../../WinMillions/WinMillions";
+import { DarkModeBtn } from "./DarkModeBtn.js";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -8,6 +10,7 @@ export function DarkMode() {
     "theme",
     defaultDark ? "dark" : "light"
   );
+  window.dispatchEvent(new Event('storage'))
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -16,23 +19,14 @@ export function DarkMode() {
 
   return (
     <div className="darkswitch" data-theme={theme}>
-      <input
-        onClick={switchTheme}
-        type="checkbox"
-        className="checkbox"
-        id="checkbox"
-      />
-      <label htmlFor="checkbox" className="label">
-        <i className="gg-moon"></i>
-        <i className="gg-sun"></i>
-        <div className="ball"></div>
-      </label>
-      <Square />
+      <WinMillions switchTheme={switchTheme}/>
+      <Cake switchTheme={switchTheme}/>
+      <DarkModeBtn switchTheme={switchTheme}/>
     </div>
   );
 }
 
-/* 
+/*
 <span>Darkmode in React</span>
       <button onClick={switchTheme}>
         Switch to {theme === "light" ? "Dark" : "Light"} Mode
