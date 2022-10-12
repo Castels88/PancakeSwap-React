@@ -18,7 +18,6 @@ const DarkModeBtn = (props) => {
           alt="svg-Sole"
         ></img>
         <img className="Moon" src={Luna} alt="svg-Luna"></img>
-
         <div className="ball"></div>
       </label>
     </>

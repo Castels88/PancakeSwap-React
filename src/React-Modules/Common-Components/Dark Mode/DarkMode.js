@@ -1,7 +1,7 @@
 import useLocalStorage from "use-local-storage";
 import "../../../SCSS-Modules/Dark Mode/darkmode.css";
 import Navbar from "../../Navbar/Navbar";
-
+import { EarnPassiveIncome } from "../../EarnPassiveIncome/EarnPassiveIncome";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -17,7 +17,8 @@ export function DarkMode() {
 
   return (
     <div className="darkswitch" data-theme={theme}>
-        <Navbar switchTheme={switchTheme} />
+      <Navbar switchTheme={switchTheme} />
+      <EarnPassiveIncome switchTheme={switchTheme} />
     </div>
   );
 }

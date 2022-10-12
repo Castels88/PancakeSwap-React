@@ -4,7 +4,7 @@ import Folder from "../Navbar/Images/Folder.webp";
 import { SyrupPools } from "./SyrupPools";
 import { TopFarm } from "./TopFarm";
 
-export function EarnPassiveIncome() {
+export function EarnPassiveIncome(props) {
   return (
     <div className="Earn_p_i_big_contaniner">
       <div className="Earn_p_i_top_container">
@@ -41,8 +41,8 @@ export function EarnPassiveIncome() {
             </div>
           </div>
         </div>
-        <TopFarm />
-        <SyrupPools />
+        <TopFarm switchTheme={props.switchTheme} />
+        <SyrupPools switchTheme={props.switchTheme} />
       </div>
     </div>
   );

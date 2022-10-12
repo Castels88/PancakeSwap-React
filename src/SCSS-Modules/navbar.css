@@ -18,8 +18,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(231, 227, 235);
+  background-color: var(--background-navbar);
+  border-bottom: 1px solid var(--border-navbar-menu);
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -33,7 +33,7 @@ nav .Navbar_sinistra {
 nav .Navbar_sinistra a {
   display: flex;
   text-decoration: none;
-  color: black;
+  color: var(--background-navbar-text);
 }
 nav .Navbar_sinistra a img {
   width: 20px;
@@ -60,8 +60,8 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
   padding: 5px;
   margin-top: 3px;
   text-align: start;
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--border-navbar-menu);
+  background-color: var(--background-navbar);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #7a6eaa;
@@ -71,7 +71,7 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
   list-style-type: none;
 }
 nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
-  border: 1px solid rgb(216, 212, 212);
+  border: 1px solid var(--border-navbar-menu);
   border-radius: 10px;
   display: block;
 }
@@ -87,8 +87,8 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn li a {
 nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
   display: none;
   position: absolute;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(231, 227, 235);
+  background-color: var(--background-navbar);
+  border: 1px solid var(--border-navbar-menu);
   border-radius: 16px;
   margin-top: 20px;
   padding-bottom: 4px;
@@ -105,6 +105,9 @@ nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .N
   width: 100%;
   align-items: center;
   padding: 10px;
+}
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element svg {
+  fill: var(--color-navbar-svg);
 }
 nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element:hover {
   display: block;
@@ -144,7 +147,7 @@ nav .Navbar_destra .Navbar_language {
   align-items: center;
 }
 nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
-  border: 1px solid rgb(216, 212, 212);
+  border: 1px solid var(--border-navbar-menu);
   border-radius: 10px;
   display: block;
   z-index: 1;
@@ -160,8 +163,8 @@ nav .Navbar_destra .Navbar_language .Navbar_dropdown_content {
   overflow-y: scroll;
   display: none;
   position: absolute;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(231, 227, 235);
+  background-color: var(--background-navbar);
+  border: 1px solid var(--border-navbar-menu);
   border-radius: 16px;
   margin-top: 238px;
   padding-bottom: 4px;
@@ -179,6 +182,7 @@ nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element {
 nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
   text-decoration: none;
   color: rgb(40, 13, 95);
+  color: var(--background-navbar-text);
   font-weight: bold;
 }
 nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
@@ -190,8 +194,8 @@ nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hov
 nav .Navbar_destra .Navbar_settings_menu {
   margin-top: 2px;
   padding: 10px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: var(--background-navbar);
+  border: 1px solid var(--border-navbar-menu);
   cursor: pointer;
 }
 nav .Navbar_destra .Navbar_settings_menu svg {
@@ -222,36 +226,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: white;
 }
 
-#light nav {
-  background-color: rgb(255, 255, 255);
-}
-
-#dark nav {
-  background-color: #100c18;
-}
-#dark nav .Navbar_logo {
-  color: white;
-}
-#dark nav .Navbar_menuBtn {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_menuBtn .Navbar_dropdown_content {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_language .Navbar_dropdown_content {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-#dark nav .Navbar_language .Navbar_dropdown_content .Navbar_element a {
-  color: white;
-}
-#dark nav .Navbar_settings_menu {
-  background-color: #100c18;
-  border: 1px solid #100c18;
-}
-
 .navbar_menu_nascosto {
   display: none;
 }
@@ -266,7 +240,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  background-color: var(--background-earn-passive-income);
   padding: 48px 0px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
@@ -349,7 +323,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
-  color: rgb(40, 13, 95);
+  color: var(--color-h2-earn-passive-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container h2 span {
   color: rgb(118, 69, 217);
@@ -414,13 +388,13 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.1;
-  color: rgb(40, 13, 95);
+  color: var(--color-header-switch-earn-passive-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch h2 span {
-  color: rgb(118, 69, 217);
+  color: var(--color-span-switch-earn-passive-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_h2_switch svg {
-  fill: #7a6eaa;
+  fill: var(--svg-switch-earn-passive-income);
   cursor: pointer;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
@@ -457,89 +431,89 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 {
   width: 100%;
@@ -547,20 +521,20 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   flex-direction: column;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
   display: flex;
@@ -579,13 +553,13 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.1;
-  color: rgb(40, 13, 95);
+  color: var(--color-header-switch-earn-passive-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch h2 span {
-  color: rgb(118, 69, 217);
+  color: var(--color-span-switch-earn-passive-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_h2_switch svg {
-  fill: #7a6eaa;
+  fill: var(--svg-switch-earn-passive-income);
   cursor: pointer;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
@@ -611,89 +585,90 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text1 {
   color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(118, 69, 217);
+  border-right: 1px solid var(--border-right-earn-passve-income);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 {
   width: 100%;
@@ -701,20 +676,20 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   flex-direction: column;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text1 {
-  color: rgb(118, 69, 217);
+  color: var(--color-earn-p-i-text1);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-earn-p-i-text2);
   font-style: bold;
   font-weight: 600;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 .Earn_p_i_text3 {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-earn-p-i-text3);
 }
 
 @media screen and (max-width: 1080px) {
@@ -723,8 +698,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: space-between;
     align-items: center;
     height: 56px;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(231, 227, 235);
+    background-color: var(--background-navbar);
+    border-bottom: 1px solid var(--border-navbar-menu);
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -755,8 +730,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding: 5px;
     margin-top: 3px;
     text-align: start;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--border-navbar-menu);
+    background-color: var(--background-navbar);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #7a6eaa;
@@ -766,7 +741,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     list-style-type: none;
   }
   nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
-    border: 1px solid rgb(216, 212, 212);
+    border: 1px solid var(--border-navbar-menu);
     border-radius: 10px;
     display: block;
   }
@@ -782,8 +757,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
     display: none;
     position: absolute;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(231, 227, 235);
+    background-color: var(--background-navbar);
+    border: 1px solid var(--border-navbar-menu);
     border-radius: 16px;
     margin-top: 20px;
     padding-bottom: 4px;
@@ -830,7 +805,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     display: flex;
   }
   nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
-    border: 1px solid rgb(216, 212, 212);
+    border: 1px solid var(--border-navbar-menu);
     border-radius: 10px;
     display: block;
   }
@@ -844,8 +819,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     overflow-y: scroll;
     display: none;
     position: absolute;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(231, 227, 235);
+    background-color: var(--background-navbar);
+    border: 1px solid var(--border-navbar-menu);
     border-radius: 16px;
     margin-top: 238px;
     padding-bottom: 4px;
@@ -862,7 +837,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
     text-decoration: none;
-    color: rgb(40, 13, 95);
+    color: var(--a-navbar);
     font-weight: bold;
   }
   nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
@@ -874,8 +849,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   nav .Navbar_destra .Navbar_settings_menu {
     margin-top: 2px;
     padding: 10px;
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--background-navbar);
+    border: 1px solid var(--border-navbar-menu);
     cursor: pointer;
   }
   nav .Navbar_destra .Navbar_settings_menu svg {
@@ -1078,7 +1053,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    background: var(--background-earn-passive-income);
     padding: 48px 0px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
@@ -1237,8 +1212,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     padding-top: 5px;
     padding-right: 8px;
     padding-left: 8px;
-    background: rgb(255, 255, 255);
-    border-top: 1px solid rgb(231, 227, 235);
+    background-color: var(--background-navbar);
+    border-top: 1px solid var(--border-navbar-menu);
     padding-bottom: env(safe-area-inset-bottom);
     z-index: 20;
   }
@@ -1272,7 +1247,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    background: var(--background-earn-passive-income);
     padding: 48px 0px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {

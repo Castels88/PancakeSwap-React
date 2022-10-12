@@ -10,18 +10,81 @@
 :root {
   /* inizio background light navbar */
   --background-navbar: white;
+  --background-navbar-text: black;
+  --border-navbar-menu: white;
+  --a-navbar: rgb(40, 13, 95);
   --text-primary: black;
   --text-secondary: royalblue;
   --accent: purple;
+  /* fine background light navbar */
+
+  /* inizio light mode earn passive income */
+  --background-earn-passive-income: rgb(224, 222, 225);
+  --color-h2-earn-passive-income: rgb(40, 13, 95);
+  --color-header-switch-earn-passive-income: rgb(40, 13, 95);
+  --color-span-switch-earn-passive-income: rgb(118, 69, 217);
+  --svg-switch-earn-passive-income: #7a6eaa;
+  --color-earn-p-i-text1: rgb(118, 69, 217);
+  --color-earn-p-i-text2: rgb(40, 13, 95);
+  --color-earn-p-i-text3: #7a6eaa;
+  --border-right-earn-passve-income: rgb(118, 69, 217);
+  /* fine light mode earn passive income */
+
+  /* inizio light mode settings*/
+  --presentation-settings: rgba(40, 13, 95, 0.6);
+  --settings-top: rgb(224, 222, 225);
+  --h2--settings-top: rgb(40, 13, 95);
+  --background-color-settings-scroolbar: white;
+  --color-font_settings2: rgb(40, 13, 95);
+  --color-ball-settings: white;
+  /* fine light mode settings */
 }
 
 [data-theme="dark"] {
-  --background: black;
-  --text-primary: white;
-  --text-secondary: yellow;
-  --accent: darkred;
+  --main: rgb(118, 69, 217);
+  --alternative: rgb(40, 13, 95);
+  --mainsecondarycolor: rgb(31, 199, 212); /*color background button*/
+  --coloroptionone: rgb(237, 75, 158);
+  --coloroptionsecond: rgb(255, 178, 55);
+  --coloroptionthird: rgb(154, 106, 255);
+  --colors-textSubtle: rgb(
+    184,
+    173,
+    210
+  ); /*DARK color subtext Earn Passive Income, Cake, IconFooter, Nav, background button Learn How to Connect e tre pallini, */
+  --colors-gradientBubblegum: linear-gradient(
+    139.73deg,
+    #313d5c,
+    #3d2a54
+  ); /*sfondo titolo connect wallet */
   /* inzio background dark navbar */
   --background-navbar: rgb(39, 38, 44);
+  --background-navbar-text: white;
+  --border-navbar-menu: rgb(39, 38, 44);
+  --color-navbar-svg: #7a6eaa;
+  --a-navbar: white;
+  /* fine background dark navbar */
+  /* inzio background dark earn passive income */
+  --background-earn-passive-income: rgb(52, 41, 72);
+  --color-h2-earn-passive-income: white;
+  --color-header-switch-earn-passive-income: rgb(154, 106, 255);
+  --color-span-switch-earn-passive-income: white;
+  --svg-switch-earn-passive-income: rgb(184, 173, 210);
+  --color-earn-p-i-text1: rgb(154, 106, 255);
+  --color-earn-p-i-text2: white;
+  --color-earn-p-i-text3: rgb(184, 173, 210);
+  --border-right-earn-passve-income: black;
+  /* fine background dark earn passive income */
+
+  /* inizio dark mode settings*/
+  --presentation-settings: rgb(207 202 219 / 60%);
+  --settings-top: rgb(52, 41, 72);
+  --h2--settings-top: white;
+  --background-color-settings-scroolbar: rgb(39, 38, 44);
+  --color-font_settings2: white;
+  --color-ball-settings: black;
+
+  /* fine dark mode settings*/
 }
 
 #root {

@@ -33,16 +33,20 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(40, 13, 95, 0.6);
+  background-color: var(--presentation-settings);
   z-index: 20;
   will-change: opacity;
 }
 .appear .settings_container {
   overflow-y: hidden;
-  background: var(--background);
+  background: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
   box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px;
-  border: 1px solid rgb(231, 227, 235);
+  border: 1px solid var(--border-navbar-menu);
   border-radius: 32px;
   width: 370px;
   max-height: 650px;
@@ -52,18 +56,14 @@
   height: 70px;
   -webkit-box-align: center;
   align-items: center;
-  background: linear-gradient(
-    111.68deg,
-    rgb(242, 236, 242) 0%,
-    rgb(232, 242, 246) 100%
-  );
-  border-bottom: 1px solid rgb(231, 227, 235);
+  background: var(--settings-top);
+  border-bottom: 1px solid var(--border-navbar-menu);
   display: flex;
   justify-content: space-between;
   padding: 12px 24px;
   font-size: 20px;
   font-weight: bolder;
-  color: rgb(40, 13, 95);
+  color: var(--h2--settings-top);
 }
 .appear .settings_container .settings_top img {
   height: 20px;
@@ -78,6 +78,7 @@
   overflow-y: scroll;
   flex-direction: column;
   padding: 10px;
+  background-color: var(--background-color-settings-scroolbar);
 }
 .appear .settings_container .settings_scroolbar .primo_conteiner {
   height: 285px;
@@ -93,7 +94,7 @@
   color: rgb(118, 69, 217);
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 20px;
 }
 .appear
   .settings_container
@@ -110,7 +111,7 @@
   .primo_conteiner
   .sub_container
   .font_settings2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-font_settings2);
   font-weight: 600;
   font-size: 16px;
 }
@@ -187,7 +188,7 @@
   .settings_scroolbar
   .primo_conteiner
   .font_settings2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-font_settings2);
   font-weight: 600;
   font-size: 16px;
 }
@@ -283,7 +284,7 @@
   .secondo_container
   .liquidity_swap
   .font_settings2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-font_settings2);
   font-weight: 600;
   font-size: 16px;
 }
@@ -373,7 +374,7 @@
   .settings_scroolbar
   .terzo_container
   .font_settings2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-font_settings2);
   font-weight: 600;
   font-size: 16px;
 }
@@ -506,7 +507,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(40, 13, 95, 0.6);
+    background-color: var(--presentation-settings);
     z-index: 20;
     will-change: opacity;
   }
@@ -555,7 +556,7 @@
     background: rgb(255, 255, 255);
     box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px,
       rgba(0, 0, 0, 0.05) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
+    border: 1px solid var(--border-navbar-menu);
     border-radius: 32px;
     width: 100%;
     max-height: 580px;

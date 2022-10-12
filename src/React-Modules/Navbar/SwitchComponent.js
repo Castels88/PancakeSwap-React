@@ -38,7 +38,7 @@ export default function SwitchComponent() {
       height: 21px;
       border-radius: 21px;
       transition: 0.2s;
-      background: #fff;
+      background: var(--color-ball-settings);
       box-shadow: 0 2px 4px;
     }
 
