@@ -1,0 +1,21 @@
+:root {
+    --main: rgb(118, 69, 217);
+    --alternative: rgb(40, 13, 95);
+    --mainsecondarycolor: rgb(31, 199, 212); /*color background button*/
+    --coloroptionone: rgb(237, 75, 158);
+    --coloroptionsecond: rgb(255, 178, 55);
+    --coloroptionthird: rgb(154, 106, 255);
+    --colors-textSubtle: rgb(122, 110, 170); /*LIGHT color subtext Earn Passive Income, Cake, IconFooter, Nav*/
+    --colors-gradientBubblegum: linear-gradient(139.73deg,#e5fdff,#f3efff);/*sfondo titolo connect wallet */
+}
+
+[data-theme='dark'] {
+    --main: rgb(118, 69, 217);
+    --alternative: rgb(40, 13, 95);
+    --mainsecondarycolor: rgb(31, 199, 212); /*color background button*/
+    --coloroptionone: rgb(237, 75, 158);
+    --coloroptionsecond: rgb(255, 178, 55);
+    --coloroptionthird: rgb(154, 106, 255);
+    --colors-textSubtle: rgb(184, 173, 210); /*DARK color subtext Earn Passive Income, Cake, IconFooter, Nav, background button Learn How to Connect e tre pallini, */
+    --colors-gradientBubblegum: linear-gradient(139.73deg,#313d5c,#3d2a54); /*sfondo titolo connect wallet */
+}

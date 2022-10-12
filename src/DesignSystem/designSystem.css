@@ -1,0 +1,351 @@
+.card {
+  width: 18.75rem;
+  height: 9.375rem;
+  overflow: inherit;
+  background: rgb(39, 38, 44);
+  border-radius: 1.5rem;
+  width: 18.75rem;
+  height: 9.375rem;
+  overflow: inherit;
+  background: rgb(39, 38, 44);
+  border-radius: 1.5rem;
+  border-radius: 8px 8px 8px 56px;
+  transition: opacity 200ms ease 0s;
+  width: 16.875rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(244, 238, 255);
+}
+* h2 {
+  border-bottom: 2px solid rgb(68, 132, 158);
+  width: fit-content;
+  letter-spacing: 0.03125rem;
+  align-self: start;
+  color: rgb(244, 238, 255);
+}
+* small {
+  font-weight: 600;
+  color: gray;
+}
+
+body {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.25rem;
+  background: linear-gradient(rgb(14, 172, 159) 0%, rgb(28, 151, 182) 100%);
+  max-width: 1300px;
+}
+body div {
+  flex: 1;
+  height: fit-content;
+}
+body div aside {
+  background: white;
+  width: 100%;
+  height: 18.75rem;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.logos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.logos h2 {
+  color: black;
+  align-self: start;
+  margin-bottom: 0.5rem;
+}
+.logos > div {
+  display: flex;
+  width: 100%;
+  max-width: 530px;
+}
+.logos > div > div {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos > div > div h4 {
+  margin: 0.3125rem 0;
+}
+.logos > div img {
+  object-fit: contain;
+  width: 40%;
+  height: 30%;
+}
+
+.first h2 {
+  color: black;
+}
+.first div.color {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: fit-content;
+  margin-top: 0.5rem;
+}
+.first div.color h4 {
+  color: black;
+}
+.first div.color span {
+  color: black;
+}
+.first div.color > p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+}
+.first div.color > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.first div.color > div p {
+  margin: 0%;
+  font-size: 0.875rem;
+  font-family: "Kanit";
+  font-weight: 600;
+  color: black;
+}
+.first div.color > div p span {
+  font-size: 0.8125rem;
+  color: black;
+  font-size: 400;
+}
+.first div.color > div div.uno {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: linear-gradient(#280D5F, rgb(118, 69, 217));
+  background-image: linear-gradient(#280D5F, rgb(118, 69, 217));
+}
+.first div.color > div div.due {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgb(118, 69, 217);
+  background-image: rgb(118, 69, 217);
+}
+.first div.color > div div.tre {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: #280D5F;
+  background-image: #280D5F;
+}
+.first div.color > div div.quattro {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgb(31, 199, 212);
+  background-image: rgb(31, 199, 212);
+}
+.first div.color > div div.sei {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgb(237, 75, 158);
+  background-image: rgb(237, 75, 158);
+}
+.first div.color > div div.cinque {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgb(255, 178, 55);
+  background-image: rgb(255, 178, 55);
+}
+.first div.color > div div.sette {
+  margin: 0 0.3125rem 0.1875rem 0.1875rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgb(154, 106, 255);
+  background-image: rgb(154, 106, 255);
+}
+
+aside.third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  min-width: fit-content;
+}
+aside.third h2 {
+  color: black;
+}
+aside.third div.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 25rem;
+}
+aside.third div.buttons p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  margin-top: 1.25rem;
+}
+aside.third div.buttons div {
+  font-family: "Kanit";
+  font-weight: 400;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+aside.third div.buttons div button {
+  align-items: center;
+  border: 0px;
+  border-radius: 1rem;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 3rem;
+  padding: 0px 1.5rem;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  margin-right: 0.5rem;
+  width: 9.375rem;
+}
+aside.third div.buttons div button.arrow-bluebutton-white img {
+  filter: brightness(0) invert(1);
+}
+aside.third div.buttons div button.arrow-bluebutton-black {
+  color: black;
+}
+aside.third div.buttons div button.arrow-bluebutton-black img {
+  filter: brightness(0%);
+}
+aside.third div.buttons div button.transparent-button {
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  border: 3px solid rgb(31, 199, 212);
+  box-shadow: none;
+}
+aside.third div.buttons div button:hover {
+  opacity: 50%;
+}
+aside.third div.buttons div p {
+  margin-top: 0.625rem;
+  border: none;
+  padding: 0;
+}
+
+.second {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.second h2, .second p {
+  color: black;
+}
+.second h4 {
+  color: rgb(118, 69, 217);
+}
+.second > div {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 6.25rem;
+}
+.second > div > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 6.25rem;
+  border-bottom: 2px solid lightgray;
+}
+.second > div > div.title h2:first-of-type {
+  border-bottom: none;
+  font-size: 1.875rem;
+  color: rgb(118, 69, 217);
+}
+.second > div > div.title h2:last-of-type {
+  border-bottom: none;
+  font-size: 1.875rem;
+}
+.second > div > div.subtitle p:first-of-type {
+  color: rgb(31, 199, 212);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.second > div > div.subtitle p:last-of-type {
+  color: black;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: 4px;
+  font-size: 16px;
+}
+.second > div > div.description p:first-of-type {
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.second > div > div.description p:last-of-type {
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.second > div > div.body p:first-of-type {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.second > div > div.body p:last-of-type {
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+aside h2 {
+  color: black;
+}
+aside div.icon {
+  margin: 0 1rem;
+}
+aside div.icon > p {
+  text-align: center;
+  font-weight: bold;
+}
+aside div.icon div.container-icons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+aside div.icon path.color-svg {
+  fill: red;
+}
+
+/*# sourceMappingURL=designSystem.css.map */

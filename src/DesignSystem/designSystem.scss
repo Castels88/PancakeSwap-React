@@ -1,0 +1,465 @@
+@use 'colorsModule' as color; //importo il modulo dei colori rinominandolo "color" per quando bisognerà richiamarlo
+
+$fontFamily: "Kanit";
+$fontLightWeight : 400;
+$fontHeavyWeight : 600;
+$fontSizeCardTitle: convertpx(20px);
+$fontSizeCardBottom: convertpx(12px);
+
+@mixin DivColorShow($color) {
+    min-height: convertpx(40px);
+    min-width: convertpx(40px);
+    background-color: $color;
+    background-image: $color
+}
+
+@function convertpx($pxinput) {
+    @return calc($pxinput / 16px)+rem;
+}
+
+@mixin input {
+
+    background-color: rgb(55, 47, 71);
+    border-radius: 16px;
+    box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
+    color: rgb(244, 238, 255);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 100%;
+    border: 1px solid rgb(38, 33, 48);
+}
+
+@mixin button {
+
+    align-items: center;
+    border: 0px;
+    border-radius: convertpx(16px);
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: convertpx(16px);
+    font-weight: $fontHeavyWeight;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: convertpx(48px);
+    padding: 0px convertpx(24px);
+    background-color: color.$mainSecondaryColor;
+    color: white;
+    margin-right: convertpx(8px);
+}
+
+@mixin card {
+    width: convertpx(300px);
+    height: convertpx(150px);
+    overflow: inherit;
+    background: rgb(39, 38, 44);
+    border-radius: convertpx(24px);
+}
+
+@mixin cardNewestArrivals {
+    @include card;
+    height: convertpx(24px);
+    width: convertpx(302px);
+    line-height: convertpx(24px);
+
+}
+
+@mixin cardNFT {
+    @include card;
+    border-radius: 8px 8px 8px 56px;
+    transition: opacity 200ms ease 0s;
+    width: convertpx(270px);
+}
+
+.card {
+    @include card;
+    @include cardNFT;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(244, 238, 255);
+
+    h2 {
+        border-bottom: 2px solid rgb(68, 132, 158);
+        width: fit-content;
+        letter-spacing: convertpx(.5px);
+        align-self: start;
+        color: rgb(244, 238, 255);
+    }
+
+    small {
+        font-weight: $fontHeavyWeight;
+        color: gray;
+    }
+}
+
+body {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.25rem;
+    background: linear-gradient(rgb(14, 172, 159) 0%, rgb(28, 151, 182) 100%);
+    max-width: 1300px;
+
+    & div {
+        flex: 1;
+        height: fit-content;
+
+        aside {
+            background: white;
+            width: 100%;
+            height: convertpx(300px);
+            margin: 1.5rem;
+            padding: convertpx(8px);
+            border-radius: 10px;
+        }
+    }
+}
+
+// Logos
+.logos {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h2 {
+        color: black;
+        align-self: start;
+        margin-bottom: .5rem;
+    }
+
+    &>div {
+        display: flex;
+        width: 100%;
+        max-width: 530px;
+
+        &>div {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                margin: convertpx(5px) 0;
+            }
+        }
+
+        img {
+            object-fit: contain;
+            width: 40%;
+            height: 30%;
+        }
+    }
+}
+
+
+// Logos end
+//color
+.first {
+
+    h2 {
+        color: black;
+    }
+    div.color {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: fit-content;
+        margin-top: .5rem;
+
+        h4 {
+            color: black;
+        }
+
+        span {
+            color: black;
+        }
+
+        >p {
+            font-weight: bold;
+            font-size: convertpx(20px);
+            margin-bottom: convertpx(5px);
+
+        }
+
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            p {
+                margin: 0%;
+                font-size: convertpx(14px);
+                font-family: $fontFamily;
+                font-weight: $fontHeavyWeight;
+                color: black;
+
+                span {
+                    font-size: convertpx(13px);
+                    color: black;
+                    font-size: $fontLightWeight;
+                }
+            }
+
+            div.uno {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+
+                @include DivColorShow(color.$colorlinear);
+            }
+
+            div.due {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$mainColor);
+            }
+
+            div.tre {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$alternativeColor);
+            }
+
+            div.quattro {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$mainSecondaryColor);
+
+            }
+
+            div.sei {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$colorOption1);
+
+            }
+
+            div.cinque {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$colorOption2);
+
+            }
+
+            div.sette {
+                margin: 0 convertpx(5px) convertpx(3px) convertpx(3px);
+                @include DivColorShow(color.$colorOption3);
+
+            }
+        }
+
+    }
+
+}
+
+aside.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: convertpx(10px);
+    min-width: fit-content;
+
+    h2 {
+        color: black;
+    }
+
+    div.buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: convertpx(400px);
+
+        p {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            color: grey;
+            margin-top: convertpx(20px);
+        }
+
+        div {
+            font-family: $fontFamily;
+            font-weight: $fontLightWeight;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            button {
+                @include button;
+                width: convertpx(150px);
+
+                &.arrow-bluebutton-white img {
+                    filter: brightness(0) invert(1);
+                }
+
+                &.arrow-bluebutton-black {
+                    color: black;
+
+                    img {
+                        filter: brightness(0%);
+                    }
+                }
+
+                &.transparent-button {
+                    background-color: transparent;
+                    color: color.$mainSecondaryColor;
+                    border: 3px solid color.$mainSecondaryColor;
+                    box-shadow: none;
+                }
+
+                &:hover {
+                    opacity: 50%;
+                }
+
+
+            }
+
+            p {
+                margin-top: convertpx(10px);
+                border: none;
+                padding: 0;
+            }
+        }
+
+    }
+}
+
+// Typography
+.second {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h2, p {
+        color: black;
+    }
+
+    h4 {
+        color: rgb(118, 69, 217);
+    }
+
+    &>div {
+
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: convertpx(100px);
+
+        &>div {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            height: convertpx(100px);
+            border-bottom: 2px solid lightgray;
+
+        }
+
+        &>div.title {
+            h2:first-of-type {
+                border-bottom: none;
+                font-size: convertpx(30px);
+                color: color.$mainColor
+            }
+
+            h2:last-of-type {
+                border-bottom: none;
+                font-size: convertpx(30px);
+
+            }
+        }
+
+        &>div.subtitle {
+
+            p:first-of-type {
+                color: rgb(31, 199, 212);
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+            p:last-of-type {
+                color: black;
+                font-weight: 600;
+                line-height: 1.5;
+                margin-right: 4px;
+                font-size: 16px;
+            }
+
+        }
+        &>div.description {
+            p:first-of-type {
+                color: black;
+                line-height: 1.5;
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            p:last-of-type {
+                color: black;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 8px;
+                font-size: 12px;
+            }
+
+        }
+        &>div.body {
+            p:first-of-type {
+                color: black;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            p:last-of-type {
+                color: black;
+                font-weight: 400;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
+// icons
+aside {
+    h2 {
+        color: black;
+    }
+    div.icon {
+
+        margin: 0 1rem;
+
+        >p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        div.container-icons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        path.color-svg {
+            fill: red;
+        }
+    }
+}
