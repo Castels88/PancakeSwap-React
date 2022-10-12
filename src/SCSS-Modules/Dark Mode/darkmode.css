@@ -12,12 +12,14 @@
     --text-primary: black;
     --text-secondary: royalblue;
     --accent: purple;
+    /* Inizio variabili light WinMillions e Cake */
     --background-gradient: linear-gradient(rgb(111, 182, 240), rgb(232, 241, 245));
     --background-blurred-content: rgb(208, 229, 250);
     --primary-text: rgb(122, 110, 170);
     --primary-title: #280d5f;
     --secondary-title: rgb(118, 69, 217);
     --button-text: white;
+    /* Fine variabili light WinMillions e Cake */
   }
 
   [data-theme='dark'] {
@@ -25,12 +27,13 @@
     --text-primary: white;
     --text-secondary: yellow;
     --accent: darkred;
+    /* Inizio variabili dark WinMillions e Cake */
     --background-gradient: linear-gradient(rgb(11,68,116), rgb(8,17,21));
     --background-blurred-content: rgba(5, 5, 5, 0.6);
     --primary-text: rgb(122, 110, 170);
     --primary-title: rgb(244,238,255);
     --button-text: black;
-
+    /* Fine variabili dark WinMillions e Cake */
   }
 
   #root {
