@@ -8,17 +8,74 @@
 }
 
 :root {
-  --background: white;
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
+  --main: rgb(118, 69, 217);
+  --alternative: rgb(40, 13, 95);
+  --mainsecondarycolor: rgb(31, 199, 212); /*color background button*/
+  --coloroptionone: rgb(237, 75, 158);
+  --coloroptionsecond: rgb(255, 178, 55);
+  --coloroptionthird: rgb(154, 106, 255);
+  --colors-textSubtle: rgb(
+    122,
+    110,
+    170
+  ); /*LIGHT color subtext Earn Passive Income, Cake, IconFooter, Nav*/
+  --colors-gradientBubblegum: linear-gradient(
+    139.73deg,
+    #e5fdff,
+    #f3efff
+  ); /*sfondo titolo connect wallet */
+
+  /* Colori Moon & UsedBy */
+  --moonMainText: rgb(118, 69, 217);
+  --moonSecondaryText: #280d5f;
+  --moonBackgroundImg: white;
+  --buttonTextColor: white;
+  --backgroundMoon: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  --backgroundUsedBy: linear-gradient(
+    rgb(255, 255, 255) 22%,
+    rgb(215, 202, 236) 100%
+  );
+  --usedbyMainText: #280d5f;
+  --usedbyCard: white;
+  --cardBorder: #e7e3eb;
 }
 
 [data-theme="dark"] {
-  --background: yellow;
-  --text-primary: white;
-  --text-secondary: yellow;
-  --accent: darkred;
+  --main: rgb(118, 69, 217);
+  --alternative: rgb(40, 13, 95);
+  --mainsecondarycolor: rgb(31, 199, 212); /*color background button*/
+  --coloroptionone: rgb(237, 75, 158);
+  --coloroptionsecond: rgb(255, 178, 55);
+  --coloroptionthird: rgb(154, 106, 255);
+  --colors-textSubtle: rgb(
+    184,
+    173,
+    210
+  ); /*DARK color subtext Earn Passive Income, Cake, IconFooter, Nav, background button Learn How to Connect e tre pallini, */
+  --colors-gradientBubblegum: linear-gradient(
+    139.73deg,
+    #313d5c,
+    #3d2a54
+  ); /*sfondo titolo connect wallet */
+
+  /* Colori Moon & UsedBy */
+  --moonMainText: #9a6aff;
+  --moonSecondaryText: #f4eeff;
+  --moonBackgroundImg: black;
+  --buttonTextColor: black;
+  --backgroundMoon: radial-gradient(
+    103.12%50%at 50%50%,
+    #21193a 0%,
+    #191326 100%
+  );
+  --backgroundUsedBy: linear-gradient(180deg, #09070c 22%, #201335 100%);
+  --usedbyMainText: #f4eeff;
+  --usedbyCard: #27262c;
+  --cardBorder: #383241;
 }
 
 #root {

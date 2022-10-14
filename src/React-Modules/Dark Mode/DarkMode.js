@@ -29,7 +29,7 @@ export function DarkMode() {
         <i className="gg-sun"></i>
         <div className="ball"></div>
       </label>
-      <Square />
+      <Moon />
       <UsedBy />
     </div>
   );

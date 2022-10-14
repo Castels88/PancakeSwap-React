@@ -2,7 +2,7 @@
   height: 50rem;
   width: 100%;
   padding-top: 100px;
-  background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  background: var(--backgroundUsedBy);
 
   .usedby_usedtop {
     width: 100%;
@@ -18,11 +18,12 @@
     }
     h2 {
       font-size: 40px;
-      color: #280d5f;
+      color: var(--usedbyMainText);
       padding-bottom: 20px;
       line-height: 1;
     }
     p {
+      color: var(--colors-textSubtle);
       padding-bottom: 20px;
     }
     span {
@@ -41,10 +42,10 @@
     .usedby_card {
       width: 280px;
       height: 300px;
-      background-color: white;
+      background-color: var(--usedbyCard);
       border-radius: 30px;
       padding: 30px;
-      border-bottom: 8px solid lightgray;
+      border: 1px solid var(--cardBorder);
       flex-wrap: wrap;
 
       .usedby_card_top,
@@ -66,7 +67,7 @@
         justify-content: space-between;
         h2 {
           font-size: 40px;
-          color: #280d5f;
+          color: var(--usedbyMainText);
           #usedby_diff1 {
             color: rgb(118, 69, 217);
           }
@@ -76,6 +77,9 @@
           #usedby_diff3 {
             color: rgb(237, 75, 158);
           }
+        }
+        p {
+          color: var(--colors-textSubtle);
         }
       }
     }

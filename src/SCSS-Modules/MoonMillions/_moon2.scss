@@ -5,13 +5,9 @@
   height: 50px;
   font-weight: 600;
   font-size: 16px;
-  color: white;
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   z-index: 10;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   &:hover {
     opacity: 0.7;
   }
@@ -38,7 +34,7 @@
   @include mainbuttons;
   a {
     text-decoration: none;
-    color: white;
+    color: var(--buttonTextColor);
     width: 150px;
     height: 100px;
   }
@@ -57,19 +53,15 @@
   position: relative;
   line-height: 1;
   // background-color: var(--background);
-  background: linear-gradient(
-    139.73deg,
-    rgb(230, 253, 255) 0%,
-    rgb(243, 239, 255) 100%
-  );
+  background: var(--backgroundMoon);
   // Background section img divider
 
   .moon_backgroundimg {
-    img {
+    svg {
       position: absolute;
       bottom: 0;
       right: 0;
-      fill: rgb(40, 13, 95);
+      fill: var(--moonBackgroundImg);
     }
   }
 
@@ -253,11 +245,11 @@
       #moon_maintext {
         font-size: 65px;
         font-weight: bolder;
-        color: rgb(118, 69, 217);
+        color: var(--moonMainText);
       }
       #moon_secondarytext {
         font-size: 18px;
-        color: #280d5f;
+        color: var(--moonSecondaryText);
         font-weight: bold;
       }
       .moon_bottoni {

@@ -7,9 +7,9 @@ import "./style.css";
 export default function App() {
   return (
     <>
-      {/* <DarkMode /> */}
-      <Moon />
-      <UsedBy />
+      <DarkMode />
+      {/* <Moon /> */}
+      {/* <UsedBy /> */}
     </>
   );
 }
