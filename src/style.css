@@ -39,6 +39,12 @@
   line-height: 1;
   background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
 }
+.moon_container .moon_backgroundimg img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  fill: rgb(40, 13, 95);
+}
 .moon_container .moon_top {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -49,6 +55,7 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 .moon_container .moon_top .moon_countdown {
   width: 100%;
@@ -66,6 +73,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  z-index: 1;
 }
 .moon_container .moon_top .moon_countdown .moon_countdown_left h2 {
   color: white;
@@ -163,12 +171,6 @@
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   border: none;
-}
-.moon_container .moon_top .moon_backgroundimg img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  fill: rgb(40, 13, 95);
 }
 .moon_container .moon_bottom {
   width: 100%;
@@ -418,7 +420,7 @@
     visibility: hidden;
   }
   .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery img:last-child {
-    visibility: hidden;
+    visibility: visible;
     padding-bottom: 50px;
     right: 0;
     width: 70%;
@@ -427,7 +429,7 @@
     visibility: hidden;
   }
   .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery2 #moon_sliderhide {
-    visibility: hidden;
+    visibility: visible;
   }
   .moon_container .moon_bottom .moon_bottomright img {
     margin-left: 0;

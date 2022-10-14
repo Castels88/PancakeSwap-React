@@ -23,6 +23,9 @@ export function Moon() {
 
   return (
     <div className="moon_container">
+      <div className="moon_backgroundimg">
+        <img src={output} alt="" />
+      </div>
       <div className="moon_top">
         <>
           {carouselOne ? (
@@ -78,10 +81,6 @@ export function Moon() {
             onClick={handleCarouselTwo}
             style={{ backgroundColor: carouselTwo ? "white" : "gray" }}
           ></button>
-        </div>
-
-        <div className="moon_backgroundimg">
-          <img src={output} alt="" />
         </div>
       </div>
 
