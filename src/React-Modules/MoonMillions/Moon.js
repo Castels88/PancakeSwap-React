@@ -5,6 +5,7 @@ import output from "./img/svgviewer-output.svg";
 import perpetual from "./img/perpetual.webp";
 import perpetualMobile from "./img/perpetualMobile.webp";
 import { useMoon } from "./useMoon";
+import { useEffect } from "react";
 
 export function Moon() {
   const {
@@ -14,7 +15,11 @@ export function Moon() {
     carouselTwo,
     handleCarouselOne,
     handleCarouselTwo,
+    startInteractive,
   } = useMoon();
+
+  /* A function that is called when the component is mounted, starts timer, lottery and carousel */
+  useEffect(() => startInteractive(), []);
 
   return (
     <div className="moon_container">
