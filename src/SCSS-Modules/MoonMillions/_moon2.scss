@@ -7,7 +7,7 @@
   font-size: 16px;
   background-color: #1fc7d4;
   transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 1;
   &:hover {
     opacity: 0.7;
   }
@@ -32,6 +32,8 @@
 
 #moon_mainbutton {
   @include mainbuttons;
+  color: var(--buttonTextColor);
+
   a {
     text-decoration: none;
     color: var(--buttonTextColor);
@@ -231,6 +233,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    z-index: 1;
 
     .moon_bottomleft {
       width: 50%;
@@ -365,11 +368,9 @@
   .moon_container {
     padding: 0px 40px;
 
-    .moon_top {
-      .moon_backgroundimg {
-        img {
-          bottom: -25px;
-        }
+    .moon_backgroundimg {
+      img {
+        bottom: -25px;
       }
 
       .moon_countdown {
