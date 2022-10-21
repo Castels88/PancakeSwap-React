@@ -10,7 +10,7 @@
 }
 .winMillion-container .winMillion-content .main-title {
   font-size: 40px;
-  color: --primary-title;
+  color: var(--primary-title);
   font-weight: 550;
   text-align: center;
 }
@@ -20,7 +20,7 @@
 .winMillion-container .winMillion-content .par-container {
   text-align: center;
   font-size: 16px;
-  color: --primary-text;
+  color: var(--colors-textSubtle);
   font-weight: 300;
 }
 .winMillion-container .winMillion-content .card-container {
@@ -198,4 +198,6 @@
     font-size: 14px;
     color: white;
   }
-}/*# sourceMappingURL=winmillion.css.map */
+}
+
+/*# sourceMappingURL=winmillion.css.map */

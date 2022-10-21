@@ -15,7 +15,7 @@
       padding: toRem(20) 0;
       margin: toRem(100) 0;
       .main-title {
-        @include fontStyle(40px, --primary-title);
+        @include fontStyle(40px, var(--primary-title));
         font-weight: 550;
         text-align: center;
         .purple-win {
@@ -24,7 +24,7 @@
       }
       .par-container {
         text-align: center;
-        @include fontStyle(16px, --primary-text);
+        @include fontStyle(16px, var(--colors-textSubtle));
         font-weight: 300;
       }
       .card-container {
