@@ -7,6 +7,8 @@ import { Cake } from "../../Cake/Cake";
 import { WinMillions } from "../../WinMillions/WinMillions";
 import Footer from "../../footer/footer";
 import Tradeanything from "../../tradeanything/tradeanything";
+import { Moon } from "../../MoonMilions/Moon";
+import { UsedBy } from "../../MoonMilions/UsedBy";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -24,6 +26,8 @@ export function DarkMode() {
   return (
     <div className="darkswitch" data-theme={theme}>
       <Navbar switchTheme={switchTheme} />
+      <Moon />
+      <UsedBy />
       <Tradeanything />
       <EarnPassiveIncome />
       <WinMillions />

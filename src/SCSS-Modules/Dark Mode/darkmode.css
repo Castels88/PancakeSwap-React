@@ -48,6 +48,24 @@
   --button-text: white;
   /* Fine variabili light WinMillions e Cake */
 
+  /* Colori Moon & UsedBy */
+  --moonMainText: rgb(118, 69, 217);
+  --moonSecondaryText: #280d5f;
+  --moonBackgroundImg: white;
+  --buttonTextColor: white;
+  --backgroundMoon: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  --backgroundUsedBy: linear-gradient(
+    rgb(255, 255, 255) 22%,
+    rgb(215, 202, 236) 100%
+  );
+  --usedbyMainText: #280d5f;
+  --usedbyCard: white;
+  --cardBorder: #e7e3eb;
+
 }
 
 
@@ -105,6 +123,22 @@
   --primary-title: rgb(244,238,255);
   --button-text: black;
   /* Fine variabili dark WinMillions e Cake */
+
+    /* Colori Moon & UsedBy */
+    --moonMainText: #9a6aff;
+    --moonSecondaryText: #f4eeff;
+    --moonBackgroundImg: black;
+    --buttonTextColor: black;
+    --backgroundMoon: radial-gradient(
+      103.12%50%at 50%50%,
+      #21193a 0%,
+      #191326 100%
+    );
+    --backgroundUsedBy: linear-gradient(180deg, #09070c 22%, #201335 100%);
+    --usedbyMainText: #f4eeff;
+    --usedbyCard: #27262c;
+    --cardBorder: #383241;
+    
 }
 
 #root {
