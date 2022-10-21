@@ -5,11 +5,7 @@ import { DarkMode } from "./React-Modules/Common-Components/Dark Mode/DarkMode";
 function App() {
   return (
     <div>
-      {/* inizio Navbar */}
       <DarkMode />
-      {/* fine Navbar */}
-      {/* inizio EranPassiveIncome */}
-      {/* fine EranPassiveIncome */}
     </div>
   );
 }
