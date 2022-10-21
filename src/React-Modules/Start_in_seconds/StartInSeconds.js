@@ -92,7 +92,6 @@ const StartInSeconds = (props) => {
           </div>
         </div>
       </div>
-      {/* <DarkModeBtn switchTheme={props.switchTheme} /> */}
     </div>
   );
 };
