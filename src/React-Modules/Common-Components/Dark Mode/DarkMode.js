@@ -3,6 +3,8 @@ import "../../../SCSS-Modules/Dark Mode/darkmode.css";
 import Navbar from "../../Navbar/Navbar";
 import { EarnPassiveIncome } from "../../EarnPassiveIncome/EarnPassiveIncome";
 import StartInSeconds from "../../Start_in_seconds/StartInSeconds";
+import { Cake } from "../../Cake/Cake";
+import { WinMillions } from "../../WinMillions/WinMillions";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -10,6 +12,7 @@ export function DarkMode() {
     "theme",
     defaultDark ? "dark" : "light"
   );
+  window.dispatchEvent(new Event('storage'))
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -21,13 +24,9 @@ export function DarkMode() {
       <Navbar switchTheme={switchTheme} />
       <EarnPassiveIncome switchTheme={switchTheme} />
       <StartInSeconds switchTheme={switchTheme} />
+      <WinMillions switchTheme={switchTheme}/>
+      <Cake switchTheme={switchTheme}/>
     </div>
   );
 }
 
-/* 
-<span>Darkmode in React</span>
-      <button onClick={switchTheme}>
-        Switch to {theme === "light" ? "Dark" : "Light"} Mode
-      </button>
-*/

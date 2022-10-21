@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container-Footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #27262c;
+  justify-content: center;
+}
+.Container-Footer-Firstbar {
+  display: none;
+}
+.Container-Footer-Sub {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15.8rem;
+  margin-top: 3rem;
+}
+.Container-Footer-Sub-Info-Ul-Titles {
+  list-style-type: none;
+  font-size: 16px;
+  color: #9a6aff;
+  font-weight: bold;
+}
+.Container-Footer-Sub-Info-Ul-Li {
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+.Container-Footer-Sub-Info-Ul-Li-Contact {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffb237;
+}
+.Container-Footer-Sub-Info-Ul-Li-Contact:hover {
+  text-decoration: underline;
+}
+.Container-Footer-Sub-Info-Ul-Li-a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.Container-Footer-Sub-Info-Ul-Li-a:hover {
+  text-decoration: underline;
+}
+.Container-Footer-Sub-Info-Ul-hr1 {
+  margin-top: 10px;
+  width: 20px;
+}
+.Container-Footer-Icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 3rem;
+  margin-bottom: 1.7rem;
+  margin-left: 2rem;
+  align-self: start;
+  width: 65%;
+  height: 48px;
+  border-bottom: #342f3b solid 0.5px;
+}
+.Container-Footer-Icons-All {
+  margin-bottom: 25px;
+}
+.Container-Footer-Latestbar {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 55rem;
+}
+.Container-Footer-Latestbar-Left {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+.Container-Footer-Latestbar-Left .switch_elio {
+  margin-right: 20px;
+  width: 56px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(189, 194, 196);
+  border-radius: 24px;
+  box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+  -webkit-box-align: center;
+}
+.Container-Footer-Latestbar-Left .switch_elio input {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+}
+.Container-Footer-Latestbar-Left .switch_elio .sole {
+  fill: rgb(252, 249, 72);
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+.Container-Footer-Latestbar-Left .switch_elio .sole:active {
+  border: 4px solid rgb(122, 110, 170);
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+.Container-Footer-Latestbar-Left .switch_elio .sole .luna {
+  fill: white;
+}
+.Container-Footer-Latestbar-Left .language {
+  height: 100%;
+  display: flex;
+}
+.Container-Footer-Latestbar-Left .language p {
+  margin-top: 3px;
+  color: #b8add2;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.Container-Footer-Latestbar-Left .language:hover .dropdown_content {
+  border: 1px solid #27262c;
+  border-radius: 10px;
+  display: block;
+}
+.Container-Footer-Latestbar-Left .language:hover .dropdown_content:hover .element {
+  display: block;
+}
+.Container-Footer-Latestbar-Left .language svg {
+  fill: #b8add2;
+}
+.Container-Footer-Latestbar-Left .language .dropdown_content {
+  overflow-x: hidden;
+  display: none;
+  position: absolute;
+  background-color: #27262c;
+  border: 1px solid #27262c;
+  border-radius: 16px;
+  margin-top: -25rem;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  width: 150px;
+  max-height: 400px;
+  flex-direction: column;
+  z-index: 1;
+}
+.Container-Footer-Latestbar-Left .language .dropdown_content .element {
+  height: 48px;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+.Container-Footer-Latestbar-Left .language .dropdown_content .element a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.Container-Footer-Latestbar-Left .language .dropdown_content .element:hover {
+  display: block;
+  border: 1px solid #27262c;
+  background-color: #27262c;
+  border-radius: 10px;
+}
+.Container-Footer-Latestbar-Right {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+.Container-Footer-Latestbar-Right .pancakeicon {
+  transition: 0.5s all;
+  transition-delay: 0s;
+}
+.Container-Footer-Latestbar-Right .pancakeicon:hover {
+  width: 30px;
+  margin: -3.2px;
+  transition-delay: 0s;
+}
+.Container-Footer-Latestbar-Right .money {
+  color: #b8add2;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.Container-Footer-Latestbar-Right .mainbuttons-Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+}
+.Container-Footer-Latestbar-Right .mainbuttons-Footer:hover {
+  background-color: #1d8999;
+  border: 1px solid #1d8999;
+  color: #afadb4;
+}
+.Container-Footer-Latestbar-Right .mainbuttons-Footer .arrow {
+  margin-left: 5px;
+  fill: white;
+}
+
+@media screen and (max-width: 1270px) {
+  .Container-Footer {
+    height: 100%;
+    justify-content: start;
+  }
+  .Container-Footer-Firstbar {
+    display: inline;
+  }
+  .Container-Footer-Firstbar-PancakeSwapLogo {
+    margin: 30px;
+  }
+  .Container-Footer-Firstbar-Topbuttons {
+    border-top: #342f3b solid 0.5px;
+    border-bottom: #342f3b solid 0.5px;
+    margin-left: 1.5rem;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .Container-Footer-Firstbar-Topbuttons #firstbar-right {
+    margin-bottom: 2rem;
+  }
+  .Container-Footer-Firstbar-Topbuttons #firstbar-right #firstbar-money {
+    margin-right: 7.4rem;
+  }
+  .Container-Footer-Sub {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 1rem;
+    gap: 4rem;
+  }
+  .Container-Footer-Sub-PancakeSwapLogo {
+    display: none;
+  }
+  .Container-Footer-Icons {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+    width: 85%;
+    height: 45px;
+    margin-left: 30px;
+    border-bottom: #342f3b solid 0.5px;
+  }
+  .Container-Footer-Icons-All {
+    margin-bottom: 25px;
+  }
+  .Container-Footer-Latestbar {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

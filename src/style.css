@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Kanit";
@@ -1733,5 +1734,567 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     left: 419px;
   }
 }
+.winMillion-container {
+  background: var(--background-gradient);
+  width: 100vw;
+}
+
+.winMillion-container .winMillion-content {
+  background-color: var(--background-blurred-content);
+  border-radius: 3.125rem;
+  padding: 1.25rem 0;
+  margin: 6.25rem 0;
+}
+
+.winMillion-container .winMillion-content .main-title {
+  font-size: 40px;
+  color: --primary-title;
+  font-weight: 550;
+  text-align: center;
+}
+
+.winMillion-container .winMillion-content .main-title .purple-win {
+  color: var(--secondary-title);
+}
+
+.winMillion-container .winMillion-content .par-container {
+  text-align: center;
+  font-size: 16px;
+  color: --primary-text;
+  font-weight: 300;
+}
+
+.winMillion-container .winMillion-content .card-container {
+  /* text-align: center;
+  display: flex;
+        align-items: center;
+        justify-content: center; */
+  width: 100%;
+}
+
+.winMillion-container .winMillion-content .card-container .card {
+  padding: 0.9375rem;
+  margin: 0.625rem;
+  height: 21.875rem;
+  border-radius: 1.5625rem;
+}
+
+.winMillion-container .winMillion-content .card-container .card .card-image {
+  text-align: end;
+  padding: 10px;
+}
+
+.winMillion-container .winMillion-content .card-container .card .card-first-el {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.winMillion-container .winMillion-content .card-container .card .card-button {
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.winMillion-container .winMillion-content .card-container .card .card-button button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 90%;
+  padding: 15px;
+  font-weight: 500;
+  color: var(--button-text);
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+  box-shadow: 0px 1.5px 3px black;
+}
+
+.winMillion-container .winMillion-content .card-container .card .card-button button:hover {
+  opacity: 0.5;
+}
+
+.winMillion-container .winMillion-content .card-container .left-card {
+  background: linear-gradient(rgb(254, 178, 55), rgb(255, 230, 104));
+  margin-right: 0.9375rem;
+}
+
+.winMillion-container .winMillion-content .card-container .left-card .card-first-el {
+  color: rgb(40, 13, 95);
+}
+
+.winMillion-container .winMillion-content .card-container .left-card .card-amount {
+  font-size: 24px;
+  color: rgb(40, 13, 95);
+}
+
+.winMillion-container .winMillion-content .card-container .left-card .card-amount h2 {
+  font-weight: 600;
+}
+
+.winMillion-container .winMillion-content .card-container .left-card .card-amount-info {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.winMillion-container .winMillion-content .card-container .left-card .card-description {
+  font-weight: 300;
+  color: rgb(40, 13, 95);
+}
+
+.winMillion-container .winMillion-content .card-container .right-card {
+  background: linear-gradient(rgb(117, 67, 216), rgb(81, 33, 177));
+  color: white;
+  margin-left: 0.9375rem;
+}
+
+.winMillion-container .winMillion-content .card-container .right-card .card-image {
+  fill: white;
+}
+
+.winMillion-container .winMillion-content .card-container .right-card .card-amount {
+  font-size: 24px;
+  color: rgb(253, 191, 35);
+}
+
+.winMillion-container .winMillion-content .card-container .right-card .card-amount h2 {
+  font-weight: 600;
+}
+
+.winMillion-container .winMillion-content .card-container .right-card .card-amount-info {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.winMillion-container .winMillion-content .card-container .right-card .card-description {
+  font-weight: 300;
+  color: white;
+}
+
+@media screen and (min-width: 852px) {
+  .winMillion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .winMillion-container .winMillion-content {
+    width: 60%;
+    height: 34.375rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "par par" "card card";
+  }
+
+  .winMillion-container .winMillion-content .main-title {
+    grid-area: title;
+  }
+
+  .winMillion-container .winMillion-content .par-container {
+    grid-area: par;
+  }
+
+  .winMillion-container .winMillion-content .card-container {
+    grid-area: card;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .winMillion-container .winMillion-content .card-container .card {
+    width: 33%;
+  }
+
+  .winMillion-container .winMillion-content .card-container .card-button {
+    margin-top: 55px !important;
+  }
+
+  .winMillion-container .winMillion-content .left-card {
+    transform: rotate(-3deg);
+    box-shadow: -1px 5px 0px rgb(254, 178, 55);
+  }
+
+  .winMillion-container .winMillion-content .right-card {
+    transform: rotate(2deg);
+    box-shadow: 0px 5px 0px hwb(260 26% 50%);
+  }
+}
+@media screen and (max-width: 851px) {
+  .winMillion-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .winMillion-container .winMillion-content {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .winMillion-container .winMillion-content .main-title {
+    grid-area: title;
+  }
+
+  .winMillion-container .winMillion-content .par-container {
+    grid-area: par;
+  }
+
+  .winMillion-container .winMillion-content .card-container {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .winMillion-container .winMillion-content .card-container .card {
+    width: 70%;
+  }
+
+  .winMillion-container .winMillion-content .card-container .left-card {
+    box-shadow: -1px 7px 0px rgb(254, 178, 55);
+  }
+
+  .winMillion-container .winMillion-content .card-container .right-card {
+    box-shadow: -1px 7px 0px hwb(260 26% 50%);
+  }
+}
+@media screen and (max-width: 370px) {
+  .winMillion-container .winMillion-content .card-container .card .card-button button {
+    font-size: 14px;
+    color: white;
+  }
+}
+/*# sourceMappingURL=winmillion.css.map */
+.cake-container {
+  height: 50rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-container .cake-content .cake-title {
+  margin-bottom: 20px;
+  grid-area: title;
+}
+
+.cake-container .cake-content .cake-title h2 {
+  font-size: 40px;
+  color: var(--primary-title);
+  font-weight: 550;
+  line-height: 45px;
+  padding: 1rem;
+}
+
+.cake-container .cake-content .cake-title h2 .purple-cake {
+  color: var(--secondary-title);
+}
+
+.cake-container .cake-content .cake-description {
+  grid-area: desc;
+  text-align: left;
+  font-size: 16px;
+  color: var(--primary-text);
+  font-weight: 300;
+}
+
+.cake-container .cake-content .cake-description p {
+  padding: 1rem;
+}
+
+.cake-container .cake-content .cake-buttons {
+  grid-area: buttons;
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 25px;
+  display: flex;
+  align-items: baseline;
+}
+
+.cake-container .cake-content .cake-buttons button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--button-text);
+  border: 1px solid #1fc7d4;
+  border-radius: 15px;
+  width: 44%;
+  padding: 15px;
+  font-weight: bold;
+  color: var(--button-text);
+  background-color: #1fc7d4;
+  transition: all 0.3s ease;
+  box-shadow: 0px 1.5px 0px #072f32;
+}
+
+.cake-container .cake-content .cake-buttons button:hover {
+  opacity: 0.5;
+}
+
+.cake-container .cake-content .cake-buttons a {
+  text-decoration: none;
+  color: #1fc7d4;
+  margin: 0 10px;
+}
+
+.cake-container .cake-content .cake-buttons a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1fc7d4;
+  text-decoration-color: #1fc7d4;
+}
+
+.cake-container .cake-content .cake-image {
+  grid-area: pic;
+}
+
+.cake-container .cake-content .cake-data-table {
+  margin-top: 100px;
+  grid-area: data;
+}
+
+.cake-container .cake-content .cake-data-table .data {
+  padding: 10px;
+}
+
+.cake-container .cake-content .cake-data-table .data .data-title {
+  font-size: 16px;
+  color: var(--primary-text);
+  font-weight: 400;
+}
+
+.cake-container .cake-content .cake-data-table .data .data-num {
+  font-size: 24px;
+  color: var(--primary-title);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 852px) {
+  .cake-container .cake-content {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-areas: "title title pic" "desc desc pic" "buttons . pic" "data data data";
+  }
+
+  .cake-container .cake-content .cake-image {
+    grid-area: pic;
+    position: relative;
+  }
+
+  .cake-container .cake-content .cake-image picture .bottom-right-cake {
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
+    animation: 3s ease-in-out 0s infinite normal none running img-moon;
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    height: 350px;
+    width: 400px;
+  }
+
+  .cake-container .cake-content .cake-image picture .top-right-cake {
+    -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+    animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 350px;
+    width: 400px;
+  }
+
+  .cake-container .cake-content .cake-image picture .top-left-cake {
+    -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+    animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+    position: absolute;
+    top: 0;
+    left: -260px;
+    height: 350px;
+    width: 400px;
+  }
+
+  .cake-container .cake-content .cake-image picture .coin-cake {
+    -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+    animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    right: 0;
+  }
+
+  .cake-container .cake-data-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "d1 d2 d3" "d4 d5 d6";
+    row-gap: 25px;
+    -moz-column-gap: 150px;
+    column-gap: 150px;
+  }
+
+  .cake-container .cake-data-table .data1  {
+    grid-area: d1;
+  }
+
+  .cake-container .cake-data-table .data-2 {
+    grid-area: d2;
+  }
+
+  .cake-container .cake-data-table .data-3 {
+    grid-area: d3;
+  }
+
+  .cake-container .cake-data-table .data-4 {
+    grid-area: d4;
+  }
+
+  .cake-container .cake-data-table .data-5 {
+    grid-area: d5;
+  }
+
+  .cake-container .cake-data-table .data-6 {
+    grid-area: d6;
+  }
+
+  .cake-container .cake-data-table .data2,
+.cake-container .cake-data-table .data3,
+.cake-container .cake-data-table .data5,
+.cake-container .cake-data-table .data6 {
+    border-left: 2px solid rgba(122, 110, 170, 0.4);
+  }
+}
+@media screen and (max-width: 851px) {
+  .cake-container .cake-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cake-container .cake-content .cake-image {
+    display: flex;
+    height: 150px;
+  }
+
+  .cake-container .cake-content .cake-image picture {
+    position: relative;
+  }
+
+  .cake-container .cake-content .cake-image picture img {
+    position: absolute;
+    height: 150px;
+    width: 200;
+  }
+
+  .cake-container .cake-content .cake-buttons button {
+    width: 150px !important;
+  }
+
+  .cake-container .cake-content .cake-data-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "d1 d2" "d3 d4" "d5 d6";
+    row-gap: 25px;
+    margin-top: 50px;
+  }
+
+  .cake-container .cake-content .cake-data-table .data1  {
+    grid-area: d1;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-2 {
+    grid-area: d2;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-3 {
+    grid-area: d3;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-4 {
+    grid-area: d4;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-5 {
+    grid-area: d5;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-6 {
+    grid-area: d6;
+  }
+
+  .cake-container .cake-content .cake-data-table .data {
+    border-left: 2px solid rgba(122, 110, 170, 0.4);
+  }
+}
+@media screen and (max-width: 370px) {
+  .cake-container .cake-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cake-container .cake-content .cake-image {
+    display: flex;
+    height: 150px;
+  }
+
+  .cake-container .cake-content .cake-image picture {
+    position: relative;
+  }
+
+  .cake-container .cake-content .cake-image picture img {
+    position: absolute;
+    height: 150px;
+    width: 200;
+  }
+
+  .cake-container .cake-content .cake-buttons button {
+    width: 150px !important;
+  }
+
+  .cake-container .cake-content .cake-data-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "d1 d2" "d3 d4" "d5 d6";
+    row-gap: 25px;
+    margin-top: 12px;
+  }
+
+  .cake-container .cake-content .cake-data-table .data1  {
+    grid-area: d1;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-2 {
+    grid-area: d2;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-3 {
+    grid-area: d3;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-4 {
+    grid-area: d4;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-5 {
+    grid-area: d5;
+  }
+
+  .cake-container .cake-content .cake-data-table .data-6 {
+    grid-area: d6;
+  }
+
+  .cake-container .cake-content .cake-data-table .data {
+    border-left: 2px solid rgba(122, 110, 170, 0.4);
+  }
+}
+/*# sourceMappingURL=cakemakeworld.css.map */
 
 /*# sourceMappingURL=style.css.map */
