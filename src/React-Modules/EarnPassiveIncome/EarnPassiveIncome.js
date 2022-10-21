@@ -17,7 +17,6 @@ export function EarnPassiveIncome(props) {
             xmlns="http://www.w3.org/2000/svg"
             className="sc-6457768a-0 bYguAj"
           >
-            <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z"></path>
           </svg>
         </div>
         <div className="Earn_p_i_central_container">
