@@ -5,6 +5,7 @@ import { EarnPassiveIncome } from "../../EarnPassiveIncome/EarnPassiveIncome";
 import StartInSeconds from "../../Start_in_seconds/StartInSeconds";
 import { Cake } from "../../Cake/Cake";
 import { WinMillions } from "../../WinMillions/WinMillions";
+import Footer from "../../footer/footer";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -23,9 +24,10 @@ export function DarkMode() {
     <div className="darkswitch" data-theme={theme}>
       <Navbar switchTheme={switchTheme} />
       <EarnPassiveIncome switchTheme={switchTheme} />
-      <StartInSeconds switchTheme={switchTheme} />
       <WinMillions switchTheme={switchTheme}/>
       <Cake switchTheme={switchTheme}/>
+      <StartInSeconds switchTheme={switchTheme} />
+      <Footer />
     </div>
   );
 }
