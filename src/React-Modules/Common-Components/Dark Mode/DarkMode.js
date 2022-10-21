@@ -6,6 +6,7 @@ import StartInSeconds from "../../Start_in_seconds/StartInSeconds";
 import { Cake } from "../../Cake/Cake";
 import { WinMillions } from "../../WinMillions/WinMillions";
 import Footer from "../../footer/footer";
+import Tradeanything from "../../tradeanything/tradeanything";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -23,11 +24,12 @@ export function DarkMode() {
   return (
     <div className="darkswitch" data-theme={theme}>
       <Navbar switchTheme={switchTheme} />
-      <EarnPassiveIncome switchTheme={switchTheme} />
-      <WinMillions switchTheme={switchTheme}/>
-      <Cake switchTheme={switchTheme}/>
+      <Tradeanything />
+      <EarnPassiveIncome />
+      <WinMillions />
+      <Cake />
       <StartInSeconds switchTheme={switchTheme} />
-      <Footer />
+      <Footer switchTheme={switchTheme} />
     </div>
   );
 }

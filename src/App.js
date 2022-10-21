@@ -1,4 +1,3 @@
-import React from "react";
 import { DarkMode } from "./React-Modules/Common-Components/Dark Mode/DarkMode";
 
 // import { ReactDOM } from "react-dom/client";
