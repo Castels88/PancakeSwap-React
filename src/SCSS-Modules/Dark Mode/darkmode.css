@@ -28,6 +28,8 @@
   --color-earn-p-i-text2: rgb(40, 13, 95);
   --color-earn-p-i-text3: #7a6eaa;
   --border-right-earn-passve-income: rgb(118, 69, 217);
+  --svg-earn-p-i: rgb(250 249 250);
+
   /* fine light mode earn passive income */
 
   /* inizio light mode settings*/
@@ -116,6 +118,7 @@
   --color-earn-p-i-text2: white;
   --color-earn-p-i-text3: rgb(184, 173, 210);
   --border-right-earn-passve-income: black;
+  --svg-earn-p-i:black;
   /* fine background dark earn passive income */
 
   /* inizio dark mode settings*/

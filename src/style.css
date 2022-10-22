@@ -245,7 +245,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   height: 600px;
 }
 .Earn_p_i_big_contaniner svg {
-  fill: rgb(250, 249, 250);
+  fill: var(--svg-earn-p-i);
   position: absolute;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container {
