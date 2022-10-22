@@ -65,7 +65,8 @@
 }
 .cake-container .cake-content .cake-buttons a:hover {
   text-decoration: underline;
-  text-decoration-color: #1fc7d4;
+  -webkit-text-decoration-color: #1fc7d4;
+          text-decoration-color: #1fc7d4;
 }
 .cake-container .cake-content .cake-image {
   grid-area: pic;
@@ -99,7 +100,8 @@
     position: relative;
   }
   .cake-container .cake-content .cake-image picture .bottom-right-cake {
-    animation: 3s ease-in-out 0s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0s infinite normal none running img-moon;
     position: absolute;
     bottom: -80px;
     right: 0;
@@ -107,7 +109,8 @@
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .top-right-cake {
-    animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
     position: absolute;
     top: 0;
     right: 0;
@@ -115,7 +118,8 @@
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .top-left-cake {
-    animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
     position: absolute;
     top: 0;
     left: -260px;
@@ -123,7 +127,8 @@
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .coin-cake {
-    animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
     position: absolute;
     height: 350px;
     width: 400px;
@@ -134,7 +139,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "d1 d2 d3" "d4 d5 d6";
     row-gap: 25px;
-    column-gap: 150px;
+    -moz-column-gap: 150px;
+         column-gap: 150px;
   }
   .cake-container .cake-data-table .data1  {
     grid-area: d1;
@@ -262,6 +268,4 @@
   .cake-container .cake-content .cake-data-table .data {
     border-left: 2px solid rgba(122, 110, 170, 0.4);
   }
-}
-
-/*# sourceMappingURL=cakemakeworld.css.map */
+}/*# sourceMappingURL=cakemakeworld.css.map */

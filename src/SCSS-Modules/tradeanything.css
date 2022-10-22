@@ -32,15 +32,23 @@ body {
   flex-shrink: 0;
 }
 
+.TA-border2 {
+  fill: White;
+}
+
 .TA-box {
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
+  background-color: var(--background-trade);
+}
+.TA-box svg {
+  fill: var(--svg-trade);
 }
 .TA-box .TA-container {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  background-color: var(--background-trade);
 }
 .TA-box .TA-container-main {
   flex-wrap: wrap;
@@ -53,12 +61,12 @@ body {
   margin-bottom: 2rem;
 }
 .TA-box .TA-container-main-header-span {
-  color: #280d5f;
+  color: var(--span-trade);
 }
 .TA-box .TA-container-main-paragraph {
   color: #7a6eaa;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   width: 400px;
   margin-bottom: 0.5rem;
 }
@@ -66,7 +74,7 @@ body {
   border: 1px solid #1fc7d4;
   border-radius: 15px;
   width: 120px;
-  padding: 15px;
+  padding: 14px;
   font-weight: bolder;
   font-size: 14px;
   margin-top: 1rem;

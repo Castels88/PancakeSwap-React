@@ -48,6 +48,18 @@
   --button-text: white;
   /* Fine variabili light WinMillions e Cake */
 
+  /* Inizio variabili light Trade Any Things */
+  --background-trade: white;
+  --h2-trade:rgb(118, 69, 217);
+  --span-trade:#280d5f;
+  --svg-trade: rgb(215,202,236);
+
+
+
+
+
+  /* Fine variabili light Trade Any Things */
+
   /* Colori Moon & UsedBy */
   --moonMainText: rgb(118, 69, 217);
   --moonSecondaryText: #280d5f;
@@ -123,6 +135,18 @@
   --primary-title: rgb(244,238,255);
   --button-text: black;
   /* Fine variabili dark WinMillions e Cake */
+
+  /* Inizio variabili dark Trade Any Things */
+  --background-trade:black;
+  --span-trade:white;
+  --svg-trade: rgb(32, 22, 49);
+
+
+
+
+
+
+  /* Fine variabili dark Trade Any Things */
 
     /* Colori Moon & UsedBy */
     --moonMainText: #9a6aff;

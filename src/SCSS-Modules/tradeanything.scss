@@ -27,11 +27,16 @@ body {
 .TA-box {
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
+  background-color: var(--background-trade);
+  svg{
+    fill:var(--svg-trade)
+  }
+  
   .TA-container {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    background-color: var(--background-trade);
   &-main {
     flex-wrap: wrap;
     margin-top:8rem;
@@ -41,7 +46,7 @@ body {
       width: 420px;
       margin-bottom: 2rem;
       &-span {
-        color: #280d5f;
+        color: var(--span-trade);
       }
     }
     &-paragraph {
@@ -76,6 +81,7 @@ body {
         text-decoration: underline;
       }
     }
+    
   }
 
   &-secondary {
