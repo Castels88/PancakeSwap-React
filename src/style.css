@@ -243,19 +243,22 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 .Earn_p_i_big_contaniner {
   width: 100%;
   height: 600px;
+  position: relative;
 }
-.Earn_p_i_big_contaniner svg {
+.Earn_p_i_big_contaniner .svg-divisor {
   fill: var(--svg-earn-p-i);
   position: absolute;
+  top: 0;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container {
   width: 100%;
   height: 600px;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
   z-index: 1;
   background-color: var(--background-earn-passive-income);
-  padding: 48px 0px;
+  padding: 95px 0px 16px 0px;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
   position: absolute;
@@ -287,19 +290,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 350px;
   height: 400px;
   position: absolute;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-}
-@-webkit-keyframes img-wallet {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 @keyframes img-wallet {
   0% {
@@ -316,14 +307,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 400px;
   height: 400px;
   position: absolute;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
   width: 350px;
   height: 400px;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
   width: 50%;
@@ -416,19 +405,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease 4s normal none running movimento;
-          animation: 1s ease 4s normal none running movimento;
-}
-@-webkit-keyframes movimento {
-  50% {
-    transform: translateY(30px);
-  }
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation: 1s ease 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -581,8 +558,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  -webkit-animation: 1s ease 4s normal none running movimento;
-          animation: 1s ease 4s normal none running movimento;
+  animation: 1s ease 4s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -1057,6 +1033,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 20px;
     color: white;
   }
+
   .Earn_p_i_big_contaniner {
     width: 100%;
     height: 800px;
@@ -1065,6 +1042,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: var(--background-earn-passive-income);
@@ -1104,21 +1082,18 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1215,6 +1190,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 20px;
     color: white;
   }
+
   .navbar_menu_nascosto {
     display: flex;
     align-items: center;
@@ -1251,6 +1227,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: 400;
     font-size: 10px;
   }
+
   .Earn_p_i_big_contaniner {
     width: 100%;
     height: 800px;
@@ -1259,6 +1236,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 100%;
     height: 800px;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: var(--background-earn-passive-income);
@@ -1298,21 +1276,18 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
-            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1389,7 +1364,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   z-index: 1;
   position: relative;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   overflow: hidden;
   vertical-align: middle;
@@ -1428,6 +1405,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .text .mainbuttons {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -1437,6 +1415,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -1465,8 +1444,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-down .first-img {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 1s infinite normal none running motion-2;
-          animation: 3s ease-in-out 1s infinite normal none running motion-2;
+  animation: 3s ease-in-out 1s infinite normal none running motion-2;
 }
 .container-MySect .box-img-animated-1 .img-middle {
   height: 100%;
@@ -1476,8 +1454,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-middle .second-img {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
-          animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+  animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
 }
 .container-MySect .box-img-animated-1 .img-up {
   height: 100%;
@@ -1487,8 +1464,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-up .third-img {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
-          animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+  animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
 }
 .container-MySect .box-img-animated-2 {
   position: relative;
@@ -1503,8 +1479,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-down-2 .first-img-2 {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 1s infinite normal none running motion-2;
-          animation: 3s ease-in-out 1s infinite normal none running motion-2;
+  animation: 3s ease-in-out 1s infinite normal none running motion-2;
 }
 .container-MySect .box-img-animated-2 .img-middle-2 {
   height: 100%;
@@ -1514,8 +1489,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-middle-2 .second-img-2 {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
-          animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+  animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
 }
 .container-MySect .box-img-animated-2 .img-up-2 {
   height: 100%;
@@ -1525,20 +1499,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-up-2 .third-img-2 {
   width: 250px;
-  -webkit-animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
-          animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
-}
-
-@-webkit-keyframes motion-2 {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(3px, 15px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+  animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
 }
 
 @keyframes motion-2 {
@@ -1552,34 +1513,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     transform: translate(0px, 0px);
   }
 }
-@-webkit-keyframes motion-3 {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(5px, 10px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
 @keyframes motion-3 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
     transform: translate(5px, 10px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-@-webkit-keyframes motion-4 {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(6px, 5px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -1600,38 +1539,49 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
+
   #img-down-res {
     left: -315px;
   }
+
   .img-middle {
     left: none;
   }
+
   #img-middle-res {
     left: -320px;
   }
+
   .img-up {
     left: none;
   }
+
   #img-up-res {
     left: -318px;
   }
+
   .img-down-2 {
     left: none;
   }
+
   #img-down-res-2 {
     left: 511px;
     top: -74px;
   }
+
   .img-middle-2 {
     left: none;
   }
+
   #img-middle-res-2 {
     left: 490px;
     top: -94px;
   }
+
   .img-up-2 {
     left: none;
   }
+
   #img-up-res-2 {
     left: 510px;
     top: -63px;
@@ -1641,38 +1591,49 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
+
   #img-down-res {
     left: -267px;
   }
+
   .img-middle {
     left: none;
   }
+
   #img-middle-res {
     left: -264px;
   }
+
   .img-up {
     left: none;
   }
+
   #img-up-res {
     left: -270px;
   }
+
   .img-down-2 {
     left: none;
   }
+
   #img-down-res-2 {
     left: 440px;
     top: -79px;
   }
+
   .img-middle-2 {
     left: none;
   }
+
   #img-middle-res-2 {
     left: 424px;
     top: -94px;
   }
+
   .img-up-2 {
     left: none;
   }
+
   #img-up-res-2 {
     left: 445px;
     top: -63px;
@@ -1682,38 +1643,49 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
+
   #img-down-res {
     left: -203px;
   }
+
   .img-middle {
     left: none;
   }
+
   #img-middle-res {
     left: -202px;
   }
+
   .img-up {
     left: none;
   }
+
   #img-up-res {
     left: -200px;
   }
+
   .img-down-2 {
     left: none;
   }
+
   #img-down-res-2 {
     left: 400px;
     top: -79px;
   }
+
   .img-middle-2 {
     left: none;
   }
+
   #img-middle-res-2 {
     left: 391px;
     top: -94px;
   }
+
   .img-up-2 {
     left: none;
   }
+
   #img-up-res-2 {
     left: 406px;
     top: -63px;
@@ -1723,36 +1695,47 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
+
   #img-down-res {
     left: -266px;
   }
+
   .img-middle {
     left: none;
   }
+
   #img-middle-res {
     left: -238px;
   }
+
   .img-up {
     left: none;
   }
+
   #img-up-res {
     left: -290px;
   }
+
   .img-down-2 {
     left: none;
   }
+
   #img-down-res-2 {
     left: 477px;
   }
+
   .img-middle-2 {
     left: none;
   }
+
   #img-middle-res-2 {
     left: 454px;
   }
+
   .img-up-2 {
     left: none;
   }
+
   #img-up-res-2 {
     left: 419px;
   }
@@ -1903,6 +1886,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     align-items: center;
   }
+
   .winMillion-container .winMillion-content {
     width: 60%;
     height: 34.375rem;
@@ -1910,28 +1894,35 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "par par" "card card";
   }
+
   .winMillion-container .winMillion-content .main-title {
     grid-area: title;
   }
+
   .winMillion-container .winMillion-content .par-container {
     grid-area: par;
   }
+
   .winMillion-container .winMillion-content .card-container {
     grid-area: card;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .winMillion-container .winMillion-content .card-container .card {
     width: 33%;
   }
+
   .winMillion-container .winMillion-content .card-container .card-button {
     margin-top: 55px !important;
   }
+
   .winMillion-container .winMillion-content .left-card {
     transform: rotate(-3deg);
     box-shadow: -1px 5px 0px rgb(254, 178, 55);
   }
+
   .winMillion-container .winMillion-content .right-card {
     transform: rotate(2deg);
     box-shadow: 0px 5px 0px hwb(260 26% 50%);
@@ -1944,6 +1935,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     align-items: center;
   }
+
   .winMillion-container .winMillion-content {
     width: 65%;
     height: auto;
@@ -1952,12 +1944,15 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     justify-content: center;
     align-items: center;
   }
+
   .winMillion-container .winMillion-content .main-title {
     grid-area: title;
   }
+
   .winMillion-container .winMillion-content .par-container {
     grid-area: par;
   }
+
   .winMillion-container .winMillion-content .card-container {
     grid-area: card;
     display: flex;
@@ -1965,12 +1960,15 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: center;
     justify-content: center;
   }
+
   .winMillion-container .winMillion-content .card-container .card {
     width: 70%;
   }
+
   .winMillion-container .winMillion-content .card-container .left-card {
     box-shadow: -1px 7px 0px rgb(254, 178, 55);
   }
+
   .winMillion-container .winMillion-content .card-container .right-card {
     box-shadow: -1px 7px 0px hwb(260 26% 50%);
   }
@@ -1980,7 +1978,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-size: 14px;
     color: white;
   }
-} /*# sourceMappingURL=winmillion.css.map */
+}
+/*# sourceMappingURL=winmillion.css.map */
 .cake-container {
   height: 50rem;
   width: 100%;
@@ -2092,10 +2091,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     grid-template-columns: repeat(1fr, 3);
     grid-template-areas: "title title pic" "desc desc pic" "buttons . pic" "data data data";
   }
+
   .cake-container .cake-content .cake-image {
     grid-area: pic;
     position: relative;
   }
+
   .cake-container .cake-content .cake-image picture .bottom-right-cake {
     -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
     animation: 3s ease-in-out 0s infinite normal none running img-moon;
@@ -2105,6 +2106,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     height: 350px;
     width: 400px;
   }
+
   .cake-container .cake-content .cake-image picture .top-right-cake {
     -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
     animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
@@ -2114,6 +2116,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     height: 350px;
     width: 400px;
   }
+
   .cake-container .cake-content .cake-image picture .top-left-cake {
     -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
     animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
@@ -2123,6 +2126,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     height: 350px;
     width: 400px;
   }
+
   .cake-container .cake-content .cake-image picture .coin-cake {
     -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
     animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
@@ -2131,6 +2135,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 400px;
     right: 0;
   }
+
   .cake-container .cake-data-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2139,24 +2144,31 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     -moz-column-gap: 150px;
     column-gap: 150px;
   }
+
   .cake-container .cake-data-table .data1  {
     grid-area: d1;
   }
+
   .cake-container .cake-data-table .data-2 {
     grid-area: d2;
   }
+
   .cake-container .cake-data-table .data-3 {
     grid-area: d3;
   }
+
   .cake-container .cake-data-table .data-4 {
     grid-area: d4;
   }
+
   .cake-container .cake-data-table .data-5 {
     grid-area: d5;
   }
+
   .cake-container .cake-data-table .data-6 {
     grid-area: d6;
   }
+
   .cake-container .cake-data-table .data2,
 .cake-container .cake-data-table .data3,
 .cake-container .cake-data-table .data5,
@@ -2171,21 +2183,26 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .cake-container .cake-content .cake-image {
     display: flex;
     height: 150px;
   }
+
   .cake-container .cake-content .cake-image picture {
     position: relative;
   }
+
   .cake-container .cake-content .cake-image picture img {
     position: absolute;
     height: 150px;
     width: 200;
   }
+
   .cake-container .cake-content .cake-buttons button {
     width: 150px !important;
   }
+
   .cake-container .cake-content .cake-data-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2193,24 +2210,31 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     row-gap: 25px;
     margin-top: 50px;
   }
+
   .cake-container .cake-content .cake-data-table .data1  {
     grid-area: d1;
   }
+
   .cake-container .cake-content .cake-data-table .data-2 {
     grid-area: d2;
   }
+
   .cake-container .cake-content .cake-data-table .data-3 {
     grid-area: d3;
   }
+
   .cake-container .cake-content .cake-data-table .data-4 {
     grid-area: d4;
   }
+
   .cake-container .cake-content .cake-data-table .data-5 {
     grid-area: d5;
   }
+
   .cake-container .cake-content .cake-data-table .data-6 {
     grid-area: d6;
   }
+
   .cake-container .cake-content .cake-data-table .data {
     border-left: 2px solid rgba(122, 110, 170, 0.4);
   }
@@ -2222,21 +2246,26 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .cake-container .cake-content .cake-image {
     display: flex;
     height: 150px;
   }
+
   .cake-container .cake-content .cake-image picture {
     position: relative;
   }
+
   .cake-container .cake-content .cake-image picture img {
     position: absolute;
     height: 150px;
     width: 200;
   }
+
   .cake-container .cake-content .cake-buttons button {
     width: 150px !important;
   }
+
   .cake-container .cake-content .cake-data-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2244,28 +2273,36 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     row-gap: 25px;
     margin-top: 12px;
   }
+
   .cake-container .cake-content .cake-data-table .data1  {
     grid-area: d1;
   }
+
   .cake-container .cake-content .cake-data-table .data-2 {
     grid-area: d2;
   }
+
   .cake-container .cake-content .cake-data-table .data-3 {
     grid-area: d3;
   }
+
   .cake-container .cake-content .cake-data-table .data-4 {
     grid-area: d4;
   }
+
   .cake-container .cake-content .cake-data-table .data-5 {
     grid-area: d5;
   }
+
   .cake-container .cake-content .cake-data-table .data-6 {
     grid-area: d6;
   }
+
   .cake-container .cake-content .cake-data-table .data {
     border-left: 2px solid rgba(122, 110, 170, 0.4);
   }
-} /*# sourceMappingURL=cakemakeworld.css.map */
+}
+/*# sourceMappingURL=cakemakeworld.css.map */
 .Container-Footer {
   display: flex;
   flex-direction: column;
@@ -2494,13 +2531,16 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .Container-Footer-Sub {
     justify-content: flex-start;
   }
+
   .Container-Footer-Icons {
     margin-left: 1%;
   }
+
   .Container-Footer-Sub-PancakeSwapLogo {
     position: absolute;
     left: 72%;
   }
+
   .Container-Footer-Latestbar {
     gap: 35%;
   }
@@ -2556,13 +2596,16 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .Container-Footer-Latestbar {
     display: none;
   }
+
   .Container-Footer-Latestbar-Right {
     gap: 5%;
   }
+
   .mobilefooter {
     display: flex;
     align-items: center;
   }
+
   .Container-Footer-Sub-Info-Ul-Li {
     margin-top: 3px;
   }
@@ -2570,17 +2613,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 @media screen and (max-width: 405px) {
   .mobilefooter {
     width: 38%;
-  }
-}
-@-webkit-keyframes img-moon {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
   }
 }
 @keyframes img-moon {
@@ -2676,17 +2708,6 @@ body {
   position: relative;
   width: 25%;
 }
-@-webkit-keyframes TA-floating {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
 @keyframes TA-floating {
   0% {
     transform: translate(0px, 0px);
@@ -2702,24 +2723,21 @@ body {
   position: relative;
   right: 20rem;
   height: 80%;
-  -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
-          animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+  animation: 3s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-secondary-BTC {
   position: relative;
   height: 60%;
   top: 3rem;
   left: 2rem;
-  -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
-          animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+  animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-secondary-BNB {
   position: relative;
   height: 70%;
   top: 2.5rem;
   left: 22rem;
-  -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
-          animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+  animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-mainmobile {
   display: none;
@@ -2737,6 +2755,7 @@ body {
     align-self: center;
     flex-shrink: 0;
   }
+
   .TA-box {
     position: relative;
   }
@@ -2757,24 +2776,21 @@ body {
     position: relative;
     right: 15rem;
     height: 60%;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BTC {
     position: relative;
     height: 40%;
     top: 3rem;
     left: 4rem;
-    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BNB {
     position: relative;
     height: 40%;
     top: 4.5rem;
     left: 20rem;
-    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-mainmobile {
     margin: 10px;
@@ -2831,6 +2847,7 @@ body {
     align-self: center;
     flex-shrink: 0;
   }
+
   .TA-box {
     position: relative;
   }
@@ -2844,24 +2861,21 @@ body {
     position: relative;
     right: 2rem;
     height: 40%;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BTC {
     position: relative;
     height: 40%;
     top: 0.8rem;
     left: 11rem;
-    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BNB {
     position: relative;
     height: 40%;
     top: 0.5rem;
     left: 24rem;
-    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-mainmobile {
     margin: 10px;
@@ -2922,6 +2936,7 @@ body {
     align-self: center;
     flex-shrink: 0;
   }
+
   .TA-box {
     position: relative;
   }
@@ -2935,24 +2950,21 @@ body {
     position: relative;
     right: 8rem;
     height: 40%;
-    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BTC {
     position: relative;
     height: 40%;
     top: 0.8rem;
     left: 5rem;
-    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BNB {
     position: relative;
     height: 40%;
     top: 0.5rem;
     left: 18rem;
-    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
-            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+    animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-mainmobile {
     margin: 10px;
@@ -3041,8 +3053,6 @@ body {
   fill: var(--moonBackgroundImg);
 }
 .moon_container .moon_top {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   display: flex;
@@ -3074,8 +3084,6 @@ body {
 }
 .moon_container .moon_top .moon_countdown .moon_countdown_left .moon_counter {
   background-color: #280d5f;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   height: 40px;
   border-radius: 10px;
@@ -3167,8 +3175,6 @@ body {
 }
 .moon_container .moon_bottom {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -3234,8 +3240,7 @@ body {
 }
 .moon_container .moon_bottom .moon_bottomright img {
   max-width: 99%;
-  -webkit-animation: 1s ease-in-out 0s infinite normal none running img-moon;
-          animation: 1s ease-in-out 0s infinite normal none running img-moon;
+  animation: 1s ease-in-out 0s infinite normal none running img-moon;
 }
 
 @keyframes img-moon {
@@ -3244,17 +3249,6 @@ body {
   }
   50% {
     transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-@-webkit-keyframes slider {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-100vw, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -3522,4 +3516,6 @@ body {
   .usedby_container .usedby_usedtop p {
     padding: 0px 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
