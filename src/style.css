@@ -244,6 +244,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   height: 600px;
 }
+.Earn_p_i_big_contaniner svg {
+  fill: rgb(231, 227, 235);
+  position: absolute;
+}
 .Earn_p_i_big_contaniner .Earn_p_i_top_container {
   width: 100%;
   height: 600px;
