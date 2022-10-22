@@ -75,7 +75,7 @@
 }
 .appear .settings_container .settings_scroolbar {
   display: flex;
-  overflow-y: scroll;
+  overflow-y: hidden;
   flex-direction: column;
   padding: 10px;
   background-color: var(--background-color-settings-scroolbar);
