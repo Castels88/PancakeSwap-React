@@ -3104,7 +3104,7 @@ body {
 }
 .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery2 #moon_sliderimg {
   position: absolute;
-  max-height: 110%;
+  max-height: 120%;
   max-width: 100%;
   right: 0;
   bottom: 0;
@@ -3512,4 +3512,38 @@ body {
   .usedby_container .usedby_usedtop p {
     padding: 0px 20px;
   }
+}
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.language .language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language .language-container .picker {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 0 0 0 5px;
+  color: #b8acd2;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.language .language-container .button {
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  font-size: 18px;
+  width: 100px;
+  font-weight: 300;
+  color: #b8acd2;
+  padding: 2px;
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */

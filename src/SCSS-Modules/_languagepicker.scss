@@ -1,0 +1,36 @@
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    .language-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .picker{
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            padding: 0 0 0 5px;
+            color: #b8acd2;
+            height: 50px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .button{
+            background: transparent;
+            text-transform: uppercase;
+            border: none;
+            font-size: 18px;
+            width: 100px;
+            font-weight: 300;
+            color: #b8acd2;
+            padding: 2px;
+            text-align: start;
+        }
+    }
+}
