@@ -1,7 +1,7 @@
-import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
+import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet.js";
 import bigBunny from "../Navbar/Images/bigBunny.svg";
 import bunnyBlue from "../Navbar/Images/bunnyBlue.svg";
-import { SettingsComponent } from "./SettingsComponent";
+import { SettingsComponent } from "./SettingsComponent.js";
 const Navbar = (props) => {
   return (
     <nav>
