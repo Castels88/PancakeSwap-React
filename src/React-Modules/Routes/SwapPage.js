@@ -5,6 +5,8 @@ import { SettingsComponent } from "../Navbar/SettingsComponent";
 import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
 import Help from "../Routes/IMG/Help.png";
 import { Tokens } from "./Componets-from-Route/Tokens";
+import CoinChart from '../API/tokens/Tokens.js'
+
 export function SwapPage() {
   return (
     <>
@@ -28,7 +30,7 @@ export function SwapPage() {
           </div>
         </div>
         <div className="swap_middle_container">
-          <div className="swap_charts">ciao</div>
+          <div className="swap_charts"><CoinChart/></div>
 
           <div className="swap_table">
             <div className="swap_top_button">
