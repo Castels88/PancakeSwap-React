@@ -1,0 +1,99 @@
+.container-ul ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  color: rgb(122, 110, 170);
+  border-top: 1px solid #e7e3eb;
+  cursor: pointer;
+}
+
+.container-header__NFT {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background: linear-gradient(139.73deg, #e5fdff, #f3efff);
+}
+
+.container-title__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.container-title__subtitle h1 {
+  color: rgb(118, 69, 217);
+  font-size: 64px;
+}
+
+.container-title__subtitle h2 {
+  color: rgb(40, 13, 95);
+  font-size: 24px;
+}
+
+.container-input__Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-input__Header input {
+  padding: 0.5rem 1rem;
+  width: 250px;
+  border-radius: 15px;
+  background-color: #eeeaf4;
+  border: 1px solid #d7caec;
+  outline-color: #7645d9;
+  box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
+}
+
+.container-input__Header input::placeholder {
+  font-size: 16px;
+  color: #7a6eaa;
+  margin-left: 1rem;
+}
+
+.container-newest-Collections {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 3rem 2rem 3rem;
+}
+
+.container-newest-Collections h3 {
+  color: #280d5f;
+  font-size: 24px;
+}
+
+.container-newest-Collections .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  padding: 0.2rem 0;
+  border: 2px solid #1fc7d4;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.container-newest-Collections .button a {
+  color: #1fc7d4;
+}
+
+@media screen and (min-width: 370px) and (max-width: 665px) {
+  .container-newest-Collections {
+    padding: 2rem 1.5rem;
+  }
+
+  .container-title__subtitle h1 {
+    font-size: 55px;
+  }
+
+  .container-title__subtitle h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+}

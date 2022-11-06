@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
 import bigBunny from "../Navbar/Images/bigBunny.svg";
 import bunnyBlue from "../Navbar/Images/bunnyBlue.svg";
@@ -70,7 +71,8 @@ const Navbar = (props) => {
           </ul>
           <ul className="Navbar_menuBtn">
             <li>
-              <a href="https://pancakeswap.finance/swap">NFT</a>
+              <Link to="/NFT">NFT</Link>
+              {/* <a href="https://pancakeswap.finance/swap">NFT</a> */}
               <div className="Navbar_dropdown_content">
                 <div className="Navbar_element">
                   <a href="http://">Overview</a>
