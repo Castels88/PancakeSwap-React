@@ -10,7 +10,6 @@ const Tokens = () => {
   const [chartData, setChartData] = useState();
   //States to store and create points and values
   const [value, setValue] = useState({});
-  const [generatedPoints, setGenPoints] = useState();
   //States for chart options
   const [data, setData] = useState();
   const [options, setOptions] = useState();
