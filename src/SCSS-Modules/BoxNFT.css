@@ -39,7 +39,9 @@
 .container__Name {
   display: flex;
   justify-content: flex-end;
-  width: 204px;
+  width: 260px;
+  height: 50px;
+  overflow: hidden;
 }
 
 .container-NFT__name h3 {
