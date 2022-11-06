@@ -3,10 +3,6 @@ export function getRndInteger(min, max) {
 }
 
 export function getChartData(arr, coinData, curr, set1, set2) {
-  const today = new Date();
-  let hour = today.getHours();
-
-
   set1([
     ["Time", `${coinData.symbol}`],
     [`20:00`, arr[0]],
