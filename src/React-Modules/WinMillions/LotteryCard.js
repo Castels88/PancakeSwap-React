@@ -1,19 +1,16 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { randomNum } from "../Functions/Million&Cake";
-import './../../SCSS-Modules/winmillion.css'
+// import './../../SCSS-Modules/winmillion.css'
 
 export function LotteryCard() {
-  const [amount, setAmount] = useState('')
+  const [amount, setAmount] = useState("");
 
-    useEffect(()=> {
-        const lottery1 = '81';
-        const lottery2 = randomNum(255, 367);
-        setAmount(`$${lottery1}.${lottery2}`);
-    }, [])
-
-
-
+  useEffect(() => {
+    const lottery1 = "81";
+    const lottery2 = randomNum(255, 367);
+    setAmount(`$${lottery1}.${lottery2}`);
+  }, []);
 
   return (
     <div className="card right-card">
