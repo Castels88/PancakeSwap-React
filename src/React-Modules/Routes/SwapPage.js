@@ -220,7 +220,7 @@ export function SwapPage() {
         </div>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

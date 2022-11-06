@@ -7,6 +7,7 @@ import "../../SCSS-Modules/NFT.css";
 import TopCollection from "./TopCollection";
 import Nft, { NftAssets } from "./AssetsNft/Nft";
 import { NftAssetCard } from "./AssetsNft/NftAssetCard";
+import Footer from "../footer/footer";
 
 const NFT = () => {
   const [nft, setNft] = useState([]);
@@ -152,6 +153,7 @@ const NFT = () => {
           )}
       </div>
       <NftAssets />
+      <Footer />
     </div>
   );
 };
