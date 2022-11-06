@@ -22,6 +22,16 @@ const Tokens = () => {
   useEffect(() => {
     axios.get(url).then((response) => {
       setFetchData(response.data);
+      return response.data
+    }).then((res) => {
+      let defaultChartData = res.filter((obj) => obj.id === 'bitcoin')
+      .find((el) => el);
+      setChartData(defaultChartData)
+      setValue({
+        high: defaultChartData.high_24h,
+        current: defaultChartData.current_price,
+        low: defaultChartData.low_24h,
+      });
     });
   }, []);
 
@@ -50,23 +60,23 @@ const Tokens = () => {
 
   return (
     <div className="">
-      <select name="coins" id="coins" onChange={changeHandler}>
-        {fetchData &&
-          fetchData.map((coin, index) => (
-            <option key={index} value={coin.id}>
-              {coin.id}
-            </option>
-          ))}
-      </select>
-      {chartData && (
-        <Chart
-          chartType="AreaChart"
-          width="80%"
-          height="400px"
-          data={data}
-          options={options}
-        />
-      )}
+        <select name="coins" id="coins" onChange={changeHandler}>
+          {fetchData &&
+            fetchData.map((coin, index) => (
+              <option key={index} value={coin.id}>
+                {coin.id}
+              </option>
+            ))}
+        </select>
+        {chartData && (
+          <Chart
+            chartType="AreaChart"
+            width="80%"
+            height="400px"
+            data={data}
+            options={options}
+          />
+        )}
     </div>
   );
 };
