@@ -1222,12 +1222,10 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    bottom: 0px;
-    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
     height: 60px;
-    padding-top: 5px;
-    padding-right: 8px;
-    padding-left: 8px;
     background-color: var(--background-navbar);
     border-top: 1px solid var(--border-navbar-menu);
     padding-bottom: env(safe-area-inset-bottom);
