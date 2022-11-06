@@ -2692,7 +2692,7 @@ body {
   .TA-box .TA-container-secondary-CAKE {
     position: relative;
     right: 15rem;
-    height: 60%;
+    height: 49%;
     -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
             animation: 3s ease-in-out 0s infinite normal none running TA-floating;
   }
