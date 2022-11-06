@@ -21,5 +21,6 @@ export function getChartData(arr, coinData, curr, set1, set2) {
     title: `${coinData.name} 24h data`,
     legend: { position: "top" },
     colors: [lineColor],
+    areaOpacity: "0.2",
   });
 }
