@@ -17,7 +17,7 @@ const Navbar = (props) => {
               <a href="https://pancakeswap.finance/swap">Trade</a>
               <div className="Navbar_dropdown_content">
                 <div className="Navbar_element">
-                  <a href="http://">Swap</a>
+                  <Link to="/swap">Swap</Link>
                 </div>
                 <div className="Navbar_element">
                   <a href="http://">Limit</a>
