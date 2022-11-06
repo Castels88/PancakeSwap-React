@@ -35,11 +35,6 @@ const Tokens = () => {
       current: currCoinData.current_price,
       low: currCoinData.low_24h,
     });
-    console.log(
-      currCoinData.high_24h,
-      currCoinData.low_24h,
-      currCoinData.current_price
-    );
   }
 
   useEffect(() => {
@@ -50,7 +45,7 @@ const Tokens = () => {
         points.push(rndPoint);
       }
       getChartData(points, chartData, value.current, setData, setOptions);
-    }, 1000);
+    }, 100);
   }, [value]);
 
   return (
@@ -65,8 +60,8 @@ const Tokens = () => {
       </select>
       {chartData && (
         <Chart
-          chartType="LineChart"
-          width="100%"
+          chartType="AreaChart"
+          width="80%"
           height="400px"
           data={data}
           options={options}

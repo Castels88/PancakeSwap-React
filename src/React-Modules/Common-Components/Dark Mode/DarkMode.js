@@ -35,7 +35,6 @@ export function DarkMode() {
       <Cake />
       <StartInSeconds switchTheme={switchTheme} />
       <Footer switchTheme={switchTheme} />
-      <Tokens/>
     </div>
   );
 }
