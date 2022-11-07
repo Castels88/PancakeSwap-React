@@ -1167,6 +1167,198 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     gap: 15px;
   }
 }
+@media screen and (max-width: 405px) {
+  nav .Navbar_sinistra {
+    width: 50%;
+  }
+  nav .Navbar_sinistra .Navbar.Navbar_logo {
+    display: none;
+  }
+  nav .Navbar_sinistra .Navbar_bottoni {
+    display: none;
+  }
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
+    display: none;
+  }
+  nav .Navbar_destra {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  nav .Navbar_destra .icon {
+    display: none;
+  }
+  nav .Navbar_destra .Navbar_money {
+    display: none;
+  }
+  nav .Navbar_destra .Navbar_main_buttons {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1fc7d4;
+    border-radius: 20px;
+    width: 110px;
+    height: 35px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #1fc7d4;
+    transition: all 0.3s ease;
+  }
+  nav .Navbar_destra .Navbar_main_buttons a {
+    text-decoration: none;
+    color: white;
+    content: "Connect";
+  }
+  nav .Navbar_destra .Navbar_main_buttons:hover {
+    background-color: #1d8999;
+    border: 1px solid #1d8999;
+    border-radius: 20px;
+    color: white;
+  }
+  .navbar_menu_nascosto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: var(--background-navbar);
+    border-top: 1px solid var(--border-navbar-menu);
+    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 20;
+  }
+  .navbar_menu_nascosto .navbar_menu_nascosto_icon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar_menu_nascosto .navbar_menu_nascosto_icon a {
+    text-decoration: none;
+  }
+  .navbar_menu_nascosto .navbar_menu_nascosto_icon a svg {
+    fill: rgb(122, 110, 170);
+  }
+  .navbar_menu_nascosto .navbar_menu_nascosto_icon a span {
+    color: rgb(122, 110, 170);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .Earn_p_i_big_contaniner {
+    width: 100%;
+    height: 800px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container {
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background: var(--background-earn-passive-income);
+    padding: 48px 0px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_medium_container svg {
+    fill: rgb(250, 249, 250);
+    height: 100%;
+    max-height: 48px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 20px;
+    left: 100px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image1 {
+    width: 187px;
+    height: 192px;
+    position: absolute;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
+    width: 187px;
+    height: 192px;
+    position: absolute;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
+    width: 187px;
+    height: 192px;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container {
+    width: 70%;
+    height: 45%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
+    width: 70%;
+    height: 40%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+  }
+}
 @media screen and (max-width: 376px) {
   nav .Navbar_sinistra {
     width: 50%;
