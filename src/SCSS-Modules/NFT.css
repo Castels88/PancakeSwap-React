@@ -85,7 +85,7 @@
   color: #1fc7d4;
 }
 
-@media screen and (min-width: 370px) and (max-width: 665px) {
+@media screen and (min-width: 370px) and (max-width: 768px) {
   .container-newest-Collections {
     padding: 2rem 1.5rem;
   }

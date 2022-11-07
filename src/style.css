@@ -1639,6 +1639,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   background-color: rgb(31, 199, 212);
   color: white;
   margin-top: 24px;
+  width: 170px;
 }
 .container-MySect .mainbuttons:hover {
   opacity: 50%;
@@ -2848,6 +2849,97 @@ body {
     text-decoration: underline;
   }
 }
+@media screen and (max-width: 665px) {
+  .TA-border1 {
+    fill: #d8cbed;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    max-height: 48px;
+    align-self: center;
+    flex-shrink: 0;
+  }
+  .TA-box {
+    position: relative;
+  }
+  .TA-box .TA-container-main {
+    display: none;
+  }
+  .TA-box .TA-container-secondary {
+    margin-bottom: -20rem;
+  }
+  .TA-box .TA-container-secondary-CAKE {
+    position: relative;
+    right: 0;
+    height: 40%;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-secondary-BTC {
+    position: relative;
+    height: 40%;
+    top: 0.8rem;
+    left: 13rem;
+    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-secondary-BNB {
+    position: relative;
+    height: 40%;
+    top: 0.5rem;
+    left: 26rem;
+    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-mainmobile {
+    margin: 10px;
+    display: inline;
+  }
+  .TA-box .TA-container-mainmobile-header {
+    color: #7645d9;
+    font-weight: bolder;
+    font-size: 42px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-header-span {
+    color: #280d5f;
+    font-weight: bolder;
+  }
+  .TA-box .TA-container-mainmobile-paragraph {
+    color: #7a6eaa;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-tradenow {
+    border: 1px solid #1fc7d4;
+    border-radius: 15px;
+    width: 120px;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    color: white;
+    background-color: #1fc7d4;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-tradenow:hover {
+    border: 1px solid #6bd8e1;
+    background-color: #6bd8e1;
+  }
+  .TA-box .TA-container-mainmobile-learn {
+    color: #1fc7d4;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .TA-box .TA-container-mainmobile-learn:hover {
+    text-decoration: underline;
+  }
+}
 @media screen and (max-width: 576px) {
   .TA-border1 {
     fill: #d8cbed;
@@ -2887,6 +2979,97 @@ body {
     height: 40%;
     top: 0.5rem;
     left: 24rem;
+    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-mainmobile {
+    margin: 10px;
+    display: inline;
+  }
+  .TA-box .TA-container-mainmobile-header {
+    color: #7645d9;
+    font-weight: bolder;
+    font-size: 42px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-header-span {
+    color: #280d5f;
+    font-weight: bolder;
+  }
+  .TA-box .TA-container-mainmobile-paragraph {
+    color: #7a6eaa;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-tradenow {
+    border: 1px solid #1fc7d4;
+    border-radius: 15px;
+    width: 120px;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    color: white;
+    background-color: #1fc7d4;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+  }
+  .TA-box .TA-container-mainmobile-tradenow:hover {
+    border: 1px solid #6bd8e1;
+    background-color: #6bd8e1;
+  }
+  .TA-box .TA-container-mainmobile-learn {
+    color: #1fc7d4;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .TA-box .TA-container-mainmobile-learn:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 405px) {
+  .TA-border1 {
+    fill: #d8cbed;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    max-height: 48px;
+    align-self: center;
+    flex-shrink: 0;
+  }
+  .TA-box {
+    position: relative;
+  }
+  .TA-box .TA-container-main {
+    display: none;
+  }
+  .TA-box .TA-container-secondary {
+    margin-bottom: -20rem;
+  }
+  .TA-box .TA-container-secondary-CAKE {
+    position: relative;
+    right: 7rem;
+    height: 40%;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-secondary-BTC {
+    position: relative;
+    height: 40%;
+    top: 0.8rem;
+    left: 6rem;
+    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+  }
+  .TA-box .TA-container-secondary-BNB {
+    position: relative;
+    height: 40%;
+    top: 0.5rem;
+    left: 19rem;
     -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
             animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
@@ -3139,9 +3322,6 @@ body {
   margin-bottom: 8px;
   background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
   -webkit-text-stroke: 6px transparent;
-}
-.moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery {
-  overflow: hidden;
 }
 .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery img {
   position: absolute;
@@ -3448,7 +3628,6 @@ body {
     visibility: visible;
     padding-bottom: 50px;
     right: 0;
-    top: 0;
     width: 70%;
   }
   .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery2 #moon_sliderimg {
@@ -3456,7 +3635,6 @@ body {
   }
   .moon_container .moon_top .moon_countdown .moon_countdown_right .moon_lottery2 #moon_sliderhide {
     visibility: visible;
-    top: 0;
   }
   .moon_container .moon_bottom .moon_bottomright img {
     margin-left: 0;
