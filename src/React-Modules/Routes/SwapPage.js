@@ -1,15 +1,15 @@
-import Footer from '../footer/footer'
-import Navbar from '../Navbar/Navbar'
-import '../../SCSS-Modules/swappage.css'
-import { SettingsComponent } from '../Navbar/SettingsComponent'
-import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet'
-import Help from '../Routes/IMG/Help.png'
-import { Tokens } from './Componets-from-Route/Tokens'
-import CoinChart from '../API/tokens/Tokens.js'
-import { useState } from 'react'
+import Footer from "../footer/footer2";
+import Navbar from "../Navbar/Navbar";
+import "../../SCSS-Modules/swappage.css";
+import { SettingsComponent } from "../Navbar/SettingsComponent";
+import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
+import Help from "../Routes/IMG/Help.png";
+import { Tokens } from "./Componets-from-Route/Tokens";
+import CoinChart from "../API/tokens/Tokens.js";
+import { useState } from "react";
 
 export function SwapPage() {
-  const [chartIsShow, setchartIsShow] = useState(true)
+  const [chartIsShow, setchartIsShow] = useState(true);
   // const [tableIsShow, setTableIsShow] = useState(true)
 
   return (
@@ -236,5 +236,5 @@ export function SwapPage() {
       </div>
       <Footer />
     </>
-  )
+  );
 }
