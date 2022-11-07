@@ -7,7 +7,6 @@ import Help from '../Routes/IMG/Help.png'
 import { Tokens } from './Componets-from-Route/Tokens'
 import CoinChart from '../API/tokens/Tokens.js'
 import { useState } from 'react'
-import Exit from '../Navbar/Images/Exit.svg'
 
 export function SwapPage() {
   const [chartIsShow, setchartIsShow] = useState(true)
