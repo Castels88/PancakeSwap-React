@@ -7,7 +7,7 @@ import "../../SCSS-Modules/NFT.css";
 import TopCollection from "./TopCollection";
 import Nft, { NftAssets } from "./AssetsNft/Nft";
 import { NftAssetCard } from "./AssetsNft/NftAssetCard";
-import Footer from "../footer/footer2";
+import { Footer } from "../footer/footer";
 import Faqs from "./Faqs";
 
 const NFT = () => {
