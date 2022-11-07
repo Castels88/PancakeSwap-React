@@ -1,4 +1,4 @@
-import Footer from "../footer/footer";
+import { Footer } from "../footer/footer";
 import Navbar from "../Navbar/Navbar";
 import "../../SCSS-Modules/swappage.css";
 import { SettingsComponent } from "../Navbar/SettingsComponent";

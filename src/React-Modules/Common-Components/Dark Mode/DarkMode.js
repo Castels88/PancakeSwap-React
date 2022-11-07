@@ -5,10 +5,10 @@ import { EarnPassiveIncome } from "../../EarnPassiveIncome/EarnPassiveIncome";
 import StartInSeconds from "../../Start_in_seconds/StartInSeconds";
 import { Cake } from "../../Cake/Cake";
 import { WinMillions } from "../../WinMillions/WinMillions";
-import Footer from "../../footer/footer";
 import Tradeanything from "../../tradeanything/tradeanything";
 import { Moon } from "../../MoonMilions/Moon";
 import { UsedBy } from "../../MoonMilions/UsedBy";
+import { Footer } from "../../footer/footer";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -16,7 +16,7 @@ export function DarkMode() {
     "theme",
     defaultDark ? "dark" : "light"
   );
-  window.dispatchEvent(new Event('storage'))
+  window.dispatchEvent(new Event("storage"));
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -37,4 +37,3 @@ export function DarkMode() {
     </div>
   );
 }
-
