@@ -8,6 +8,7 @@ import TopCollection from "./TopCollection";
 import Nft, { NftAssets } from "./AssetsNft/Nft";
 import { NftAssetCard } from "./AssetsNft/NftAssetCard";
 import Footer from "../footer/footer";
+import Faqs from "./Faqs";
 
 const NFT = () => {
   const [nft, setNft] = useState([]);
@@ -105,6 +106,7 @@ const NFT = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1rem",
+          backgroundColor: "#faf9fa",
         }}
       >
         {nft &&
@@ -141,6 +143,7 @@ const NFT = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1rem",
+          backgroundColor: "#faf9fa",
         }}
       >
         {topnft &&
@@ -153,6 +156,7 @@ const NFT = () => {
           )}
       </div>
       <NftAssets />
+      <Faqs />
       <Footer />
     </div>
   );
