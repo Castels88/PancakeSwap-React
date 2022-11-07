@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const ButtonConnectWallet = (props) => {
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, setIsShown] = useState(false)
 
   const handleClick = () => {
-    setIsShown((current) => !current);
-  };
+    setIsShown((current) => !current)
+  }
 
   return (
     <>
@@ -14,8 +14,8 @@ const ButtonConnectWallet = (props) => {
       </button>
 
       <div
-        className={"big_container2"}
-        style={{ display: isShown ? "block" : "none" }}
+        className={'big_container2'}
+        style={{ display: isShown ? 'block' : 'none' }}
       >
         <div className="appear_second">
           <div className="presentation_second"></div>
@@ -247,7 +247,7 @@ const ButtonConnectWallet = (props) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ButtonConnectWallet;
+export default ButtonConnectWallet

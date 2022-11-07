@@ -2611,6 +2611,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .Container-Footer-Firstbar {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
   .Container-Footer-Firstbar-Topbuttons {
     border-top: #342f3b solid 0.5px;
@@ -3904,4 +3905,4 @@ body {
     width: 99%;
     height: 258px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

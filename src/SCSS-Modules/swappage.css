@@ -468,6 +468,9 @@
 
 
 @media screen and (min-width: 1080px){
+  .chart_background{
+    display: none !important;
+  }
   .swap_charts {
     width: 60%;
     height: 80%;
@@ -531,6 +534,9 @@
   
 }
 @media screen and (min-width: 968px){
+  .chart_background{
+    display: none !important;
+  }
   .swap_charts {
     width: 60%;
     height: 80%;
@@ -594,6 +600,9 @@
   
 }
 @media screen and (min-width: 851px){
+  .chart_background{
+    display: none !important;
+  }
   .swap_charts {
     width: 50%;
     height: 80%;
@@ -658,6 +667,9 @@
 }
 
 @media screen and (min-width: 768px){
+  .chart_background{
+    display: none !important;
+  }
   .swap_charts {
     width: 60%;
     height: 80%;
@@ -720,6 +732,7 @@
   }
   
 }
+
 @media screen and (max-width: 665px){
   .swap_container {
     width: 100%;
@@ -889,6 +902,7 @@
 
 }
 @media screen and (max-width: 370px){
+
   .swap_container {
     width: 100%;
     height: 95vh;
@@ -947,4 +961,7 @@
     right: 6px;
   }
   
+
+  
   }
+

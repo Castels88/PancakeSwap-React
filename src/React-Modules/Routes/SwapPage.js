@@ -7,10 +7,16 @@ import Help from '../Routes/IMG/Help.png'
 import { Tokens } from './Componets-from-Route/Tokens'
 import CoinChart from '../API/tokens/Tokens.js'
 import { useState } from 'react'
+import { ChartFromMobile } from './Componets-from-Route/ChartForMobile'
 
 export function SwapPage() {
   const [chartIsShow, setchartIsShow] = useState(true)
-  // const [tableIsShow, setTableIsShow] = useState(true)
+  const [chartMobile, setchartMobile] = useState(true)
+
+  function handleButton() {
+    setchartMobile(!chartMobile)
+    setchartIsShow(!chartIsShow)
+  }
 
   return (
     <>
@@ -51,10 +57,7 @@ export function SwapPage() {
               </button>
             </div>
             <div className="swap_settings">
-              <div
-                onClick={() => setchartIsShow(!chartIsShow)}
-                className="swap_settings_firstRow"
-              >
+              <div onClick={handleButton} className="swap_settings_firstRow">
                 <div className="swap_chart_container">
                   <svg
                     id="swap_SVG"
@@ -234,6 +237,7 @@ export function SwapPage() {
           </div>
         </div>
       </div>
+      {chartMobile ? <ChartFromMobile /> : null}
       <Footer />
     </>
   )
