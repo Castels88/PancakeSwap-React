@@ -222,6 +222,99 @@ body {
   }
 }
 
+@media screen and (max-width: 665px) {
+  .TA-border1 {
+    fill: #d8cbed;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    max-height: 48px;
+    align-self: center;
+    flex-shrink: 0;
+  }
+  .TA-box {
+    position: relative;
+    .TA-container {
+      &-main {
+        display: none;
+      }
+      &-secondary {
+        margin-bottom: -20rem;
+        &-CAKE {
+          position: relative;
+          right: 0;
+          height: 40%;
+          animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+        }
+        &-BTC {
+          position: relative;
+          height: 40%;
+          top: 0.8rem;
+          left: 13rem;
+          animation: 2.3s ease-in-out 0s infinite normal none running
+            TA-floating;
+        }
+        &-BNB {
+          position: relative;
+          height: 40%;
+          top: 0.5rem;
+          left: 26rem;
+          animation: 2.4s ease-in-out 0s infinite normal none running
+            TA-floating;
+        }
+      }
+      &-mainmobile {
+        margin: 10px;
+        display: inline;
+        &-header {
+          color: #7645d9;
+          font-weight: bolder;
+          font-size: 42px;
+          margin-bottom: 2rem;
+          margin-left: 1rem;
+          &-span {
+            color: #280d5f;
+            font-weight: bolder;
+          }
+        }
+        &-paragraph {
+          color: #7a6eaa;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+          margin-left: 1rem;
+        }
+        &-tradenow {
+          border: 1px solid #1fc7d4;
+          border-radius: 15px;
+          width: 120px;
+          padding: 15px;
+          font-weight: bolder;
+          font-size: 12px;
+          margin-top: 1rem;
+          margin-right: 0.5rem;
+          color: white;
+          background-color: #1fc7d4;
+          transition: all 0.3s ease;
+          margin-left: 1rem;
+          &:hover {
+            border: 1px solid #6bd8e1;
+            background-color: #6bd8e1;
+          }
+        }
+        &-learn {
+          color: #1fc7d4;
+          text-decoration: none;
+          font-weight: bolder;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   .TA-border1 {
     fill: #d8cbed;
@@ -259,6 +352,99 @@ body {
           height: 40%;
           top: 0.5rem;
           left: 24rem;
+          animation: 2.4s ease-in-out 0s infinite normal none running
+            TA-floating;
+        }
+      }
+      &-mainmobile {
+        margin: 10px;
+        display: inline;
+        &-header {
+          color: #7645d9;
+          font-weight: bolder;
+          font-size: 42px;
+          margin-bottom: 2rem;
+          margin-left: 1rem;
+          &-span {
+            color: #280d5f;
+            font-weight: bolder;
+          }
+        }
+        &-paragraph {
+          color: #7a6eaa;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+          margin-left: 1rem;
+        }
+        &-tradenow {
+          border: 1px solid #1fc7d4;
+          border-radius: 15px;
+          width: 120px;
+          padding: 15px;
+          font-weight: bolder;
+          font-size: 12px;
+          margin-top: 1rem;
+          margin-right: 0.5rem;
+          color: white;
+          background-color: #1fc7d4;
+          transition: all 0.3s ease;
+          margin-left: 1rem;
+          &:hover {
+            border: 1px solid #6bd8e1;
+            background-color: #6bd8e1;
+          }
+        }
+        &-learn {
+          color: #1fc7d4;
+          text-decoration: none;
+          font-weight: bolder;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .TA-border1 {
+    fill: #d8cbed;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    max-height: 48px;
+    align-self: center;
+    flex-shrink: 0;
+  }
+  .TA-box {
+    position: relative;
+    .TA-container {
+      &-main {
+        display: none;
+      }
+      &-secondary {
+        margin-bottom: -20rem;
+        &-CAKE {
+          position: relative;
+          right: 7rem;
+          height: 40%;
+          animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+        }
+        &-BTC {
+          position: relative;
+          height: 40%;
+          top: 0.8rem;
+          left: 6rem;
+          animation: 2.3s ease-in-out 0s infinite normal none running
+            TA-floating;
+        }
+        &-BNB {
+          position: relative;
+          height: 40%;
+          top: 0.5rem;
+          left: 19rem;
           animation: 2.4s ease-in-out 0s infinite normal none running
             TA-floating;
         }

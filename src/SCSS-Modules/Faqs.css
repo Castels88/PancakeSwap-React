@@ -90,21 +90,21 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 851px) {
+@media screen and (min-width: 769px) and (max-width: 851px) {
   .box-faq {
-    width: 851px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 405px) and (max-width: 768px) {
   .box-faq {
-    width: 576px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (min-width: 370px) and (max-width: 404px) {
   .box-faq {
-    width: 370px;
+    width: 100%;
   }
 
   .header-first-faq {
