@@ -7,6 +7,7 @@
   color: rgb(122, 110, 170);
   border-top: 1px solid #e7e3eb;
   cursor: pointer;
+  background-color: #faf9fa;
 }
 
 .container-header__NFT {
@@ -59,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 3rem 2rem 3rem;
+  background-color: #faf9fa;
 }
 
 .container-newest-Collections h3 {
@@ -83,7 +85,7 @@
   color: #1fc7d4;
 }
 
-@media screen and (min-width: 370px) and (max-width: 665px) {
+@media screen and (min-width: 370px) and (max-width: 768px) {
   .container-newest-Collections {
     padding: 2rem 1.5rem;
   }

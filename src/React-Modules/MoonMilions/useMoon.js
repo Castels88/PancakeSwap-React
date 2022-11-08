@@ -9,7 +9,7 @@ export function useMoon() {
   function startInteractive() {
     // A timer that counts down to a specific date.
     const timer = setInterval(() => {
-      let date = "Oct 15, 2022 15:37:25";
+      let date = "Nov 12, 2022 15:37:25";
       let countDownDate = new Date(date).getTime();
       const now = new Date().getTime();
       let interval = countDownDate - now;
