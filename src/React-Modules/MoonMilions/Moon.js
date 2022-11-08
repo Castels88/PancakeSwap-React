@@ -6,6 +6,8 @@ import perpetual from "./img/perpetual.webp";
 import perpetualMobile from "./img/perpetualMobile.webp";
 import { useMoon } from "./useMoon";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
 
 export function Moon() {
   const {
@@ -54,9 +56,9 @@ export function Moon() {
               <div className="moon_countdown_left">
                 <p id="moon_perpetual">Perpetual Futures</p>
                 <h2 id="moon_upto100">Up to 100x Leverage</h2>
-                <button id="moon_mainbutton">
-                  <a href="https://pancakeswap.finance/lottery">Trade Now</a>
-                </button>
+                <Link to="/swap">
+                  <button id="moon_mainbutton">Trade Now</button>
+                </Link>
               </div>
               <div className="moon_countdown_right">
                 <div className="moon_lottery2">
@@ -126,10 +128,11 @@ export function Moon() {
             platform in the galaxy.
           </p>
           <div className="moon_bottoni">
-            <button id="moon_mainbutton">Connect Wallet</button>
-            <a href="https://pancakeswap.finance/swap">
+            {/* <button id="moon_mainbutton">Connect Wallet</button> */}
+            <ButtonConnectWallet />
+            <Link to="/swap">
               <button id="moon_secondarybutton">Trade Now</button>
-            </a>
+            </Link>
           </div>
         </div>
 

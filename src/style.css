@@ -3410,6 +3410,32 @@ body {
   justify-content: left;
   gap: 10px;
 }
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni .Navbar_main_buttons {
+  position: relative;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 170px;
+}
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni .Navbar_main_buttons:hover {
+  opacity: 50%;
+  transition: 0.2s ease-in-out;
+}
 .moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton {
   border: 1px solid #1fc7d4;
   border-radius: 15px;
