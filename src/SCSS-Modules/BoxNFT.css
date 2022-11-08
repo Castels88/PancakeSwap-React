@@ -72,6 +72,8 @@
 .container-volume {
   margin-top: 0.5rem;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .p-volume {
