@@ -13,6 +13,7 @@ const useSelect = (fetchData) => {
       high: currCoinData.high_24h,
       current: currCoinData.current_price,
       low: currCoinData.low_24h,
+      image: currCoinData.image,
     });
   }
 
