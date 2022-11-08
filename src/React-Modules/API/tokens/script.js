@@ -3,9 +3,9 @@ export function getRndInteger(min, max) {
 }
 
 export let roundOff = (num, places) => {
-    const x = Math.pow(10,places);
-    return Math.round(num * x) / x;
-  }
+  const x = Math.pow(10, places);
+  return Math.round(num * x) / x;
+};
 
 export function getChartData(arr, coinData, curr, set1, set2) {
   set1([
