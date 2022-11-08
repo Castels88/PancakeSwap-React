@@ -1,6 +1,6 @@
 .swap_container {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
 }
 .swap_link_container {
   width: 100%;
@@ -63,7 +63,7 @@
   width: 50%;
   height: 100%;
   background-color: white;
-  border-top-left-radius: 25px;
+  border-top-left-radius: 15px;
   border: none;
   border-top-right-radius: 25px;
 }
@@ -72,7 +72,7 @@
   height: 100%;
   background-color: rgb(238, 234, 244);
   border: none;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 15px;
 }
 .swap-text {
   color: #7a6eaa;
@@ -250,14 +250,14 @@
   line-height: 1.5;
   font-size: 12px;
   color: #7a6eaa;
-  margin: 20px;
+  margin: 18px;
 }
 .swap_text_font3 {
   font-weight: 600;
   line-height: 1.5;
   font-size: 16px;
   color: rgb(30, 199, 211);
-  margin: 20px;
+  margin: 15px;
 }
 .swap_conteiner_component {
   width: 95%;
@@ -349,6 +349,7 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
 }
 .swap_bottom_right_element_SVG_container {
   width: 50%;
@@ -728,7 +729,7 @@
 @media screen and (max-width: 665px) {
   .swap_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: rgb(231, 253, 255);
   }
   .swap_link_container {
@@ -753,7 +754,7 @@
   }
   .swap_bottom_container {
     width: 100%;
-    height: 27%;
+    height: 15%;
     background-color: RGB(231 253 255);
     display: flex;
     flex-direction: column;
@@ -766,6 +767,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
   .swap_bottom_right_container {
     width: 100%;
@@ -783,7 +785,7 @@
 @media screen and (max-width: 576px) {
   .swap_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: rgb(231, 253, 255);
   }
   .swap_link_container {
@@ -808,7 +810,7 @@
   }
   .swap_bottom_container {
     width: 100%;
-    height: 27%;
+    height: 15%;
     background-color: RGB(231 253 255);
     display: flex;
     flex-direction: column;
@@ -838,7 +840,7 @@
 @media screen and (max-width: 405px) {
   .swap_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: rgb(231, 253, 255);
   }
   .swap_link_container {
@@ -863,7 +865,7 @@
   }
   .swap_bottom_container {
     width: 100%;
-    height: 27%;
+    height: 15%;
     background-color: RGB(231 253 255);
     display: flex;
     flex-direction: column;
@@ -893,7 +895,7 @@
 @media screen and (max-width: 370px) {
   .swap_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: rgb(231, 253, 255);
   }
   .swap_link_container {
@@ -922,7 +924,7 @@
   }
   .swap_bottom_container {
     width: 100%;
-    height: 27%;
+    height: 15%;
     background-color: RGB(231 253 255);
     display: flex;
     flex-direction: column;
