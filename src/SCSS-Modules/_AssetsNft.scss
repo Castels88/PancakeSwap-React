@@ -98,6 +98,7 @@
           width: 100%;
           height: 100%;
           border-radius: 8px;
+          object-fit: cover;
         }
 
         &:hover {
@@ -125,6 +126,10 @@
         line-height: 24px;
         font-weight: 600;
         color: #280d5f;
+
+        p {
+          line-height: normal;
+        }
       }
 
       .nft-assets__price {
@@ -192,7 +197,7 @@
 
         .nft-assets__image {
           width: 99%;
-          height: auto;
+          height: 250px;
         }
       }
     }
@@ -221,7 +226,7 @@
 
           .nft-assets__image {
             width: 99%;
-            height: auto;
+            height: 250px;
           }
         }
       }
@@ -244,7 +249,7 @@
 
           .nft-assets__image {
             width: 99%;
-            height: auto;
+            height: 250px;
           }
         }
       }

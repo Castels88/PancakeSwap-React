@@ -203,9 +203,10 @@
       width: 100px;
       height: 8px;
       position: absolute;
-      top: 0;
-      margin-top: 230px;
+      // top: 0;
+      // margin-top: 230px;
       display: flex;
+      transform: translate(0px, 80px);
 
       .moon_slidertrasparente {
         width: 100px;
@@ -259,6 +260,34 @@
         width: 100%;
         justify-content: left;
         gap: 10px;
+
+        .Navbar_main_buttons {
+          position: relative;
+          align-items: center;
+          border: 0px;
+          border-radius: 16px;
+          box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+          cursor: pointer;
+          display: inline-flex;
+          font-family: inherit;
+          font-size: 16px;
+          font-weight: 600;
+          justify-content: center;
+          letter-spacing: 0.03em;
+          line-height: 1;
+          outline: 0px;
+          transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+          height: 48px;
+          padding: 0px 24px;
+          background-color: rgb(31, 199, 212);
+          color: white;
+          width: 170px;
+
+          &:hover {
+            opacity: 50%;
+            transition: 0.2s ease-in-out;
+          }
+        }
 
         #moon_mainbutton {
           @include mainbuttons;
@@ -315,6 +344,7 @@
     .moon_top {
       .moon_countdown {
         width: 85%;
+        height: 350px;
       }
     }
   }
@@ -325,6 +355,10 @@
     height: auto;
     .moon_top {
       padding-top: 230px;
+
+      .moon_sliderbox {
+        transform: translate(0px, 140px);
+      }
     }
 
     .moon_bottom {
