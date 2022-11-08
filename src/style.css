@@ -3357,9 +3357,8 @@ body {
   width: 100px;
   height: 8px;
   position: absolute;
-  top: 0;
-  margin-top: 230px;
   display: flex;
+  transform: translate(0px, 80px);
 }
 .moon_container .moon_top .moon_sliderbox .moon_slidertrasparente {
   width: 100px;
@@ -3484,6 +3483,7 @@ body {
 @media screen and (min-width: 1500px) {
   .moon_container .moon_top .moon_countdown {
     width: 85%;
+    height: 350px;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
@@ -3492,6 +3492,9 @@ body {
   }
   .moon_container .moon_top {
     padding-top: 230px;
+  }
+  .moon_container .moon_top .moon_sliderbox {
+    transform: translate(0px, 140px);
   }
   .moon_container .moon_bottom .moon_bottomright img {
     width: 80%;

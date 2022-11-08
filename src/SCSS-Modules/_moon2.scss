@@ -203,9 +203,10 @@
       width: 100px;
       height: 8px;
       position: absolute;
-      top: 0;
-      margin-top: 230px;
+      // top: 0;
+      // margin-top: 230px;
       display: flex;
+      transform: translate(0px, 80px);
 
       .moon_slidertrasparente {
         width: 100px;
@@ -315,6 +316,7 @@
     .moon_top {
       .moon_countdown {
         width: 85%;
+        height: 350px;
       }
     }
   }
@@ -325,6 +327,10 @@
     height: auto;
     .moon_top {
       padding-top: 230px;
+
+      .moon_sliderbox {
+        transform: translate(0px, 140px);
+      }
     }
 
     .moon_bottom {
