@@ -9,6 +9,7 @@ import Footer from "../../footer/footer";
 import Tradeanything from "../../tradeanything/tradeanything";
 import { Moon } from "../../MoonMilions/Moon";
 import { UsedBy } from "../../MoonMilions/UsedBy";
+import Converter from "../../API/converter/Converter";
 
 export function DarkMode() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -34,6 +35,7 @@ export function DarkMode() {
       <Cake />
       <StartInSeconds switchTheme={switchTheme} />
       <Footer switchTheme={switchTheme} />
+      <Converter/>
     </div>
   );
 }

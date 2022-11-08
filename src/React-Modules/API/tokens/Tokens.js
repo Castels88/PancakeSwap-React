@@ -5,15 +5,16 @@ import { useState } from "react";
 import { Chart } from "react-google-charts";
 import { getChartData, getRndInteger } from "./script.js";
 import useSelect from "../Custom Hooks/useSelect.js";
+import Select from "react-select";
 const CoinChart = () => {
   //States to get apis response
   const [fetchData, setFetchData] = useState();
   //Custom hook to set and filter selected coin data
-  const {coinData, setCoinData, value, setValue, changeHandler} = useSelect(fetchData)
+  const { coinData, setCoinData, value, setValue, changeHandler } =
+    useSelect(fetchData);
   //States for chart options
   const [data, setData] = useState();
   const [options, setOptions] = useState();
-
 
   //API url
   const url =
@@ -65,14 +66,18 @@ const CoinChart = () => {
 
   return (
     <div className="" style={{ height: "100%", width: "100%" }}>
-      <select name="coins" id="coins" onChange={changeHandler}>
-        {fetchData &&
-          fetchData.map((coin, index) => (
-            <option key={index} value={coin.id}>
-              {coin.id}
-            </option>
-          ))}
-      </select>
+      {fetchData && (
+        <Select
+          defaultValue={{ value: "bitcoin", label: "bitcoin" }}
+          onChange={changeHandler}
+          options={fetchData.map((coin) => {
+            return {
+              value: coin.id,
+              label: coin.id,
+            };
+          })}
+        />
+      )}
       {coinData && (
         <Chart
           chartType="AreaChart"

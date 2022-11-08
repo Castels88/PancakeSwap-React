@@ -6,7 +6,7 @@ const useSelect = (fetchData) => {
 
   function changeHandler(event) {
     let currCoinData = fetchData
-      .filter((obj) => obj.id === event.target.value)
+      .filter((obj) => obj.id === event.value)
       .find((el) => el);
     setCoinData(currCoinData);
     setValue({
@@ -26,3 +26,15 @@ const useSelect = (fetchData) => {
 };
 
 export default useSelect
+
+
+/*
+ SELECT from 'react-select' tag
+
+ <Select onChange={changeHandler} options={fetchData.map((coin) => {
+        return {
+          value: coin.id,
+          label: coin.id
+        }
+      })}/>
+*/
