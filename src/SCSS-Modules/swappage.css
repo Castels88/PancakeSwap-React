@@ -147,8 +147,17 @@
   height: 90%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .swap_BNB_container {
+  width: 95%;
+  height: 10%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.swap_BNB_container2{
   width: 95%;
   height: 40%;
   margin: 20px;
@@ -167,6 +176,15 @@
   margin: 5px;
 }
 .swap_input_container {
+  margin-top: 5px;
+  width: 90%;
+  height: 13%;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.swap_input_container2{
   margin-top: 5px;
   width: 90%;
   height: 35%;
@@ -191,6 +209,7 @@
   height: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .swap_freccia_button {
   width: 35px;
@@ -689,7 +708,7 @@
   }
   .swap_BNB_container {
     width: 95%;
-    height: 40%;
+    height: 10%;
     margin: 20px;
     display: flex;
     flex-direction: column;
