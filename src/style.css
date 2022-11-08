@@ -3902,6 +3902,9 @@ body {
   font-weight: 600;
   color: #280d5f;
 }
+.NftAssetsContainer .NftAssets .nft-assets .nft-assets__title p {
+  line-height: normal;
+}
 .NftAssetsContainer .NftAssets .nft-assets .nft-assets__price {
   display: flex;
   max-height: 33px;

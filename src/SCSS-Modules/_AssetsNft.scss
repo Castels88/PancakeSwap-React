@@ -126,6 +126,10 @@
         line-height: 24px;
         font-weight: 600;
         color: #280d5f;
+
+        p {
+          line-height: normal;
+        }
       }
 
       .nft-assets__price {
