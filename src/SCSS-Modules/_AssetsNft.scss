@@ -98,6 +98,7 @@
           width: 100%;
           height: 100%;
           border-radius: 8px;
+          object-fit: cover;
         }
 
         &:hover {
@@ -192,7 +193,7 @@
 
         .nft-assets__image {
           width: 99%;
-          height: auto;
+          height: 250px;
         }
       }
     }
@@ -221,7 +222,7 @@
 
           .nft-assets__image {
             width: 99%;
-            height: auto;
+            height: 250px;
           }
         }
       }
@@ -244,7 +245,7 @@
 
           .nft-assets__image {
             width: 99%;
-            height: auto;
+            height: 250px;
           }
         }
       }
