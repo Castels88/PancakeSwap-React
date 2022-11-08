@@ -2528,10 +2528,11 @@ footer .footer__foot .foot_right .main-button {
   height: 30px;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   background-color: #1fc7d4;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 footer .footer__foot .foot_right .main-button:hover {
   background-color: #1d8999;
@@ -3220,6 +3221,7 @@ body {
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   z-index: 1;
+  cursor: pointer;
   color: var(--buttonTextColor);
 }
 #moon_mainbutton:hover {
@@ -3446,6 +3448,7 @@ body {
   background-color: #1fc7d4;
   transition: all 0.3s ease;
   z-index: 1;
+  cursor: pointer;
 }
 .moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton:hover {
   opacity: 0.7;
@@ -3460,6 +3463,7 @@ body {
   color: #1fc7d4;
   background-color: transparent;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_secondarybutton:hover {
   opacity: 0.7;

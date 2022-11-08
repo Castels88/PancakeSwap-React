@@ -108,10 +108,11 @@ footer {
         height: 30px;
         text-align: center;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         color: white;
         background-color: #1fc7d4;
         transition: all 0.3s ease;
+        cursor: pointer;
         &:hover {
           background-color: #1d8999;
           border: 1px solid #1d8999;
