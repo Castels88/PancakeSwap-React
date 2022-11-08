@@ -1,30 +1,29 @@
-import { Footer } from "../footer/footer";
-import Navbar from "../Navbar/Navbar";
-import "../../SCSS-Modules/swappage.css";
-import { SettingsComponent } from "../Navbar/SettingsComponent";
-import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
-import Help from "../Routes/IMG/Help.png";
-import { Tokens } from "./Componets-from-Route/Tokens";
+import { Footer } from '../footer/footer'
+import Navbar from '../Navbar/Navbar'
+import '../../SCSS-Modules/swappage.css'
+import { SettingsComponent } from '../Navbar/SettingsComponent'
+import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet'
+import Help from '../Routes/IMG/Help.png'
+import { Tokens } from './Componets-from-Route/Tokens'
 import CoinChart from '../API/tokens/Tokens.js'
 import Converter from '../API/converter/Converter.js'
-import { useState } from "react";
-import { ChartFromMobile } from "./Componets-from-Route/ChartForMobile";
-
+import { useState } from 'react'
+import { ChartFromMobile } from './Componets-from-Route/ChartForMobile'
 
 export function SwapPage() {
-  const [chartIsShow, setchartIsShow] = useState(true);
-  const [chartMobile, setchartMobile] = useState(true);
-  const [visible, setVisible] = useState(false);
-  const [visibleTwo, setVisibleTwo] = useState(true);
+  const [chartIsShow, setchartIsShow] = useState(true)
+  const [chartMobile, setchartMobile] = useState(true)
+  const [visible, setVisible] = useState(false)
+  const [visibleTwo, setVisibleTwo] = useState(true)
 
   function handleButton() {
-    setchartMobile(!chartMobile);
-    setchartIsShow(!chartIsShow);
+    setchartMobile(!chartMobile)
+    setchartIsShow(!chartIsShow)
   }
 
   function handleButtonTwo() {
-    setVisible(!visible);
-    setVisibleTwo(!visibleTwo);
+    setVisible(!visible)
+    setVisibleTwo(!visibleTwo)
   }
 
   return (
@@ -61,7 +60,7 @@ export function SwapPage() {
                 className="swap_button_one"
                 onClick={handleButtonTwo}
                 style={{
-                  backgroundColor: visibleTwo ? "white" : "rgb(238, 234, 244)",
+                  backgroundColor: visibleTwo ? 'white' : 'rgb(238, 234, 244)',
                 }}
               >
                 <p className="swap-text">Swap</p>
@@ -70,8 +69,8 @@ export function SwapPage() {
                 className="swap_button_two"
                 onClick={handleButtonTwo}
                 style={{
-                  backgroundColor: visible ? "white" : "rgb(238, 234, 244)",
-                  borderTopLeftRadius: visible ? "25px" : "0",
+                  backgroundColor: visible ? 'white' : 'rgb(238, 234, 244)',
+                  borderTopLeftRadius: visible ? '25px' : '0',
                 }}
               >
                 <p className="swap-text">StableSwap</p>
@@ -154,7 +153,7 @@ export function SwapPage() {
                 </div>
                 <div className="swap_tokes_container">
                   <div className="swap_tokes_sub_container">
-                    <Converter/>
+                    <Converter />
                   </div>
                   <div className="swap_conteiner_component">
                     <ButtonConnectWallet />
@@ -238,7 +237,7 @@ export function SwapPage() {
                 </div>
                 <div className="swap_tokes_container">
                   <div className="swap_tokes_sub_container">
-                    <div className="swap_BNB_container">
+                    <div className="swap_BNB_container2">
                       {!visible ? (
                         <Tokens />
                       ) : (
@@ -246,7 +245,7 @@ export function SwapPage() {
                           <img
                             src="https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5/logo.png"
                             alt="img-HAY"
-                            style={{ width: "24px", marginRight: "5px" }}
+                            style={{ width: '24px', marginRight: '5px' }}
                           />
                           <p class="swap-text">HAY</p>
                           <svg
@@ -259,7 +258,7 @@ export function SwapPage() {
                           </svg>
                         </div>
                       )}
-                      <div className="swap_input_container">
+                      <div className="swap_input_container2">
                         <input
                           className="swap_input"
                           type="text"
@@ -281,7 +280,7 @@ export function SwapPage() {
                         </button>
                       </div>
                     </div>
-                    <div className="swap_BNB_container">
+                    <div className="swap_BNB_container2">
                       {!visible ? (
                         <Tokens />
                       ) : (
@@ -289,7 +288,7 @@ export function SwapPage() {
                           <img
                             src="https://tokens.pancakeswap.finance/images/symbol/busd.png"
                             alt="img-BUSD"
-                            style={{ width: "24px", marginRight: "5px" }}
+                            style={{ width: '24px', marginRight: '5px' }}
                           />
                           <p class="swap-text">BUSD</p>
                           <svg
@@ -302,7 +301,7 @@ export function SwapPage() {
                           </svg>
                         </div>
                       )}
-                      <div className="swap_input_container">
+                      <div className="swap_input_container2">
                         <input
                           className="swap_input"
                           type="text"
@@ -413,5 +412,5 @@ export function SwapPage() {
       {chartMobile ? <ChartFromMobile /> : null}
       <Footer />
     </>
-  );
+  )
 }
