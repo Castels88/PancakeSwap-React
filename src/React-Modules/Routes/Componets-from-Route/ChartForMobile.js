@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../../../SCSS-Modules/chartmobile.css'
+import CoinChart from '../../API/tokens/Tokens'
 export function ChartFromMobile() {
   const [isShown, setIsShown] = useState(true)
   const handleClick = () => {
@@ -29,7 +30,7 @@ export function ChartFromMobile() {
                 ></path>
               </svg>
             </div>
-            <div className="chart_icon_container"></div>
+            <div className="chart_icon_container"><CoinChart/></div>
           </div>
         </div>
       </div>

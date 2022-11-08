@@ -42,6 +42,11 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.swap_charts Chart{
+  height: 100%;
+  width: 100%;
+}
 .swap_chart_exit {
   width: 25px;
   position: absolute;
