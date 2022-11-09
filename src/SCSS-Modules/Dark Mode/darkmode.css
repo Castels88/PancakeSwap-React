@@ -79,6 +79,22 @@
   --usedbyCard: white;
   --cardBorder: #e7e3eb;
 
+  /* inizio Swap-Page */
+  --background-swap_middle-container:RGB(231 253 255);
+  --background-swap-link-container:white;
+  --background-swap-bottom-container:RGB(231 253 255);
+  --background-swap-chart:rgb(245,252,255);
+  --background-swap-table:rgb(245,252,255);
+  --background-swap-button-one: rgb(238, 234, 244);
+  --background-swap-button-two: rgb(238, 234, 244);
+  --background-swap-input: rgb(238, 234, 244);
+  --background-swap-text: rgb(76, 53, 122);
+  --background-swap-freccia:rgb(238, 234, 244);
+  --background-swap-svg-chart:#7a6eaa;
+  --background-swap-h2:rgb(40, 13, 95);
+  --background-swap-crypto:#7a6eaa;
+
+
   /*inizio NFT*/
   --background-header-NFT: linear-gradient(139.73deg, #e5fdff, #f3efff);
   --backgroundcolor-ul-nft: #faf9fa;
@@ -172,6 +188,21 @@
   --usedbyMainText: #f4eeff;
   --usedbyCard: #27262c;
   --cardBorder: #383241;
+
+  /* inizio dark mode Swap-Page */
+  --background-swap_middle-container:rgb(54,55,89);
+  --background-swap-link-container:black;
+  --background-swap-bottom-container:rgb(54,55,89);
+  --background-swap-chart:rgb(45,46,67);
+  --background-swap-table:black;
+  --background-swap-button-one: rgb(39,38,45);
+  --background-swap-button-two: rgb(39,38,45);
+  --background-swap-input:rgb(55,47,71);
+  --background-swap-text: RGB(167 156 190);
+  --background-swap-freccia:rgb(55,47,71);
+  --background-swap-svg-chart:rgb(182,171,208);
+  --background-swap-h2:white;
+  --background-swap-crypto:white;
 
   /*inizio NFT*/
   --background-header-NFT: linear-gradient(139.73deg, #313d5c, #3d2a54);
