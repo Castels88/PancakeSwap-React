@@ -22,7 +22,7 @@
 }
 .swap_link:hover {
   display: block;
-  box-shadow: rgb(133 133 133 / 10%) 0px -2px 0p
+  box-shadow: rgb(133 133 133 / 10%) 0px -2px 0p;
 }
 .swap_link a:hover {
   border-bottom: 5px solid rgb(14, 169, 204);
@@ -43,7 +43,7 @@
   justify-content: flex-end;
 }
 
-.swap_charts Chart{
+.swap_charts Chart {
   height: 100%;
   width: 100%;
 }
@@ -60,7 +60,7 @@
 }
 .swap_top_button {
   height: 8%;
-  background-color: rgb(238, 234, 244);
+  background-color: var(--background-swap-button-one);
   border-radius: 25px;
   display: flex;
 }
@@ -85,7 +85,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.swap-text-crypto{
+.swap-text-crypto {
   color: var(--background-swap-crypto);
   font-size: 18px;
   font-weight: 600;
@@ -96,7 +96,7 @@
   height: 15%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(231, 227, 235);
+  border-bottom: 1px solid var(--color-border-boxNFT);
 }
 .swap_settings_firstRow {
   width: 100%;
@@ -168,7 +168,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.swap_BNB_container2{
+.swap_BNB_container2 {
   width: 95%;
   height: 40%;
   margin: 20px;
@@ -195,7 +195,7 @@
   display: flex;
   align-items: center;
 }
-.swap_input_container2{
+.swap_input_container2 {
   margin-top: 5px;
   width: 90%;
   height: 35%;
@@ -226,7 +226,7 @@
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background-color:var(--background-swap-freccia);
+  background-color: var(--background-swap-freccia);
   border: none;
 }
 .swap_SVG_freccia {
@@ -521,7 +521,7 @@
     height: 15%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgb(231, 227, 235);
+    border-bottom: 1px solid var(--color-border-boxNFT);
     justify-content: space-evenly;
   }
   .swap_BNB_container {
@@ -554,7 +554,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    }
+  }
   .swap_bottom_right_container {
     width: 100%;
     height: 100%;
@@ -585,7 +585,7 @@
     height: 15%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgb(231, 227, 235);
+    border-bottom: 1px solid var(--color-border-boxNFT);
     justify-content: space-evenly;
   }
   .swap_BNB_container {
@@ -618,7 +618,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    }
+  }
   .swap_bottom_right_container {
     width: 100%;
     height: 100%;
@@ -649,7 +649,7 @@
     height: 15%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgb(231, 227, 235);
+    border-bottom: 1px solid var(--color-border-boxNFT);
     justify-content: space-evenly;
   }
   .swap_BNB_container {
@@ -682,7 +682,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    }
+  }
   .swap_bottom_right_container {
     width: 100%;
     height: 100%;
@@ -714,7 +714,7 @@
     height: 15%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgb(231, 227, 235);
+    border-bottom: 1px solid var(--color-border-boxNFT);
     justify-content: space-evenly;
   }
   .swap_BNB_container {
@@ -747,7 +747,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    }
+  }
   .swap_bottom_right_container {
     width: 100%;
     height: 100%;
@@ -797,7 +797,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-      padding: 0;
+    padding: 0;
   }
   .swap_bot_left_elem {
     width: 40%;
@@ -938,7 +938,6 @@
     position: relative;
     right: 6px;
   }
-  
 }
 @media screen and (max-width: 370px) {
   .swap_container {
