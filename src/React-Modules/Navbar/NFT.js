@@ -20,7 +20,7 @@ const NFT = () => {
       url: "https://opensea13.p.rapidapi.com/collections",
       params: { offset: "0", limit: "21" },
       headers: {
-        "X-RapidAPI-Key": "78aca3a23bmsh611072a2dee3071p1f225bjsn5ad5ea859e05",
+        "X-RapidAPI-Key": "01f9e7510amsh347f1bb7237e98fp161703jsnda15bdd2b1c0",
         "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
       },
     };
@@ -46,7 +46,7 @@ const NFT = () => {
         include_orders: "false",
       },
       headers: {
-        "X-RapidAPI-Key": "78aca3a23bmsh611072a2dee3071p1f225bjsn5ad5ea859e05",
+        "X-RapidAPI-Key": "01f9e7510amsh347f1bb7237e98fp161703jsnda15bdd2b1c0",
         "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
       },
     };
