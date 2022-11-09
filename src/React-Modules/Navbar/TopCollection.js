@@ -44,7 +44,7 @@ const TopCollection = ({ props }) => {
           style={{
             position: "absolute",
             right: "2.6rem",
-            color: "#280d5f",
+            color: "var(--color-container-title__subtitle_h2)",
             fontWeight: 600,
           }}
         >
