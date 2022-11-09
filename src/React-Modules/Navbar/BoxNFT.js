@@ -37,10 +37,10 @@ const BoxNFT = ({ props }) => {
           </svg>
         </p>
         <p
+          className="p-data-volume"
           style={{
             position: "absolute",
             right: "2.6rem",
-            color: "#280d5f",
             fontWeight: 600,
           }}
         >

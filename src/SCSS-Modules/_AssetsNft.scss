@@ -11,7 +11,7 @@
   align-items: center;
   width: 100%;
   padding: 1rem 0 5rem 0;
-  background-color: #faf9fa;
+  background-color: var(--background-color-newest-collections);
 
   .AssetsHeader {
     align-items: center;
@@ -34,7 +34,7 @@
       justify-content: flex-start;
 
       h3 {
-        color: #280d5f;
+        color: var(--color-container-title__subtitle_h2);
         font-size: 20px;
       }
     }
@@ -71,7 +71,7 @@
     .nft-assets {
       width: 275px;
       height: 370px;
-      border: 2px solid #e7e3eb;
+      border: 2px solid var(--color-border-boxNFT);
       border-radius: 8px;
       padding: 8px;
       display: flex;
@@ -79,11 +79,12 @@
       justify-content: space-between;
       cursor: pointer;
       box-shadow: 1px 2px 7px 0px rgb(215 202 236);
+      background-color: var(--background-color-boxNFT);
 
       .nft-assets__image {
         width: 258px;
         height: 258px;
-        border: 1px solid #e7e3eb;
+        border: 1px solid var(--color-border-boxNFT);
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -114,7 +115,7 @@
         padding-top: 5px;
         font-size: 12px;
         line-height: 18px;
-        color: #7a6eaa;
+        color: var(--color-divisor-faqs-p);
       }
 
       .nft-assets__title {
@@ -125,7 +126,7 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: 600;
-        color: #280d5f;
+        color: var(--color-container-title__subtitle_h2);
 
         p {
           line-height: normal;
@@ -152,7 +153,7 @@
         .price-title {
           font-size: 12px;
           line-height: 18px;
-          color: #7a6eaa;
+          color: var(--color-divisor-faqs-p);
           max-width: 120px;
         }
 
@@ -162,14 +163,14 @@
           align-items: center;
           #info-dollar {
             font-size: 12px;
-            color: #280d5f;
+            color: var(--color-container-title__subtitle_h2);
             font-weight: 400;
           }
 
           #info-token {
             font-size: 16px;
             font-weight: 600;
-            color: #280d5f;
+            color: var(--color-container-title__subtitle_h2);
           }
         }
       }
@@ -187,7 +188,7 @@
       .nft-assets {
         width: 30%;
         height: auto;
-        border: 2px solid #e7e3eb;
+        border: 2px solid var(--color-border-boxNFT);
         border-radius: 8px;
         padding: 8px;
         display: flex;
@@ -216,7 +217,7 @@
         .nft-assets {
           width: 45%;
           height: auto;
-          border: 2px solid #e7e3eb;
+          border: 2px solid var(--color-border-boxNFT);
           border-radius: 8px;
           padding: 8px;
           display: flex;
@@ -239,7 +240,7 @@
         .nft-assets {
           width: 45%;
           height: auto;
-          border: 2px solid #e7e3eb;
+          border: 2px solid var(--color-border-boxNFT);
           border-radius: 8px;
           padding: 8px;
           display: flex;
@@ -270,7 +271,7 @@
         .nft-assets {
           width: 99%;
           height: 370px;
-          border: 2px solid #e7e3eb;
+          border: 2px solid var(--color-border-boxNFT);
           border-radius: 8px;
           padding: 8px;
           display: flex;

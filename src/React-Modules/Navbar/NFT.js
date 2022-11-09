@@ -9,8 +9,21 @@ import Nft, { NftAssets } from "./AssetsNft/Nft";
 import { NftAssetCard } from "./AssetsNft/NftAssetCard";
 import { Footer } from "../footer/footer";
 import Faqs from "./Faqs";
+import useLocalStorage from "use-local-storage";
 
 const NFT = () => {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+  window.dispatchEvent(new Event("storage"));
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   const [nft, setNft] = useState([]);
   const [topnft, setTopNft] = useState([]);
 
@@ -63,8 +76,8 @@ const NFT = () => {
   }, []);
 
   return (
-    <div>
-      <Navbar />
+    <div className="darkswitch" data-theme={theme}>
+      <Navbar switchTheme={switchTheme} />
       <div className="container-ul">
         <ul>
           <li>Overview</li>
@@ -100,13 +113,14 @@ const NFT = () => {
         </div>
       </div>
       <div
+        className="container-boxNFT"
         style={{
           display: "flex",
           flexWrap: "wrap",
           alignItems: "center",
+          padding: "1rem 0",
           justifyContent: "center",
           gap: "1rem",
-          backgroundColor: "#faf9fa",
         }}
       >
         {nft &&
@@ -137,13 +151,14 @@ const NFT = () => {
         </div>
       </div>
       <div
+        className="container-boxNFT"
         style={{
           display: "flex",
           flexWrap: "wrap",
           alignItems: "center",
+          padding: "1rem 0",
           justifyContent: "center",
           gap: "1rem",
-          backgroundColor: "#faf9fa",
         }}
       >
         {topnft &&
@@ -157,7 +172,7 @@ const NFT = () => {
       </div>
       <NftAssets />
       <Faqs />
-      <Footer />
+      <Footer switchTheme={switchTheme} />
     </div>
   );
 };

@@ -42,7 +42,10 @@
   /* fine light mode settings */
 
   /* Inizio variabili light WinMillions e Cake */
-  --background-gradient: linear-gradient(rgb(111, 182, 240), rgb(232, 241, 245));
+  --background-gradient: linear-gradient(
+    rgb(111, 182, 240),
+    rgb(232, 241, 245)
+  );
   --background-blurred-content: rgb(208, 229, 250);
   --primary-text: rgb(122, 110, 170);
   --primary-title: #280d5f;
@@ -52,13 +55,9 @@
 
   /* Inizio variabili light Trade Any Things */
   --background-trade: white;
-  --h2-trade:rgb(118, 69, 217);
-  --span-trade:#280d5f;
-  --svg-trade: rgb(215,202,236);
-
-
-
-
+  --h2-trade: rgb(118, 69, 217);
+  --span-trade: #280d5f;
+  --svg-trade: rgb(215, 202, 236);
 
   /* Fine variabili light Trade Any Things */
 
@@ -80,9 +79,22 @@
   --usedbyCard: white;
   --cardBorder: #e7e3eb;
 
+  /*inizio NFT*/
+  --background-header-NFT: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  --backgroundcolor-ul-nft: #faf9fa;
+  --color-border-top-header-NFT: #e7e3eb;
+  --color-container-title__subtitle_h2: rgb(40, 13, 95);
+  --background-color-input-header-NFT: #eeeaf4;
+  --color-border-input-header-NFT: #d7caec;
+  --color-placeholder-input-header-NFT: #7a6eaa;
+  --background-color-newest-collections: #faf9fa;
+  --color-newest-Collections-h3: #280d5f;
+  --background-color-boxNFT: white;
+  --color-border-boxNFT: #eeeaf4;
+  --background-container-faq: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  --color-divisor-faqs-p: rgb(122, 110, 170);
+  /*Fine NFT */
 }
-
-
 
 [data-theme="dark"] {
   --main: rgb(118, 69, 217);
@@ -118,7 +130,7 @@
   --color-earn-p-i-text2: white;
   --color-earn-p-i-text3: rgb(184, 173, 210);
   --border-right-earn-passve-income: black;
-  --svg-earn-p-i:black;
+  --svg-earn-p-i: black;
   /* fine background dark earn passive income */
 
   /* inizio dark mode settings*/
@@ -132,40 +144,50 @@
   /* fine dark mode settings*/
 
   /* Inizio variabili dark WinMillions e Cake */
-  --background-gradient: linear-gradient(rgb(11,68,116), rgb(8,17,21));
+  --background-gradient: linear-gradient(rgb(11, 68, 116), rgb(8, 17, 21));
   --background-blurred-content: rgba(5, 5, 5, 0.6);
   --primary-text: rgb(122, 110, 170);
-  --primary-title: rgb(244,238,255);
+  --primary-title: rgb(244, 238, 255);
   --button-text: black;
   /* Fine variabili dark WinMillions e Cake */
 
   /* Inizio variabili dark Trade Any Things */
-  --background-trade:black;
-  --span-trade:white;
+  --background-trade: black;
+  --span-trade: white;
   --svg-trade: rgb(32, 22, 49);
-
-
-
-
-
 
   /* Fine variabili dark Trade Any Things */
 
-    /* Colori Moon & UsedBy */
-    --moonMainText: #9a6aff;
-    --moonSecondaryText: #f4eeff;
-    --moonBackgroundImg: black;
-    --buttonTextColor: black;
-    --backgroundMoon: radial-gradient(
-      103.12%50%at 50%50%,
-      #21193a 0%,
-      #191326 100%
-    );
-    --backgroundUsedBy: linear-gradient(180deg, #09070c 22%, #201335 100%);
-    --usedbyMainText: #f4eeff;
-    --usedbyCard: #27262c;
-    --cardBorder: #383241;
-    
+  /* Colori Moon & UsedBy */
+  --moonMainText: #9a6aff;
+  --moonSecondaryText: #f4eeff;
+  --moonBackgroundImg: black;
+  --buttonTextColor: black;
+  --backgroundMoon: radial-gradient(
+    103.12%50%at 50%50%,
+    #21193a 0%,
+    #191326 100%
+  );
+  --backgroundUsedBy: linear-gradient(180deg, #09070c 22%, #201335 100%);
+  --usedbyMainText: #f4eeff;
+  --usedbyCard: #27262c;
+  --cardBorder: #383241;
+
+  /*inizio NFT*/
+  --background-header-NFT: linear-gradient(139.73deg, #313d5c, #3d2a54);
+  --backgroundcolor-ul-nft: black;
+  --color-border-top-header-NFT: #383241;
+  --color-container-title__subtitle_h2: #f4eeff;
+  --background-color-input-header-NFT: #372f47;
+  --color-border-input-header-NFT: #262130;
+  --color-placeholder-input-header-NFT: #b8add2;
+  --background-color-newest-collections: black;
+  --color-newest-Collections-h3: #f4eeff;
+  --background-color-boxNFT: #27262c;
+  --color-border-boxNFT: #383241;
+  --background-container-faq: linear-gradient(166.77deg, #3b4155, #3a3045);
+  --color-divisor-faqs-p: #f4eeff;
+  /*Fine NFT */
 }
 
 #root {

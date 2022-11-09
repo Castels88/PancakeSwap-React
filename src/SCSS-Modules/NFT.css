@@ -5,16 +5,16 @@
   gap: 1.5rem;
   padding: 1rem;
   color: rgb(122, 110, 170);
-  border-top: 1px solid #e7e3eb;
+  border-top: 1px solid var(--color-border-top-header-NFT);
   cursor: pointer;
-  background-color: #faf9fa;
+  background-color: var(--backgroundcolor-ul-nft);
 }
 
 .container-header__NFT {
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
-  background: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  background: var(--background-header-NFT);
 }
 
 .container-title__subtitle {
@@ -30,7 +30,7 @@
 }
 
 .container-title__subtitle h2 {
-  color: rgb(40, 13, 95);
+  color: var(--color-container-title__subtitle_h2);
   font-size: 24px;
 }
 
@@ -44,15 +44,15 @@
   padding: 0.5rem 1rem;
   width: 250px;
   border-radius: 15px;
-  background-color: #eeeaf4;
-  border: 1px solid #d7caec;
+  background-color: var(--background-color-input-header-NFT);
+  border: 1px solid var(--color-border-input-header-NFT);
   outline-color: #7645d9;
   box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
 }
 
 .container-input__Header input::placeholder {
   font-size: 16px;
-  color: #7a6eaa;
+  color: var(--color-placeholder-input-header-NFT);
   margin-left: 1rem;
 }
 
@@ -60,11 +60,11 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 3rem 2rem 3rem;
-  background-color: #faf9fa;
+  background-color: var(--background-color-newest-collections);
 }
 
 .container-newest-Collections h3 {
-  color: #280d5f;
+  color: var(--color-newest-Collections-h3);
   font-size: 24px;
 }
 
@@ -75,7 +75,7 @@
   width: 120px;
   padding: 0.2rem 0;
   border: 2px solid #1fc7d4;
-  background-color: white;
+  background-color: var(--background-color-newest-collections);
   font-size: 16px;
   font-weight: 600;
   border-radius: 20px;
@@ -83,6 +83,10 @@
 
 .container-newest-Collections .button a {
   color: #1fc7d4;
+}
+
+.container-boxNFT {
+  background-color: var(--backgroundcolor-ul-nft);
 }
 
 @media screen and (min-width: 370px) and (max-width: 768px) {
