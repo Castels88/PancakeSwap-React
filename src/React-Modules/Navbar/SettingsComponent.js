@@ -1,10 +1,10 @@
-import DarkModeBtn from "../Common-Components/DarkModeBtn";
-import { useState } from "react";
-import Exit from "../Navbar/Images/Exit.svg";
-import SwitchComponent from "../Navbar/SwitchComponent";
+import DarkModeBtn from '../Common-Components/DarkModeBtn'
+import { useState } from 'react'
+import Exit from '../Navbar/Images/Exit.svg'
+import SwitchComponent from '../Navbar/SwitchComponent'
 
 export function SettingsComponent(props) {
-  const [Toogle, setToogle] = useState(false);
+  const [Toogle, setToogle] = useState(false)
 
   return (
     <div>
@@ -22,37 +22,39 @@ export function SettingsComponent(props) {
         </svg>
       </div>
       {Toogle && (
-        <div class="big_container">
-          <div class="appear">
-            <div class="presentation"></div>
-            <div class="settings_container">
-              <div class="settings_top">
+        <div className="big_container">
+          <div className="appear">
+            <div className="presentation"></div>
+            <div className="settings_container">
+              <div className="settings_top">
                 Settings
                 <img onClick={() => setToogle(!Toogle)} src={Exit} alt="" />
               </div>
-              <div class="settings_scroolbar">
-                <div class="primo_conteiner">
-                  <div class="font_settings1">Global</div>
-                  <div class="sub_container">
-                    <div class="font_settings2">Dark mode</div>
-                      <DarkModeBtn switchTheme={props.switchTheme} />
+              <div className="settings_scroolbar">
+                <div className="primo_conteiner">
+                  <div className="font_settings1">Global</div>
+                  <div className="sub_container">
+                    <div className="font_settings2">Dark mode</div>
+                    <DarkModeBtn switchTheme={props.switchTheme} />
                   </div>
-                  <div class="sub_container">
-                    <div class="font_settings2">Subgraph Health Indicator</div>
+                  <div className="sub_container">
+                    <div className="font_settings2">
+                      Subgraph Health Indicator
+                    </div>
                     <SwitchComponent />
                   </div>
-                  <div class="font_settings2">
+                  <div className="font_settings2">
                     Default Transaction Speed (GWEI)
                   </div>
-                  <div class="trebottoni">
-                    <button class="btn_settings">
-                      {" "}
+                  <div className="trebottoni">
+                    <button className="btn_settings">
+                      {' '}
                       <span>Standard(5)</span>
                     </button>
-                    <button class="btn_settings">
+                    <button className="btn_settings">
                       <span>Fast(6)</span>
                     </button>
-                    <button class="btn_settings">
+                    <button className="btn_settings">
                       <span>Instant(7)</span>
                     </button>
                   </div>
@@ -63,5 +65,5 @@ export function SettingsComponent(props) {
         </div>
       )}
     </div>
-  );
+  )
 }
