@@ -28,7 +28,7 @@ export function NftAssetCard(props) {
             width="16px"
             color="text"
             xmlns="http://www.w3.org/2000/svg"
-            class="sc-4ba21b47-0 hiUWYl"
+            className="sc-4ba21b47-0 hiUWYl"
           >
             <circle cx="48" cy="48" r="48" fill="#F0B90B"></circle>
             <path
@@ -40,5 +40,5 @@ export function NftAssetCard(props) {
         </div>
       </div>
     </div>
-  );
+  )
 }

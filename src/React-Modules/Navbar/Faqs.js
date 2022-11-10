@@ -1,22 +1,22 @@
-import { useState } from "react";
-import "../../SCSS-Modules/Faqs.css";
+import { useState } from 'react'
+import '../../SCSS-Modules/Faqs.css'
 
 const Faqs = () => {
-  const [openOne, setOpenOne] = useState(false);
-  const [openTwo, setOpenTwo] = useState(false);
-  const [openThree, setOpenThree] = useState(false);
+  const [openOne, setOpenOne] = useState(false)
+  const [openTwo, setOpenTwo] = useState(false)
+  const [openThree, setOpenThree] = useState(false)
 
   const handleClick = () => {
-    setOpenOne(!openOne);
-  };
+    setOpenOne(!openOne)
+  }
 
   const handleClickTwo = () => {
-    setOpenTwo(!openTwo);
-  };
+    setOpenTwo(!openTwo)
+  }
 
   const handleClickThree = () => {
-    setOpenThree(!openThree);
-  };
+    setOpenThree(!openThree)
+  }
 
   return (
     <div className="container-box-faq">
@@ -43,7 +43,7 @@ const Faqs = () => {
                   color="primary"
                   width="20px"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="sc-4ba21b47-0 elUESX"
+                  className="sc-4ba21b47-0 elUESX"
                 >
                   <path
                     d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z"
@@ -87,7 +87,7 @@ const Faqs = () => {
                   color="primary"
                   width="20px"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="sc-4ba21b47-0 elUESX"
+                  className="sc-4ba21b47-0 elUESX"
                 >
                   <path
                     d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z"
@@ -119,8 +119,8 @@ const Faqs = () => {
                       color="primary"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="sc-4ba21b47-0 ceTLum"
-                      style={{ marginLeft: ".2rem" }}
+                      className="sc-4ba21b47-0 ceTLum"
+                      style={{ marginLeft: '.2rem' }}
                     >
                       <path
                         d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
@@ -151,7 +151,7 @@ const Faqs = () => {
                   color="primary"
                   width="20px"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="sc-4ba21b47-0 elUESX"
+                  className="sc-4ba21b47-0 elUESX"
                 >
                   <path
                     d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z"
@@ -190,8 +190,8 @@ const Faqs = () => {
           color="primary"
           width="20px"
           xmlns="http://www.w3.org/2000/svg"
-          class="sc-4ba21b47-0 ceTLum"
-          style={{ marginLeft: ".2rem" }}
+          className="sc-4ba21b47-0 ceTLum"
+          style={{ marginLeft: '.2rem' }}
         >
           <path
             d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
@@ -200,7 +200,7 @@ const Faqs = () => {
         </svg>
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default Faqs;
+export default Faqs

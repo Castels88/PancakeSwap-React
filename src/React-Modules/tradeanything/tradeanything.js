@@ -12,7 +12,7 @@ function Tradeanything() {
           preserveAspectRatio="none"
           color="text"
           xmlns="http://www.w3.org/2000/svg"
-          class="sc-8a800401-0 fGhPpn"
+          className="sc-8a800401-0 fGhPpn"
         >
           <path d="M1660 48C1139.02 46.1887 336.256 15.2453 0 0H1660V48Z"></path>
         </svg>

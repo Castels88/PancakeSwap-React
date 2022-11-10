@@ -1,4 +1,4 @@
-import "../../SCSS-Modules/BoxNFT.css";
+import '../../SCSS-Modules/BoxNFT.css'
 
 const BoxNFT = ({ props }) => {
   return (
@@ -26,8 +26,8 @@ const BoxNFT = ({ props }) => {
             width="16px"
             color="text"
             xmlns="http://www.w3.org/2000/svg"
-            class="sc-4ba21b47-0 hiUWYl"
-            style={{ position: "absolute", right: "-1.5rem" }}
+            className="sc-4ba21b47-0 hiUWYl"
+            style={{ position: 'absolute', right: '-1.5rem' }}
           >
             <circle cx="48" cy="48" r="48" fill="#F0B90B"></circle>
             <path
@@ -39,8 +39,8 @@ const BoxNFT = ({ props }) => {
         <p
           className="p-data-volume"
           style={{
-            position: "absolute",
-            right: "2.6rem",
+            position: 'absolute',
+            right: '2.6rem',
             fontWeight: 600,
           }}
         >
@@ -48,7 +48,7 @@ const BoxNFT = ({ props }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BoxNFT;
+export default BoxNFT

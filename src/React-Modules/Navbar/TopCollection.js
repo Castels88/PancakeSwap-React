@@ -1,4 +1,4 @@
-import "../../SCSS-Modules/BoxNFT.css";
+import '../../SCSS-Modules/BoxNFT.css'
 
 const TopCollection = ({ props }) => {
   return (
@@ -30,8 +30,8 @@ const TopCollection = ({ props }) => {
             width="16px"
             color="text"
             xmlns="http://www.w3.org/2000/svg"
-            class="sc-4ba21b47-0 hiUWYl"
-            style={{ position: "absolute", right: "-1.5rem" }}
+            className="sc-4ba21b47-0 hiUWYl"
+            style={{ position: 'absolute', right: '-1.5rem' }}
           >
             <circle cx="48" cy="48" r="48" fill="#F0B90B"></circle>
             <path
@@ -42,9 +42,9 @@ const TopCollection = ({ props }) => {
         </p>
         <p
           style={{
-            position: "absolute",
-            right: "2.6rem",
-            color: "var(--color-container-title__subtitle_h2)",
+            position: 'absolute',
+            right: '2.6rem',
+            color: 'var(--color-container-title__subtitle_h2)',
             fontWeight: 600,
           }}
         >
@@ -52,7 +52,7 @@ const TopCollection = ({ props }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopCollection;
+export default TopCollection
