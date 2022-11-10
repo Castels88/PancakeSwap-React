@@ -82,6 +82,18 @@ const CoinChart = () => {
     }, 100);
   }, [value]);
 
+  const colorStyle = {
+    option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+      // const color = chroma(data.color);
+      console.log({ data, isDisabled, isFocused, isSelected });
+      return {
+        ...styles,
+        backgroundColor: isFocused ? "var(--background-swap-crypto)" : null,
+        color: "var(--color-header-switch-earn-passive-income)",
+      };
+    },
+  };
+
   return (
     <div className="" id="chart_div" style={{ height: "100%", width: "100%" }}>
       {fetchData && (
@@ -91,10 +103,11 @@ const CoinChart = () => {
             borderRadius: 0,
             colors: {
               ...theme.colors,
-              primary25: "var(--presentation-settings)", //hover
-              primary: "var(--background-swap-text)", //select
+              primary25: "var(--background-swap-crypto)", //hover
+              primary: "var(--color-header-switch-earn-passive-income)", //select
             },
           })}
+          styles={colorStyle}
           className="hotpink"
           image={value.image}
           components={{ Control }}

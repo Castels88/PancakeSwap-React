@@ -57,7 +57,7 @@
 }
 
 .hotpink div:first-child {
-  color: var(--background-swap-text);
+  color: var(--color-header-switch-earn-passive-income); /*color label select*/
 }
 
 .swap_chart_exit {
@@ -487,7 +487,7 @@
 .crypto_name_font {
   font-weight: 400;
   font-size: 14px;
-  color:var(--background-swap-text);
+  color: var(--background-swap-text);
 }
 .tokens_bottom_container {
   width: 95%;
