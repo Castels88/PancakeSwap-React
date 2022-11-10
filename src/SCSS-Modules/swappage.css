@@ -80,7 +80,7 @@
   border-top-right-radius: 15px;
 }
 .swap-text {
-  color: #7a6eaa;
+  color: var(--background-swap-text);
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -469,12 +469,12 @@
   font-weight: 600;
   line-height: 1.5;
   font-size: 16px;
-  color: RGB(76 53 122);
+  color: var(--background-swap-text);
 }
 .crypto_name_font {
   font-weight: 400;
   font-size: 14px;
-  color: #7a6eaa;
+  color:var(--background-swap-text);
 }
 .tokens_bottom_container {
   width: 95%;
@@ -489,6 +489,8 @@
   height: 75%;
   display: flex;
   justify-content: center;
+  background-color: var(--background-swap-button-mobile);
+  border: none;
 }
 .swap_text_font7 {
   font-size: 16px;

@@ -93,6 +93,8 @@
   --background-swap-svg-chart:#7a6eaa;
   --background-swap-h2:rgb(40, 13, 95);
   --background-swap-crypto:#7a6eaa;
+  --background-swap-button-mobile:white;
+
 
 
   /*inizio NFT*/
@@ -198,11 +200,13 @@
   --background-swap-button-one: rgb(39,38,45);
   --background-swap-button-two: rgb(39,38,45);
   --background-swap-input:rgb(55,47,71);
-  --background-swap-text: RGB(167 156 190);
+  --background-swap-text: white;
   --background-swap-freccia:rgb(55,47,71);
   --background-swap-svg-chart:rgb(182,171,208);
   --background-swap-h2:white;
   --background-swap-crypto:white;
+  --background-swap-button-mobile:rgb(39,38,45);
+
 
   /*inizio NFT*/
   --background-header-NFT: linear-gradient(139.73deg, #313d5c, #3d2a54);
