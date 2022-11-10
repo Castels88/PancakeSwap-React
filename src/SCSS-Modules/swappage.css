@@ -133,7 +133,7 @@
   fill: var(--background-swap-svg-chart);
 }
 .swap_rec_transaction {
-  width: 15%;
+  width: 25px;
   margin: 5px;
 }
 #swap_SVG_recTransaction {
@@ -778,6 +778,7 @@
     background-color: var(--background-swap-table);
     border-radius: 25px;
   }
+  
 
   .swap_charts {
     display: none;
