@@ -22,7 +22,9 @@ export function NftAssetCard(props) {
           <span>Lowest Price</span>
         </div>
         <div className="price-info">
-          <span id="info-dollar">(4,19$)</span>
+          <span id="info-dollar">
+            ({Math.floor(Math.random() * 100).toFixed()}$)
+          </span>
           <svg
             viewBox="0 0 96 96"
             width="16px"
@@ -42,5 +44,5 @@ export function NftAssetCard(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
