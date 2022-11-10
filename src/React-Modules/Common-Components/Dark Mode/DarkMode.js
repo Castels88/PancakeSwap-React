@@ -10,7 +10,7 @@ import { Moon } from "../../MoonMilions/Moon";
 import { UsedBy } from "../../MoonMilions/UsedBy";
 import { Footer } from "../../footer/footer";
 
-export function DarkMode() {
+export function Home() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
     "theme",

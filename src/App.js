@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { DarkMode } from "./React-Modules/Common-Components/Dark Mode/DarkMode";
+import { Home } from "./React-Modules/Common-Components/Dark Mode/DarkMode";
 import NFT from "./React-Modules/Navbar/NFT";
 import { SwapPage } from "./React-Modules/Routes/SwapPage";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<DarkMode />} />
+        <Route path="/" element={<Home />} />
         <Route path="/NFT" element={<NFT />} />
         <Route path="/swap" element={<SwapPage />} />
       </Routes>

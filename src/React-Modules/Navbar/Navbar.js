@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet'
-import bigBunny from '../Navbar/Images/bigBunny.svg'
-import bunnyBlue from '../Navbar/Images/bunnyBlue.svg'
-import { SettingsComponent } from './SettingsComponent'
+import { Link } from "react-router-dom";
+import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
+import bigBunny from "../Navbar/Images/bigBunny.svg";
+import bunnyBlue from "../Navbar/Images/bunnyBlue.svg";
+import { SettingsComponent } from "./SettingsComponent";
 const Navbar = (props) => {
   return (
     <nav>
@@ -72,10 +72,9 @@ const Navbar = (props) => {
           <ul className="Navbar_menuBtn">
             <li>
               <Link to="/NFT">NFT</Link>
-              {/* <a href="https://pancakeswap.finance/swap">NFT</a> */}
               <div className="Navbar_dropdown_content">
                 <div className="Navbar_element">
-                  <a href="http://">Overview</a>
+                  <Link to="/NFT">Overview</Link>
                 </div>
                 <div className="Navbar_element">
                   <a href="http://">Collections </a>
@@ -266,7 +265,7 @@ const Navbar = (props) => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
