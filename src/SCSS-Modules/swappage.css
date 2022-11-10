@@ -43,10 +43,23 @@
   justify-content: flex-end;
 }
 
-.swap_charts Chart {
+.swap_charts {
   height: 100%;
   width: 100%;
 }
+
+.hotpink > div {
+  background-color: var(--background-swap-chart);
+  border: none;
+  padding: 0.2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hotpink div:first-child {
+  color: var(--background-swap-text);
+}
+
 .swap_chart_exit {
   width: 25px;
   position: absolute;
@@ -778,7 +791,6 @@
     background-color: var(--background-swap-table);
     border-radius: 25px;
   }
-  
 
   .swap_charts {
     display: none;

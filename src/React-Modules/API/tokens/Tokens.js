@@ -30,12 +30,12 @@ const CoinChart = () => {
   const { coinData, setCoinData, value, setValue, changeHandler } =
     useSelect(fetchData);
   //States for chart options
-  const [data, setData] = useState()
-  const [options, setOptions] = useState()
+  const [data, setData] = useState();
+  const [options, setOptions] = useState();
 
   //API url
   const url =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
   //Api call
   useEffect(() => {
@@ -54,7 +54,7 @@ const CoinChart = () => {
           high: defaultChartData.high_24h,
           current: defaultChartData.current_price,
           low: defaultChartData.low_24h,
-          image: defaultChartData.image
+          image: defaultChartData.image,
         });
       });
   }, []);
@@ -72,23 +72,36 @@ const CoinChart = () => {
   } */
 
   useEffect(() => {
-    let points = []
+    let points = [];
     setTimeout(() => {
       for (let i = 0; i <= 9; i++) {
-        let rndPoint = getRndInteger(value.low, value.high)
-        points.push(rndPoint)
+        let rndPoint = getRndInteger(value.low, value.high);
+        points.push(rndPoint);
       }
       getChartData(points, coinData, value.current, setData, setOptions);
     }, 100);
   }, [value]);
 
   return (
-    <div className="" style={{ height: "100%", width: "100%" }}>
+    <div className="" id="chart_div" style={{ height: "100%", width: "100%" }}>
       {fetchData && (
         <Select
+          theme={(theme) => ({
+            ...theme,
+            borderRadius: 0,
+            colors: {
+              ...theme.colors,
+              primary25: "var(--presentation-settings)", //hover
+              primary: "var(--background-swap-text)", //select
+            },
+          })}
+          className="hotpink"
           image={value.image}
           components={{ Control }}
-          defaultValue={{ value: "binancecoin", label: "binancecoin" }}
+          defaultValue={{
+            value: "binancecoin",
+            label: "binancecoin",
+          }}
           onChange={changeHandler}
           options={fetchData.map((coin) => {
             return {
@@ -99,14 +112,10 @@ const CoinChart = () => {
         />
       )}
       {coinData && (
-        <Chart
-          chartType="AreaChart"
-          data={data}
-          options={options}
-        />
+        <Chart chartType="AreaChart" data={data} options={options} />
       )}
     </div>
-  )
-}
+  );
+};
 
-export default CoinChart
+export default CoinChart;

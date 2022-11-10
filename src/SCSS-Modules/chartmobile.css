@@ -1,68 +1,66 @@
-.chart_background{
-    display: none;
+.chart_background {
+  display: none;
 }
-.chart_appear_second{
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    position: fixed;
-    inset: 0px;
-    z-index: 99;
-    will-change: opacity;
+.chart_appear_second {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  inset: 0px;
+  z-index: 99;
+  will-change: opacity;
 }
 .chart_appear_second .chart_presentation_second {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 13, 95, 0.6);
-    z-index: 20;
-    will-change: opacity;
-  }
-  .chart_appear_second .chart_settings_menu_2 {
-    overflow: hidden;
-    background: var(--background);
-    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
-    width: 370px;
-    height: 80%;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-    right: 0;
-    left: 0;
-    z-index: 100;
-  }
-  .chart_appear_second .chart_settings_menu_2 .chart_settings_top {
-    height: 80px;
-    -webkit-box-align: center;
-    align-items: center;
-    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
-    border-bottom: 1px solid rgb(231, 227, 235);
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 24px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: rgb(40, 13, 95);
-}  
-.chart_icon_container{
-    background-color: white;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 13, 95, 0.6);
+  z-index: 20;
+  will-change: opacity;
+}
+.chart_appear_second .chart_settings_menu_2 {
+  overflow: hidden;
+  background: var(--background);
+  box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px;
+  width: 370px;
+  height: 80%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.chart_appear_second .chart_settings_menu_2 .chart_settings_top {
+  height: 80px;
+  -webkit-box-align: center;
+  align-items: center;
+  background: var(--background-swap-chart);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(40, 13, 95);
+}
+.chart_icon_container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 665px) {
   .chart_appear_second .chart_settings_menu_2 {
     overflow: hidden;
-    background: var(--background);
-    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
+    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+      rgb(0 0 0 / 5%) 0px 1px 1px;
     width: 665px;
     height: 80%;
     border-top-right-radius: 25px;
@@ -72,14 +70,19 @@
     z-index: 100;
     right: 0;
     left: 0;
-    z-index: 100;}
+    z-index: 100;
+  }
+
+  .chart_icon_container,
+  .chart_settings_top {
+    background: var(--background-swap-chart);
+  }
 }
 @media screen and (max-width: 576px) {
   .chart_appear_second .chart_settings_menu_2 {
     overflow: hidden;
-    background: var(--background);
-    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
+    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+      rgb(0 0 0 / 5%) 0px 1px 1px;
     width: 576px;
     height: 80%;
     border-top-right-radius: 25px;
@@ -89,14 +92,14 @@
     z-index: 100;
     right: 0;
     left: 0;
-    z-index: 100;}
+    z-index: 100;
+  }
 }
 @media screen and (max-width: 405px) {
   .chart_appear_second .chart_settings_menu_2 {
     overflow: hidden;
-    background: var(--background);
-    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
+    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+      rgb(0 0 0 / 5%) 0px 1px 1px;
     width: 405px;
     height: 80%;
     border-top-right-radius: 25px;
@@ -106,15 +109,14 @@
     z-index: 100;
     right: 0;
     left: 0;
-    z-index: 100;}
-  
+    z-index: 100;
+  }
 }
 @media screen and (max-width: 370px) {
   .chart_appear_second .chart_settings_menu_2 {
     overflow: hidden;
-    background: var(--background);
-    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
-    border: 1px solid rgb(231, 227, 235);
+    box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+      rgb(0 0 0 / 5%) 0px 1px 1px;
     width: 370px;
     height: 80%;
     border-top-right-radius: 25px;
@@ -124,5 +126,6 @@
     z-index: 100;
     right: 0;
     left: 0;
-    z-index: 100;} 
+    z-index: 100;
+  }
 }
