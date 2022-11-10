@@ -3,13 +3,12 @@ import { NftAssetCard } from "./NftAssetCard";
 
 export function NftAssets() {
   const [assets, setAssets] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   async function fetchNFT() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "750ece70demshb30267f1d64abbfp14b182jsnd6fa68a2b93c",
+        "X-RapidAPI-Key": "01f9e7510amsh347f1bb7237e98fp161703jsnda15bdd2b1c0",
         "X-RapidAPI-Host": "opensea13.p.rapidapi.com",
       },
     };

@@ -2,7 +2,7 @@ export function NftAssetCard(props) {
   return (
     <div className="nft-assets">
       <div className="nft-assets__image">
-        <img src={props.image}></img>
+        <img src={props.image} alt={props.name}></img>
       </div>
 
       <div className="nft-assets__collection">

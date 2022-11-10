@@ -1,42 +1,43 @@
-import { Footer } from '../footer/footer'
-import Navbar from '../Navbar/Navbar'
-import '../../SCSS-Modules/swappage.css'
-import { SettingsComponent } from '../Navbar/SettingsComponent'
-import ButtonConnectWallet from '../Common-Components/ButtonConnectWallet'
-import Help from '../Routes/IMG/Help.png'
-import { Tokens } from './Componets-from-Route/Tokens'
-import CoinChart from '../API/tokens/Tokens.js'
-import Converter from '../API/converter/Converter.js'
-import { useState } from 'react'
-import { ChartFromMobile } from './Componets-from-Route/ChartForMobile'
-import useLocalStorage from 'use-local-storage'
+import { Footer } from "../footer/footer";
+import Navbar from "../Navbar/Navbar";
+import "../../SCSS-Modules/swappage.css";
+import { SettingsComponent } from "../Navbar/SettingsComponent";
+import ButtonConnectWallet from "../Common-Components/ButtonConnectWallet";
+import Help from "../Routes/IMG/Help.png";
+import { Tokens } from "./Componets-from-Route/Tokens";
+import CoinChart from "../API/tokens/Tokens.js";
+// eslint-disable-next-line
+import Converter from "../API/converter/Converter.js";
+import { useState } from "react";
+import { ChartFromMobile } from "./Componets-from-Route/ChartForMobile";
+import useLocalStorage from "use-local-storage";
 
 export function SwapPage() {
-  const [chartIsShow, setchartIsShow] = useState(true)
-  const [chartMobile, setchartMobile] = useState(true)
-  const [visible, setVisible] = useState(false)
-  const [visibleTwo, setVisibleTwo] = useState(true)
+  const [chartIsShow, setchartIsShow] = useState(true);
+  const [chartMobile, setchartMobile] = useState(true);
+  const [visible, setVisible] = useState(false);
+  const [visibleTwo, setVisibleTwo] = useState(true);
 
   function handleButton() {
-    setchartMobile(!chartMobile)
-    setchartIsShow(!chartIsShow)
+    setchartMobile(!chartMobile);
+    setchartIsShow(!chartIsShow);
   }
 
   function handleButtonTwo() {
-    setVisible(!visible)
-    setVisibleTwo(!visibleTwo)
+    setVisible(!visible);
+    setVisibleTwo(!visibleTwo);
   }
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
-    'theme',
-    defaultDark ? 'dark' : 'light',
-  )
-  window.dispatchEvent(new Event('storage'))
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+  window.dispatchEvent(new Event("storage"));
 
   const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-  }
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
   return (
     <div className="darkswitch" data-theme={theme}>
@@ -73,8 +74,8 @@ export function SwapPage() {
                 onClick={handleButtonTwo}
                 style={{
                   backgroundColor: visibleTwo
-                    ? 'var(--background-swap-link-container)'
-                    : 'var(--background-swap-button-one)',
+                    ? "var(--background-swap-link-container)"
+                    : "var(--background-swap-button-one)",
                 }}
               >
                 <p className="swap-text">Swap</p>
@@ -84,9 +85,9 @@ export function SwapPage() {
                 onClick={handleButtonTwo}
                 style={{
                   backgroundColor: visible
-                    ? 'var(--background-swap-link-container)'
-                    : 'var(--background-swap-button-one)',
-                  borderTopLeftRadius: visible ? '25px' : '0',
+                    ? "var(--background-swap-link-container)"
+                    : "var(--background-swap-button-one)",
+                  borderTopLeftRadius: visible ? "25px" : "0",
                 }}
               >
                 <p className="swap-text">StableSwap</p>
@@ -313,7 +314,7 @@ export function SwapPage() {
                           <img
                             src="https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5/logo.png"
                             alt="img-HAY"
-                            style={{ width: '24px', marginRight: '5px' }}
+                            style={{ width: "24px", marginRight: "5px" }}
                           />
                           <p class="swap-text-crypto">HAY</p>
                           <svg
@@ -356,7 +357,7 @@ export function SwapPage() {
                           <img
                             src="https://tokens.pancakeswap.finance/images/symbol/busd.png"
                             alt="img-BUSD"
-                            style={{ width: '24px', marginRight: '5px' }}
+                            style={{ width: "24px", marginRight: "5px" }}
                           />
                           <p class="swap-text-crypto">BUSD</p>
                           <svg
@@ -460,5 +461,5 @@ export function SwapPage() {
       {chartMobile ? <ChartFromMobile /> : null}
       <Footer switchTheme={switchTheme} />
     </div>
-  )
+  );
 }

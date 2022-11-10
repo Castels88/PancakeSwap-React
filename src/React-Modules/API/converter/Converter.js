@@ -1,99 +1,92 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-import Select, {
-  components,
-  ControlProps,
-  Props,
-  StylesConfig,
-} from 'react-select'
-import useSelect from '../Custom Hooks/useSelect'
-import { getExchangeRate, roundOff } from '../tokens/script'
-import './Converter.css'
+import axios from "axios";
+import { useEffect, useState } from "react";
+import Select, { components } from "react-select";
+import useSelect from "../Custom Hooks/useSelect";
+import { roundOff } from "../tokens/script";
+import "./Converter.css";
 
 const Control = ({ children, ...props }) => {
-  const { image } = props.selectProps
+  const { image } = props.selectProps;
 
   return (
     <components.Control {...props}>
       <img className="selected-image" src={image} alt={image} />
       {children}
     </components.Control>
-  )
-}
+  );
+};
 
 const Converter = () => {
   //states to store fetched data
-  const [fetchData, setFetchData] = useState()
+  const [fetchData, setFetchData] = useState();
   //hooks to store user selected coin values
   const {
-    coinData: firstCoinData,
     setCoinData: setFirstCoinData,
     value: firstValue,
     setValue: setFirstValue,
     changeHandler: changeFirstHandler,
-  } = useSelect(fetchData)
+  } = useSelect(fetchData);
   const {
-    coinData: secondCoinData,
     setCoinData: setSecondCoinData,
     value: secondValue,
     setValue: setSecondValue,
     changeHandler: changeSecondHandler,
-  } = useSelect(fetchData)
+  } = useSelect(fetchData);
 
   //states to store exchange and input values
-  const [exchangeRate, setExchangeRate] = useState()
-  const [firstInput, setFirstInput] = useState('0.00')
-  const [secondInput, setSecondInput] = useState('0.00')
+  const [firstInput, setFirstInput] = useState("0.00");
+  const [secondInput, setSecondInput] = useState("0.00");
 
   const url =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
-        setFetchData(response.data)
-        return response.data
+        setFetchData(response.data);
+        return response.data;
       })
       .then((res) => {
         let first = res
-          .filter((obj) => obj.id === 'binancecoin')
-          .find((el) => el)
-        setFirstCoinData(first)
+          .filter((obj) => obj.id === "binancecoin")
+          .find((el) => el);
+        setFirstCoinData(first);
         setFirstValue({
           high: first.high_24h,
           current: first.current_price,
           low: first.low_24h,
           image: first.image,
-        })
-        return res
+        });
+        return res;
       })
       .then((res) => {
         let second = res
-          .filter((obj) => obj.id === 'pancakeswap-token')
-          .find((el) => el)
-        setSecondCoinData(second)
+          .filter((obj) => obj.id === "pancakeswap-token")
+          .find((el) => el);
+        setSecondCoinData(second);
         setSecondValue({
           high: second.high_24h,
           current: second.current_price,
           low: second.low_24h,
           image: second.image,
-        })
-      })
-  }, [])
+        });
+      });
+    // eslint-disable-next-line
+  }, []);
 
   function firstInputHandler(event) {
-    let input = event.target.value
-    setFirstInput(input)
-    let res = input * (firstValue.current / secondValue.current)
-    setSecondInput(roundOff(res, 2))
+    let input = event.target.value;
+    setFirstInput(input);
+    let res = input * (firstValue.current / secondValue.current);
+    setSecondInput(roundOff(res, 2));
   }
 
   function secondInputHandler(event) {
-    let input = event.target.value
-    setSecondInput(input)
-    let res = input * (secondValue.current / firstValue.current)
-    setFirstValue(roundOff(res, 2))
+    let input = event.target.value;
+    setSecondInput(input);
+    let res = input * (secondValue.current / firstValue.current);
+    setFirstValue(roundOff(res, 2));
   }
 
   return (
@@ -104,13 +97,13 @@ const Converter = () => {
             className="swap_SVG_container"
             image={firstValue.image}
             components={{ Control }}
-            defaultValue={{ value: 'binancecoin', label: 'binancecoin' }}
+            defaultValue={{ value: "binancecoin", label: "binancecoin" }}
             onChange={changeFirstHandler}
             options={fetchData.map((coin) => {
               return {
                 value: coin.id,
                 label: coin.id,
-              }
+              };
             })}
           />
         </div>
@@ -144,15 +137,15 @@ const Converter = () => {
             image={secondValue.image}
             components={{ Control }}
             defaultValue={{
-              value: 'pancakeswap-token',
-              label: 'pancakeswap-token',
+              value: "pancakeswap-token",
+              label: "pancakeswap-token",
             }}
             onChange={changeSecondHandler}
             options={fetchData.map((coin) => {
               return {
                 value: coin.id,
                 label: coin.id,
-              }
+              };
             })}
           />
         </div>
@@ -167,7 +160,7 @@ const Converter = () => {
         />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Converter
+export default Converter;

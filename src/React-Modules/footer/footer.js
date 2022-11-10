@@ -39,7 +39,7 @@ export function Footer(props) {
           <li className="footer__main-default">Careers</li>
         </ul>
         <div className="footer__pancake-img">
-          <img src={fpancakelogo}></img>
+          <img src={fpancakelogo} alt="pancake-logo"></img>
         </div>
       </div>
 

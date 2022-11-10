@@ -1977,9 +1977,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .winMillion-container .winMillion-content .card-container {
   /* text-align: center;
-  display: flex;
-        align-items: center;
-        justify-content: center; */
+    display: flex;
+          align-items: center;
+          justify-content: center; */
   width: 100%;
 }
 .winMillion-container .winMillion-content .card-container .card {
@@ -2094,9 +2094,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   .winMillion-container .winMillion-content .card-container .card {
     width: 33%;
-  }
-  .winMillion-container .winMillion-content .card-container .card-button {
-    margin-top: 55px !important;
   }
   .winMillion-container .winMillion-content .left-card {
     transform: rotate(-3deg);

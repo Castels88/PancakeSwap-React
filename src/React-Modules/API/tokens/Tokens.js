@@ -5,12 +5,7 @@ import { useState } from "react";
 import { Chart } from "react-google-charts";
 import { getChartData, getRndInteger } from "./script.js";
 import useSelect from "../Custom Hooks/useSelect.js";
-import Select, {
-  components,
-  ControlProps,
-  Props,
-  StylesConfig,
-} from "react-select";
+import Select, { components } from "react-select";
 
 const Control = ({ children, ...props }) => {
   const { image } = props.selectProps;
@@ -57,19 +52,8 @@ const CoinChart = () => {
           image: defaultChartData.image,
         });
       });
+    // eslint-disable-next-line
   }, []);
-
-  /* function changeHandler(event) {
-    let currCoinData = fetchData
-      .filter((obj) => obj.id === event.target.value)
-      .find((el) => el);
-    setCoinData(currCoinData);
-    setValue({
-      high: currCoinData.high_24h,
-      current: currCoinData.current_price,
-      low: currCoinData.low_24h,
-    });
-  } */
 
   useEffect(() => {
     let points = [];
@@ -80,7 +64,7 @@ const CoinChart = () => {
       }
       getChartData(points, coinData, value.current, setData, setOptions);
     }, 100);
-  }, [value]);
+  }, [coinData, value]);
 
   const colorStyle = {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
