@@ -36,7 +36,9 @@ export function NftAssetCard(props) {
               fill="white"
             ></path>
           </svg>
-          <span id="info-token">0,1129</span>
+          <span id="info-token">
+            {Math.floor(Math.random() * 100).toFixed()}
+          </span>
         </div>
       </div>
     </div>

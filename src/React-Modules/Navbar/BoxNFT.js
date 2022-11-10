@@ -40,11 +40,11 @@ const BoxNFT = ({ props }) => {
           className="p-data-volume"
           style={{
             position: "absolute",
-            right: "2.6rem",
+            right: "2.3rem",
             fontWeight: 600,
           }}
         >
-          40,1405
+          {Math.floor(Math.random(1) * 100).toFixed(4)}
         </p>
       </div>
     </div>

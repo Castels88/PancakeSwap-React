@@ -43,12 +43,12 @@ const TopCollection = ({ props }) => {
         <p
           style={{
             position: "absolute",
-            right: "2.6rem",
+            right: "2.3rem",
             color: "var(--color-container-title__subtitle_h2)",
             fontWeight: 600,
           }}
         >
-          40,1405
+          {Math.floor(Math.random(1) * 100).toFixed(4)}
         </p>
       </div>
     </div>
