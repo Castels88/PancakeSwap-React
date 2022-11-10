@@ -6,6 +6,7 @@ import Select, {
   Props,
   StylesConfig,
 } from 'react-select'
+import { Tokens } from '../../Routes/Componets-from-Route/Tokens'
 import useSelect from '../Custom Hooks/useSelect'
 import { getExchangeRate, roundOff } from '../tokens/script'
 import './Converter.css'
@@ -104,12 +105,12 @@ const Converter = () => {
             className="swap_SVG_container"
             image={firstValue.image}
             components={{ Control }}
-            defaultValue={{ value: 'binancecoin', label: 'binancecoin' }}
+            defaultValue={{ value: 'binancecoin', label: 'BNB' }}
             onChange={changeFirstHandler}
             options={fetchData.map((coin) => {
               return {
                 value: coin.id,
-                label: coin.id,
+                label: coin.symbol.toUpperCase(),
               }
             })}
           />
@@ -118,7 +119,7 @@ const Converter = () => {
       <div className="swap_input_container">
         <input
           className="swap_input"
-          type="text"
+          type="number"
           onChange={firstInputHandler}
           value={firstInput}
           placeholder="0.00"
@@ -145,13 +146,13 @@ const Converter = () => {
             components={{ Control }}
             defaultValue={{
               value: 'pancakeswap-token',
-              label: 'pancakeswap-token',
+              label: 'CAKE',
             }}
             onChange={changeSecondHandler}
             options={fetchData.map((coin) => {
               return {
                 value: coin.id,
-                label: coin.id,
+                label: coin.symbol.toUpperCase(),
               }
             })}
           />
@@ -160,7 +161,7 @@ const Converter = () => {
       <div className="swap_input_container">
         <input
           className="swap_input"
-          type="text"
+          type="number"
           onChange={secondInputHandler}
           value={secondInput}
           placeholder="0.00"

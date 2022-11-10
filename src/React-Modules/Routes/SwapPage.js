@@ -153,7 +153,7 @@ export function SwapPage() {
                 </div>
                 <div className="swap_tokes_container">
                   <div className="swap_tokes_sub_container">
-                    <Converter />
+                    <Tokens/>
                   </div>
                   <div className="swap_conteiner_component">
                     <ButtonConnectWallet />

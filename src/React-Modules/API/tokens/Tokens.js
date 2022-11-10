@@ -11,6 +11,8 @@ import Select, {
   Props,
   StylesConfig,
 } from "react-select";
+import { Tokens } from "../../Routes/Componets-from-Route/Tokens.js";
+import { css } from "@emotion/react";
 
 const Control = ({ children, ...props }) => {
   const { image } = props.selectProps;
@@ -88,12 +90,12 @@ const CoinChart = () => {
         <Select
           image={value.image}
           components={{ Control }}
-          defaultValue={{ value: "binancecoin", label: "binancecoin" }}
+          defaultValue={{ value: "binancecoin", label: "BNB" }}
           onChange={changeHandler}
           options={fetchData.map((coin) => {
             return {
               value: coin.id,
-              label: coin.id,
+              label: coin.symbol.toUpperCase(),
             };
           })}
         />

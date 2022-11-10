@@ -10,6 +10,7 @@ const useSelect = (fetchData) => {
       .find((el) => el);
     setCoinData(currCoinData);
     setValue({
+      id: currCoinData.symbol.toUpperCase(),
       high: currCoinData.high_24h,
       current: currCoinData.current_price,
       low: currCoinData.low_24h,
